@@ -2,7 +2,6 @@ import { Routes, Route } from "react-router-dom";
 // import NavBarComponent from "./components/Navbar";
 // import AboutPage from "./ParentDir/AboutPage";
 // import EventPage from "./ParentDir/EventPage";
-// import ContactPage from "./ParentDir/ContactPage";
 // import FooterComponent from "./ParentDir/Footer/FooterComponent";
 
 function App() {
