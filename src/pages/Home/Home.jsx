@@ -1,7 +1,25 @@
-import React from 'react'
+import React from "react";
+import HeroComponent from "../../components/home/HeroComponent";
+import About from "../../components/home/About";
+import RecipeReviewCard from "../../components/home/Notification";
 
-export default function Archives() {
+function Home() {
   return (
-    <div>Archives</div>
-  )
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        margin:"20px"
+      }}
+    >
+      <HeroComponent/>
+      <About/>
+      <RecipeReviewCard/>
+
+    </div>
+  );
 }
+
+export default Home
