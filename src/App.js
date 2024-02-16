@@ -1,19 +1,14 @@
-import { Routes, Route } from "react-router-dom";
-// import NavBarComponent from "./components/Navbar";
-// import AboutPage from "./ParentDir/AboutPage";
-// import EventPage from "./ParentDir/EventPage";
-// import FooterComponent from "./ParentDir/Footer/FooterComponent";
+// import { Routes, Route } from "react-router-dom";
+import Footer from "./components/footer/Footer";
+import Navbar from "./components/navbar/Nabar";
+import Home from "./pages/Home/Home";
 
 function App() {
   return (
     <div className="App">
-      {/* <NavBarComponent /> */}
-      <Routes>
-        {/* <Route path="/" element={<HomePage />} />
-        <Route path="/library" element={<EventPage />} />
-        <Route path="/contact" element={<ContactPage />} /> */}
-      </Routes>
-      {/* <FooterComponent /> */}
+      <Navbar />
+      <Home />
+      <Footer/>
     </div>
   );
 }
