@@ -2,6 +2,8 @@ import {Routes, Route } from "react-router-dom";
 import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
 import Home from "./pages/Home/Home";
+import { Box} from "@mui/material";
+import Background from "./assets/Background.png"
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import Events from "./pages/Events/Events";
@@ -10,7 +12,10 @@ import HighlightEvent from "./pages/Events/HighlightEvent";
 
 function App() {
   return (
-    <div className="App">
+    <Box className="App"
+    sx={{
+      backgroundImage: `url(${Background})`,
+    }}>
       <Navbar />
 
       <Routes>
@@ -23,7 +28,7 @@ function App() {
       </Routes>
 
       <Footer/>
-    </div>
+    </Box>
   );
 }
 
