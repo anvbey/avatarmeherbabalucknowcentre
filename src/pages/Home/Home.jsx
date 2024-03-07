@@ -3,6 +3,7 @@ import HeroComponent from "../../components/home/HeroComponent";
 import AboutMeherBaba from "../../components/home/AboutMeherBaba";
 import AboutLucknowCentre from "../../components/home/AboutLucknowCentre";
 import RecipeReviewCard from "../../components/home/Notification";
+import Quotes from "../../components/home/Quotes";
 
 function Home() {
   return (
@@ -12,12 +13,15 @@ function Home() {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        margin:"20px"
+        // margin:"20px"
       }}
     >
       <HeroComponent/>
+      <Quotes/>
       <AboutMeherBaba/>
+      <Quotes/>
       <AboutLucknowCentre/>
+      <Quotes/>
       <RecipeReviewCard/>
 
     </div>
