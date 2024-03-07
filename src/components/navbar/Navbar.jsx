@@ -39,6 +39,7 @@ function Navbar() {
               width: "100%",
             }}
           >
+
             <Typography
               variant="h6"
               component="div"
@@ -50,7 +51,7 @@ function Navbar() {
                 textDecoration: "none",
               }}
             >
-              <Link to="/library">Library</Link>
+              <Link to="/oct2024"> Meher Prem Sammelan October 2024</Link>
             </Typography>
 
             <Typography
@@ -64,7 +65,7 @@ function Navbar() {
                 textDecoration: "none",
               }}
             >
-              <Link to="/contact">Contact Us!</Link>
+              <Link to="/about">About</Link>
             </Typography>
 
             <Typography
@@ -78,7 +79,21 @@ function Navbar() {
                 textDecoration: "none",
               }}
             >
-              <Link to="/library"> Ways to donate</Link>
+              <Link to="/events"> Events</Link>
+            </Typography>
+
+            <Typography
+              variant="h6"
+              component="div"
+              sx={{
+                marginLeft: 8,
+                fontFamily: "'Open Sans Hebrew', sans-serif",
+                fontWeight: "bold",
+                color: "black",
+                textDecoration: "none",
+              }}
+            >
+              <Link to="/contact">Contact Us</Link>
             </Typography>
           </Box>
         </Toolbar>

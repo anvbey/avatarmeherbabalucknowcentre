@@ -1,6 +1,7 @@
 import React from "react";
 import HeroComponent from "../../components/home/HeroComponent";
-import About from "../../components/home/About";
+import AboutMeherBaba from "../../components/home/AboutMeherBaba";
+import AboutLucknowCentre from "../../components/home/AboutLucknowCentre";
 import RecipeReviewCard from "../../components/home/Notification";
 
 function Home() {
@@ -15,7 +16,8 @@ function Home() {
       }}
     >
       <HeroComponent/>
-      <About/>
+      <AboutMeherBaba/>
+      <AboutLucknowCentre/>
       <RecipeReviewCard/>
 
     </div>
