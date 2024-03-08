@@ -1,6 +1,6 @@
-var express = require('express');
-var cors = require('cors');
-var bodyParser = require('body-parser');
+import express from 'express';
+import cors from 'cors';
+import { json, urlencoded } from 'body-parser';
 
 const port = process.env.PORT || 8080;
 require('dotenv').config();
@@ -14,10 +14,10 @@ app.use(cors(
         methods: ['GET', 'POST', 'PUT', 'DELETE']
     }
 ));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(json());
+app.use(urlencoded({ extended: true }));
 
-app.use('/form', require('./routes/contactForm.route'));
+app.use('/form', require('./routes/form.route'));
 
 const server = app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
@@ -25,4 +25,3 @@ const server = app.listen(port, () => {
 
 server.timeout = 1000 * 60 * 10;
 server.keepAliveTimeout = 1000 * 60 * 10;
-server.requestTimeout = 1000 * 60 * 10;
