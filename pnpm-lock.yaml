@@ -26,6 +26,9 @@ dependencies:
   '@testing-library/user-event':
     specifier: ^13.5.0
     version: 13.5.0(@testing-library/dom@9.3.4)
+  body-parser:
+    specifier: ^1.20.2
+    version: 1.20.2
   core-js:
     specifier: ^3.35.1
     version: 3.35.1
@@ -35,6 +38,12 @@ dependencies:
   express:
     specifier: ^4.18.3
     version: 4.18.3
+  nodemailer:
+    specifier: ^6.9.12
+    version: 6.9.12
+  nodemailer-express-handlebars:
+    specifier: ^6.1.2
+    version: 6.1.2(express-handlebars@7.1.2)(nodemailer@6.9.12)
   react:
     specifier: ^17.0.2
     version: 17.0.2
@@ -5502,6 +5511,15 @@ packages:
       jest-util: 29.7.0
     dev: false
 
+  /express-handlebars@7.1.2:
+    resolution: {integrity: sha512-ss9d3mBChOLTEtyfzXCsxlItUxpgS3i4cb/F70G6Q5ohQzmD12XB4x/Y9U6YboeeYBJZt7WQ5yUNu7ZSQ/EGyQ==}
+    engines: {node: '>=v16'}
+    dependencies:
+      glob: 10.3.10
+      graceful-fs: 4.2.11
+      handlebars: 4.7.8
+    dev: false
+
   /express@4.18.3:
     resolution: {integrity: sha512-6VyCijWQ+9O7WuVMTRBTl+cjNNIzD5cY5mQ1WM8r/LEkI2u8EYpOotESNwzNlyCn3g+dmjKYI6BmNneSr/FSRw==}
     engines: {node: '>= 0.10.0'}
@@ -5967,6 +5985,19 @@ packages:
 
   /handle-thing@2.0.1:
     resolution: {integrity: sha512-9Qn4yBxelxoh2Ow62nP+Ka/kMnOXRi8BXnRaUwezLNhqelnN49xKz4F/dPP8OYLxLxq6JDtZb2i9XznUQbNPTg==}
+    dev: false
+
+  /handlebars@4.7.8:
+    resolution: {integrity: sha512-vafaFqs8MZkRrSX7sFVUdo3ap/eNiLnb4IakshzvP56X5Nr1iGKAIqdX6tMlm6HcNRIkr6AxO5jFEoJzzpT8aQ==}
+    engines: {node: '>=0.4.7'}
+    hasBin: true
+    dependencies:
+      minimist: 1.2.8
+      neo-async: 2.6.2
+      source-map: 0.6.1
+      wordwrap: 1.0.0
+    optionalDependencies:
+      uglify-js: 3.17.4
     dev: false
 
   /harmony-reflect@1.6.2:
@@ -7751,6 +7782,22 @@ packages:
 
   /node-releases@2.0.14:
     resolution: {integrity: sha512-y10wOWt8yZpqXmOgRo77WaHEmhYQYGNA6y421PKsKYWEK8aW+cqAphborZDhqfyKrbZEN92CN1X2KbafY2s7Yw==}
+    dev: false
+
+  /nodemailer-express-handlebars@6.1.2(express-handlebars@7.1.2)(nodemailer@6.9.12):
+    resolution: {integrity: sha512-p5ZKPe8PmiDZquNqi+uDKE1eKXOcqOVPdnmhWELCT1HHoaYXcVwM7wQE1R7wtPPracZRH2hL7mEWiXhVwr5hng==}
+    engines: {node: 14.* || 16.* || >= 18}
+    peerDependencies:
+      express-handlebars: '>= 6.0.0'
+      nodemailer: '>= 6.0.0'
+    dependencies:
+      express-handlebars: 7.1.2
+      nodemailer: 6.9.12
+    dev: false
+
+  /nodemailer@6.9.12:
+    resolution: {integrity: sha512-pnLo7g37Br3jXbF0bl5DekBJihm2q+3bB3l2o/B060sWmb5l+VqeScAQCBqaQ+5ezRZFzW5SciZNGdRDEbq89w==}
+    engines: {node: '>=6.0.0'}
     dev: false
 
   /normalize-path@3.0.0:
@@ -10494,6 +10541,14 @@ packages:
     hasBin: true
     dev: false
 
+  /uglify-js@3.17.4:
+    resolution: {integrity: sha512-T9q82TJI9e/C1TAxYvfb16xO120tMVFZrGA3f9/P4424DNu6ypK103y0GPFVa17yotwSyZW5iYXgjYHkGrJW/g==}
+    engines: {node: '>=0.8.0'}
+    hasBin: true
+    requiresBuild: true
+    dev: false
+    optional: true
+
   /unbox-primitive@1.0.2:
     resolution: {integrity: sha512-61pPlCD9h51VoreyJ0BReideM3MDKMKnh6+V9L08331ipq6Q8OFXZYiqP6n/tbHx4s5I9uRhcye6BrbkizkBDw==}
     dependencies:
@@ -10929,6 +10984,10 @@ packages:
   /word-wrap@1.2.5:
     resolution: {integrity: sha512-BN22B5eaMMI9UMtjrGd5g5eCYPpCPDUy0FJXbYsaT5zYxjFOckS53SQDE3pWkVoWpHXVb3BrYcEN4Twa55B5cA==}
     engines: {node: '>=0.10.0'}
+    dev: false
+
+  /wordwrap@1.0.0:
+    resolution: {integrity: sha512-gvVzJFlPycKc5dZN4yPkP8w7Dc37BtP1yczEneOb4uq34pXZcvrtRTmWV8W+Ume+XCxKgbjM+nevkyFPMybd4Q==}
     dev: false
 
   /workbox-background-sync@6.6.0:
