@@ -1,9 +1,8 @@
-import express from 'express';
-import cors from 'cors';
-import { json, urlencoded } from 'body-parser';
+const express = require('express');
+const cors = require('cors');
+const { json, urlencoded } = require('body-parser');
 
 const port = process.env.PORT || 8080;
-require('dotenv').config();
 
 const app = new express();
 app.use(cors(
