@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -7,27 +7,6 @@ import "react-vertical-timeline-component/style.min.css";
 import './Timeline.css'
 import ExpandableTimelineElement from "./ExpandableTimelineElement ";
 
-const CustomIcon = ({ text, style }) => (
-  <div
-    style={{
-      ...style,
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "center",
-    }}
-  >
-    <div
-      style={{
-        background: "rgb(16, 204, 82)",
-        color: "#fff",
-        padding: "8px",
-        borderRadius: "50%",
-      }}
-    >
-      {text}
-    </div>
-  </div>
-);
 
 function Timeline() {
   return (
