@@ -22,7 +22,7 @@ function AboutMeherBaba() {
         margin: "10px",
       }}
     >
-      <Typography variant="h1">About</Typography>
+      
       <div
         style={{
           display: "flex",
