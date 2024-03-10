@@ -23,7 +23,7 @@ function Navbar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar
-        position="relative"
+        position="fixed"
         elevation={0}
         sx={{
           borderBottom: "2.5px solid #C4C698",
