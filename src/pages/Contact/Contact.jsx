@@ -1,11 +1,29 @@
 import React from "react";
 import { Box, Typography, TextField, Button } from "@mui/material";
+import contactFormSchema from '../../lib/formSchema/contactFormSchema';
+import { useForm } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
 
 const ContactForm = () => {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission logic here
+  const onSubmit = (values) => {
+    console.log(values)
   };
+
+  const {
+    register,
+    handleSubmit,
+  } = useForm(
+    {
+      resolver: zodResolver(contactFormSchema),
+      defaultValues: {
+        name: "",
+        email: "",
+        phone: "",
+        subject: "",
+        message: "",
+      },
+    }
+  );
 
   return (
     <Box sx={{  margin:'60px'}}>
@@ -31,10 +49,10 @@ const ContactForm = () => {
             Send your request
           </Typography>
 
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit(onSubmit)}>
             <Box display="flex" gap={2} marginBottom={2}>
-              <TextField label="Name" variant="outlined" fullWidth />
-              <TextField label="Phone" variant="outlined" fullWidth />
+              <TextField label="Name" variant="outlined" fullWidth {...register('name')}/>
+              <TextField label="Phone" variant="outlined" fullWidth {...register('phone')}/>
             </Box>
             <Box display="flex" gap={2} marginBottom={2}>
               <TextField
@@ -43,12 +61,14 @@ const ContactForm = () => {
                 variant="outlined"
                 fullWidth
                 marginBottom={2}
+                {...register('email')}
               />
               <TextField
                 label="Subject"
                 variant="outlined"
                 fullWidth
                 marginBottom={2}
+                {...register('subject')}
               />
             </Box>
 
@@ -59,6 +79,7 @@ const ContactForm = () => {
               variant="outlined"
               fullWidth
               marginBottom={2}
+              {...register('message')}
             />
 
             <Button type="submit" variant="contained" color="primary" sx={{  marginTop:'10px'}}>

@@ -4,6 +4,7 @@ const path = require('path');
 
 const transporter = createTransport({
     service: 'gmail',
+    host: 'smtp.gmail.com',
     auth: {
         user: process.env.EMAIL,
         pass: process.env.PASSWORD
@@ -17,7 +18,6 @@ const handlebarsOptions = {
     },
     viewPath: path.resolve('./templates/')
 }
-
 
 const sendMail = async (userEmail, subject, template, context) => {
     transporter.use('compile', hbs(handlebarsOptions))
