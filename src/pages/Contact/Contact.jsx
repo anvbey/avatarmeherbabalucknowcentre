@@ -1,12 +1,29 @@
 import React from "react";
-import { Box, Typography, TextField, Button, Snackbar, Alert } from "@mui/material";
+import { Box, Typography, TextField, Button } from "@mui/material";
+import contactFormSchema from '../../lib/formSchema/contactFormSchema';
+import { useForm } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
 
 const ContactForm = () => {
-  const [open, setOpen] = React.useState(false);
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    
+  const onSubmit = (values) => {
+    console.log(values)
   };
+
+  const {
+    register,
+    handleSubmit,
+  } = useForm(
+    {
+      resolver: zodResolver(contactFormSchema),
+      defaultValues: {
+        name: "",
+        email: "",
+        phone: "",
+        subject: "",
+        message: "",
+      },
+    }
+  );
 
   return (
     <Box sx={{ margin: "20px 60px" }}>
@@ -37,16 +54,10 @@ const ContactForm = () => {
             Send your request
           </Typography>
 
-          <form onSubmit={handleSubmit}>
-            <Box
-              display="flex"
-              gap={2}
-              sx={{
-                "& .MuiTextField-root": { m: 1 },
-              }}
-            >
-              <TextField label="Name" variant="outlined" fullWidth />
-              <TextField label="Phone" variant="outlined" fullWidth />
+          <form onSubmit={handleSubmit(onSubmit)}>
+            <Box display="flex" gap={2} marginBottom={2}>
+              <TextField label="Name" variant="outlined" fullWidth {...register('name')}/>
+              <TextField label="Phone" variant="outlined" fullWidth {...register('phone')}/>
             </Box>
             <Box
               display="flex"
@@ -60,6 +71,9 @@ const ContactForm = () => {
                 type="email"
                 variant="outlined"
                 fullWidth
+
+                marginBottom={2}
+                {...register('email')}
               />
               <TextField label="Subject" variant="outlined" fullWidth />
             </Box>
@@ -77,11 +91,28 @@ const ContactForm = () => {
                 multiline
                 rows={4}
                 variant="outlined"
+                fullWidth
+                marginBottom={2}
+                {...register('subject')}
               />
               <Button type="submit" variant="contained" color="primary">
                 Submit
               </Button>
             </Box>
+
+            <TextField
+              label="Message"
+              multiline
+              rows={4}
+              variant="outlined"
+              fullWidth
+              marginBottom={2}
+              {...register('message')}
+            />
+
+            <Button type="submit" variant="contained" color="primary" sx={{  marginTop:'10px'}}>
+              Submit
+            </Button>
           </form>
         </Box>
 

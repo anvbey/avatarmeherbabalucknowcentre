@@ -39,7 +39,6 @@ function Navbar() {
               width: "100%",
             }}
           >
-
             <Typography
               variant="h6"
               component="div"
@@ -53,7 +52,6 @@ function Navbar() {
             >
               <Link to="/oct2024"> Meher Prem Sammelan October 2024</Link>
             </Typography>
-
             <Typography
               variant="h6"
               component="div"
