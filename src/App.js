@@ -3,7 +3,6 @@ import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
 import Home from "./pages/Home/Home";
 import { Box } from "@mui/material";
-import Background from "./assets/Background.png";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import Events from "./pages/Events/Events";
@@ -18,9 +17,10 @@ function App() {
         display: "flex",
         flexDirection: "column",
         minHeight: "100vh", // Set minimum height to full viewport height
-        backgroundImage: `url(${Background})`,
+        // backgroundImage: `url(${Background})`,
       }}
     >
+
       <Navbar />
 
       <Box
@@ -39,6 +39,7 @@ function App() {
       </Box>
 
       <Footer />
+      
     </Box>
   );
 }

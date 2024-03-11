@@ -10,6 +10,7 @@ const About = () => {
     <Box sx={{ margin: "60px" }}>
       <Overview/>
       <Timeline/>
+      <Present/>
     </Box>
   );
 };

@@ -1,16 +1,20 @@
-import React, { useRef, useEffect } from "react";
-import { Box } from "@mui/material";
+import React from "react";
+import { Box, Typography } from "@mui/material";
 import MeherPrem from "../../assets/MeherPrem.jpg";
-
+import Schedule from "../../components/events/Schedule";
+import AboutEvent from "../../components/highlightEvent/AboutEvent";
+import Contact from "../../components/highlightEvent/Contact"
 const HighlightEvent = () => {
   const imageRef = React.createRef();
 
   return (
     <Box
       display="flex"
+      flexDirection="column"
       justifyContent="center"
       alignItems="center"
-      minHeight="100vh" // Set minimum height to cover the entire viewport
+      minHeight="100vh"
+      padding={"50px"}
     >
       <img
         ref={imageRef}
@@ -18,12 +22,20 @@ const HighlightEvent = () => {
         alt={"item.title"}
         loading="lazy"
         style={{
-          maxWidth: '100%', // Make sure the image doesn't exceed the screen width
-          maxHeight: '100%', // Make sure the image doesn't exceed the screen height
+          maxWidth: "80%",
+          // height: '500px',
+          marginTop: "50px",
+          borderRadius: '8px'
         }}
       />
+      <AboutEvent/>
+      <Box>
+        <Typography variant="h3">Session-wise Schedule</Typography>
+        <Schedule />
+      </Box>
+      <Contact/>
     </Box>
-);
-}
+  );
+};
 
 export default HighlightEvent;
