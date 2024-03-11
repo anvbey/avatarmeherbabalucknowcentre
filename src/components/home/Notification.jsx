@@ -15,7 +15,7 @@ import Thumbnail from "../../assets/Thumbnail.png";
 
 export default function RecipeReviewCard() {
   return (
-    <Card sx={{ minWidth: 1180, maxWidth: 1180 }}>
+    <Card sx={{ minWidth: 1180, maxWidth: 1180, }}>
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
