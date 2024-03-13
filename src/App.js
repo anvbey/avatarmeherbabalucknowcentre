@@ -16,8 +16,7 @@ function App() {
       sx={{
         display: "flex",
         flexDirection: "column",
-        minHeight: "100vh", // Set minimum height to full viewport height
-        // backgroundImage: `url(${Background})`,
+        minHeight: "100vh",
       }}
     >
 
