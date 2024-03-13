@@ -14,7 +14,6 @@ const ContactForm = () => {
     defaultValues: {
       name: "",
       email: "",
-      phone: "",
       subject: "",
       message: "",
     },
@@ -80,9 +79,6 @@ const ContactForm = () => {
               display="flex"
               flexDirection="column"
               gap={2}
-              sx={{
-                "& .MuiTextField-root": { m: 1 },
-              }}
             >
               <TextField
                 label="Message"
