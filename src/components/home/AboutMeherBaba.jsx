@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import Netting from "../../assets/BabaMeetingKids.jpg";
-import { Typography } from "@mui/material";
+import { Typography, Box } from "@mui/material";
 
 function AboutMeherBaba() {
   const imageRef = useRef(null);
@@ -14,64 +14,49 @@ function AboutMeherBaba() {
     }
   }, []);
   return (
-    <div
-      style={{
+    <Box
+      sx={{
         display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        margin: "10px",
+        justifyContent: "flex-start",
       }}
     >
-      
-      <div
-        style={{
+      <img
+        ref={imageRef}
+        src={Netting}
+        alt={"item.title"}
+        loading="lazy"
+        width="340"
+        height="340"
+        style={{ borderRadius: "10px", marginLeft: "40px" }}
+      />
+      <Box
+        sx={{
           display: "flex",
           flexDirection: "column",
-          justifyContent: "center",
-          margin: "20px",
+          alignItems: "start",
+          margin: "0 40px",
         }}
       >
-        <Typography variant="h3">Meher Baba</Typography>
-        <div
-          style={{
-            display: "flex",
-            border: "1px solid black",
-            borderRadius: "30px",
-            margin: "10px",
-          }}
-        >
-        <img
-          ref={imageRef}
-          src={Netting}
-          alt={"item.title"}
-          loading="lazy"
-          width="700"
-          height="700"
-          style={{ borderRadius: "50px", padding: "30px" }}
-        />
-          <Typography variant="h6" style={{ margin: "auto", padding: "20px" }}>
-            Meher Baba, the Avatar. “Meher Baba” means “Compassionate Father.”
-            It is the name given to Him, their spiritual Master, by a group of
-            His disciples in the early 1920s after signs of His spiritual status
-            became apparent. Today, many thousands of people from every
-            religious tradition regard Meher Baba as the one long awaited — the
-            Prophet, the Buddha, the Christ, the Messiah of this age. Most
-            commonly in India, He is referred to as the “Avatar,” a Sanskrit
-            word meaning “descent of God.”
-          </Typography>
-        </div>
-      </div>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          margin: "20px",
-        }}
-      >
-        
-      </div>
-    </div>
+        <Typography variant="h3">About Meher Baba</Typography>
+        <Typography variant="h6">
+          Meher Baba, the Avatar. “Meher Baba” means “Compassionate Father.” It
+          is the name given to Him, their spiritual Master, by a group of His
+          disciples in the early 1920s after signs of His spiritual status
+          became apparent. Today, many thousands of people from every religious
+          tradition regard Meher Baba as the one long awaited — the Prophet, the
+          Buddha, the Christ, the Messiah of this age. Most commonly in India,
+          He is referred to as the “Avatar,” a Sanskrit word meaning “descent of
+          God.” Meher Baba, the Avatar. “Meher Baba” means “Compassionate
+          Father.” It is the name given to Him, their spiritual Master, by a
+          group of His disciples in the early 1920s after signs of His spiritual
+          status became apparent. Today, many thousands of people from every
+          religious tradition regard Meher Baba as the one long awaited — the
+          Prophet, the Buddha, the Christ, the Messiah of this age. Most
+          commonly in India, He is referred to as the “Avatar,” a Sanskrit word
+          meaning “descent of God.”
+        </Typography>
+      </Box>
+    </Box>
   );
 }
 
