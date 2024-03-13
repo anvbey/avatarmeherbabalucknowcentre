@@ -2,7 +2,7 @@ import { z } from "zod";
 
 const individualFormSchema = z.object({
     name: z.string().min(1, "Name is required"),
-    age: z.number().int().positive(),
+    age: z.coerce.number().int().positive(),
     gender: z.string(),
     email: z.string().email(),
     phone: z.string().length(10, "Phone number must be 10 digits"),
