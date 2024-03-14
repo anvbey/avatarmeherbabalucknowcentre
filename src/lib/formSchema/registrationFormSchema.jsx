@@ -12,7 +12,7 @@ const individualFormSchema = z.object({
 const memberFormSchema = z.object({
     name: z.string().min(1, "Name is required"),
     gender: z.string(),
-    age: z.number().int().positive(),
+    age: z.coerce.number().int().positive(),
 });
 
 
@@ -21,10 +21,10 @@ const groupFormSchema = z.object({
     email: z.string().email(),
     phone: z.string().length(10, "Phone number must be 10 digits"),
     address: z.string().min(1, "Address is required"),
-    age: z.number().int().positive(),
+    age: z.coerce.number().int().positive(),
     gender: z.string(),
-    numberOfMembers: z.number().int().positive(),
+    numberOfMembers: z.coerce.number().int().positive(),
     members: z.array(memberFormSchema),
 });
 
-export { individualFormSchema, groupFormSchema };
+export { individualFormSchema, groupFormSchema, memberFormSchema };
