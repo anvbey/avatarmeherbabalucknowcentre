@@ -13,7 +13,7 @@ function HeroComponent() {
       });
     }
   }, []);
-  
+
   return (
     <Box
       style={{
@@ -21,7 +21,8 @@ function HeroComponent() {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        marginBottom: "45px",
+        margin: "80px 0 45px 0",
+        maxHeight: "90vh",
       }}
     >
       <img

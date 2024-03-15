@@ -1,11 +1,10 @@
 import React from "react";
 
 const YouTubeEmbed = ({ videoId }) => {
-
   const srcUrl = `https://www.youtube.com/embed/91IRuRRKQuk`;
 
   return (
-    <div style={{ borderRadius: '8px', width: '560px',overflow: 'hidden' }}>
+    <div style={{ borderRadius: "8px", overflow: "hidden" }}>
       <iframe
         width="100%"
         height="315"

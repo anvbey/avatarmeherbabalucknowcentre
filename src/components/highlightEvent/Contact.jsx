@@ -10,40 +10,61 @@ const ContactCard = ({ title, email }) => (
 
 const VerticalDividerMiddle = () => {
   const contactData = [
-    { title: "Placeholder I", email: "test1@gmail.com" },
-    { title: "Placeholder II", email: "test2@gmail.com" },
-    { title: "Placeholder III", email: "test3@gmail.com" },
+    { title: "General Query", email: "(+91) 123 456 7890)" },
+    { title: "Accommodation", email: "(+91) 123 456 7890)" },
+    { title: "Transportation", email: "(+91) 123 456 7890)" },
   ];
 
   return (
-    <Box>
+    <Box
+      sx={{
+        width: "100%",
+      }}
+    >
       <Typography variant="h2" align="left">
         Contact
       </Typography>
-      <Card
-        variant="outlined"
+      <Box
         sx={{
           display: "flex",
-          color: "text.secondary",
-          width: "100%", // Set width to 100%
-          justifyContent: "space-between", // Evenly distribute items
-          "& svg": {
-            m: 1,
-          },
-          "& hr": {
-            mx: 0.5,
-          },
+          justifyContent: "space-between",
+          padding: "0 20px",
         }}
       >
-        {contactData.map(({ title, email }, index) => (
-          <React.Fragment key={index}>
-            <ContactCard title={title} email={email} />
-            {index < contactData.length - 1 && (
-              <Divider orientation="vertical" variant="middle" flexItem />
-            )}
-          </React.Fragment>
-        ))}
-      </Card>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Typography variant="h5">Transportation</Typography>
+          <Typography variant="body1">(+91) 123 456 7890</Typography>
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Typography variant="h5">Accommodation</Typography>
+          <Typography variant="body1">(+91) 123 456 7890</Typography>
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Typography variant="h5">General</Typography>
+          <Typography variant="body1">(+91) 123 456 7890</Typography>
+        </Box>
+      </Box>
     </Box>
   );
 };
