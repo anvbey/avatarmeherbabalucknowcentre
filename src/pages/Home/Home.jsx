@@ -8,7 +8,7 @@ import { Box } from "@mui/material";
 function Home() {
   return (
     <Box
-      style={{
+      sx={{
         display: "flex",
         flexDirection: "column",
       }}

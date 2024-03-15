@@ -29,11 +29,11 @@ function App() {
       >
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/events" element={<Events />} />
-          <Route path="/oct2024/register" element={<Registration />} />
           <Route path="/oct2024" element={<HighlightEvent />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/oct2024/register" element={<Registration />} />
         </Routes>
       </Box>
 

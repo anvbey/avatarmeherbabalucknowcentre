@@ -1,32 +1,33 @@
 import React from "react";
 import { Box, Grid } from "@mui/material";
-import Card from "../../components/events/Cards";
-import DropDown from "../../components/events/AutoComplete";
+import Card from "../../components/events/Cards"; // Assuming Card component exists
+import DropDown from "../../components/events/AutoComplete"; // Assuming DropDown component exists
 
 const Events = () => {
   return (
-    <Box
-      sx={{
-        width: "100%",
-        height: "100vh",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <DropDown />
-      <Grid
-        container
-        spacing={2}
-        justifyContent="center"
-        alignItems="center"
-        sx={{ marginLeft: "auto", marginRight: "auto" }}
-      >
-        <Grid item xs={12} sm={6}>
-          <Card />
+    <Box sx={{ display: "flex", marginTop: "80px" }}>
+      {" "}
+      {/* Set full viewport height */}
+      <Box sx={{ display: "flex", flexDirection: "column", flexGrow: 1 }}>
+        {" "}
+        {/* Main content area */}
+        <DropDown /> {/* Place dropdown at the top */}
+        <Grid container spacing={2} sx={{ mt: 2, px: 2 }}>
+          {" "}
+          {/* Card grid with spacing and margins */}
+          <Grid item xs={12} md={6} lg={4}>
+            {" "}
+            {/* Adjust grid layout as needed */}
+            <Card />
+          </Grid>
+          <Grid item xs={12} md={6} lg={4}>
+            <Card />
+          </Grid>
+          <Grid item xs={12} md={6} lg={4}>
+            <Card />
+          </Grid>
         </Grid>
-      </Grid>
+      </Box>
     </Box>
   );
 };
