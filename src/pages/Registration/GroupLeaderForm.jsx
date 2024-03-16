@@ -7,7 +7,7 @@ import MemberForm from "./MemberForm";
 
 const GroupForm = () => {
     const [ isPreview, setIsPreview ] = useState(null);
-    const { getValues, control, handleSubmit, register } = useForm({
+    const { getValues, control, handleSubmit, register, watch } = useForm({
         resolver: zodResolver(groupFormSchema),
         defaultValues: {
             firstName: '',
@@ -18,17 +18,11 @@ const GroupForm = () => {
             age: '',
             gender: '',
             numberOfMembers: '',
-            members: [{
-                firstName: '',
-                lastName: '',
-                age: '',
-                phone: '',
-                gender: '',
-            }]
+            members: []
         }
     })
 
-    const { fields, remove } = useFieldArray({
+    const { remove } = useFieldArray({
         control,
         name: "members"
     })
@@ -82,8 +76,8 @@ const GroupForm = () => {
                 <TextField label="Number of Members" type="number" name="numberOfMembers" {...register('numberOfMembers')} required sx={{width: '15vw'}}/>
             </Grid>
         </Grid>
-        {isPreview && fields.map((field, index) => (
-            <MemberForm control={control} index={index} remove={remove} key={field.id}/>
+        {isPreview && Array.from({length: watch('numberOfMembers')-1}).map((_, index) => (
+            <MemberForm control={control} index={index} remove={remove} key={index}/>
         ))}
         {!isPreview && <Button variant="contained" color="secondary" sx={{ width: '25vw' }} onClick={handlePreview}>
             Continue
