@@ -15,7 +15,7 @@ function Timeline() {
         margin: "20px 0",
       }}
     >
-      <Typography variant="h3">Baba's visit to Lucknow Timeline</Typography>
+      <Typography variant="h3" id='lucknow'>Baba's visit to Lucknow Timeline</Typography>
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
