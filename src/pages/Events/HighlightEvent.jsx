@@ -3,7 +3,7 @@ import { Box, Typography } from "@mui/material";
 import MeherPrem from "../../assets/MeherPrem.jpg";
 import Schedule from "../../components/events/Schedule";
 import AboutEvent from "../../components/highlightEvent/AboutEvent";
-import Contact from "../../components/highlightEvent/Contact"
+import Contact from "../../components/highlightEvent/Contact";
 const HighlightEvent = () => {
   const imageRef = React.createRef();
 
@@ -11,10 +11,10 @@ const HighlightEvent = () => {
     <Box
       display="flex"
       flexDirection="column"
-      justifyContent="center"
+      justifyContent="flex-start"
       alignItems="center"
       minHeight="100vh"
-      padding={"50px"}
+      margin=" 0 40px"
     >
       <img
         ref={imageRef}
@@ -23,17 +23,25 @@ const HighlightEvent = () => {
         loading="lazy"
         style={{
           maxWidth: "80%",
-          // height: '500px',
-          marginTop: "50px",
-          borderRadius: '8px'
+          maxHeight: "100vh",
+          marginTop: "80px",
+          borderRadius: "8px",
         }}
       />
-      <AboutEvent/>
-      <Box>
+      <AboutEvent />
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "flex-start",
+          width: "100%",
+          alignItems: "flex-start",
+        }}
+      >
         <Typography variant="h3">Session-wise Schedule</Typography>
         <Schedule />
       </Box>
-      <Contact/>
+      <Contact />
     </Box>
   );
 };

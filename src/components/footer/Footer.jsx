@@ -16,6 +16,7 @@ function Footer() {
         position: "fixed",
         bottom: 0,
         width: "100%",
+        marginTop: "40px"
       }}
     >
       <Typography variant="body1">

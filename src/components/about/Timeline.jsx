@@ -1,16 +1,21 @@
 import React from "react";
+import { Box, Typography } from "@mui/material";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import './Timeline.css'
+import "./Timeline.css";
 import ExpandableTimelineElement from "./ExpandableTimelineElement ";
-
 
 function Timeline() {
   return (
-    <div>
+    <Box
+      sx={{
+        margin: "20px 0",
+      }}
+    >
+      <Typography variant="h3" id='lucknow'>Baba's visit to Lucknow Timeline</Typography>
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -111,7 +116,7 @@ function Timeline() {
           description="Creative Direction, User Experience, Visual Design"
         />
       </VerticalTimeline>
-    </div>
+    </Box>
   );
 }
 

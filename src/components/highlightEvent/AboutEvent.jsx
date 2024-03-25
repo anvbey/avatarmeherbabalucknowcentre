@@ -7,38 +7,49 @@ function AboutEvent() {
       sx={{
         display: "flex",
         justifyContent: "center",
-        alignItems: "center",
+        alignItems: "stretch",
         margin: "40px 0",
       }}
     >
       <Box
         sx={{
+          flex: 5,
           display: "flex",
           flexDirection: "column",
-          width: "600px",
-          alignItems: "start",
+          justifyContent: "space-between",
         }}
       >
         <Typography variant="h3" sx={{ textAlign: "left" }}>
           About Meher Prem Sammelan
         </Typography>
-        <Typography variant="body2" sx={{ textAlign: "left" }}>
-          Jashn-e-Rekhta, a vibrant three-day festival, reverently celebrates
-          the multifaceted beauty of Urdu across diverse art forms. It's a
-          dedicated platform for nurturing and showcasing the rich tapestry of
-          language, literature, and culture. Explore the cultural heritage
-          through Ghazals, Poetry Symposiums, Qawwali, Sufi melodies, and myriad
-          exquisite experiences.
-        </Typography>
-        <Button
-          variant="contained"
-          href="#contained-buttons"
-          sx={{ width: "100px", marginTop: "10px" }}
+        <Box
+          sx={{
+            marginRight: "50px",
+          }}
         >
-          Register!
-        </Button>
+          <Typography variant="body2" sx={{ textAlign: "left" }}>
+            Meher Prem Sammelan, a vibrant two-day festival, reverently
+            celebrates 100 years of Baba's visit to Lucknow. Here we showcase
+            the rich tapestry of language, literature, and culture. Explore the
+            cultural heritage through Ghazals, Poetry Symposiums, Qawwali, Sufi
+            melodies, Plays, Movies and myriad exquisite experiences. Meher Prem
+            Sammelan, a vibrant two-day festival, reverently celebrates 100
+            years of Baba's visit to Lucknow. Meher Prem Sammelan, a vibrant
+            two-day festival, reverently celebrates 100 years of Baba's visit to
+            Lucknow.
+          </Typography>
+          <Button
+            variant="contained"
+            href="#contained-buttons"
+            sx={{ width: "100px", marginTop: "10px" }}
+          >
+            Register!
+          </Button>
+        </Box>
       </Box>
-      <YouTubeEmbed />
+      <Box sx={{ flex: 5 }}>
+        <YouTubeEmbed />
+      </Box>
     </Box>
   );
 }
