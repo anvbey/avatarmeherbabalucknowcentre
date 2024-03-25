@@ -13,7 +13,7 @@ function Footer() {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        position: "relative",
+        position: "fixed",
         bottom: 0,
         width: "100%",
         marginTop: "40px"

@@ -19,13 +19,13 @@ const handlebarsOptions = {
     viewPath: path.resolve('./templates/')
 }
 
-const sendMail = async (userEmail, subject, template, context) => {
+const sendMail = async (template, context) => {
     transporter.use('compile', hbs(handlebarsOptions))
 
     const mailOptions = {
-        from: userEmail,
+        from: process.env.DOMAIN_EMAIL,
         to: process.env.EMAIL,
-        subject: subject,
+        subject: 'Someone contacted you from the website',
         template,
         context
     }
