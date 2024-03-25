@@ -1,30 +1,22 @@
 import { z } from "zod";
 
-const individualFormSchema = z.object({
-    name: z.string().min(1, "Name is required"),
-    age: z.coerce.number().int().positive(),
-    gender: z.string(),
-    email: z.string().email(),
-    phone: z.string().length(10, "Phone number must be 10 digits"),
-    address: z.string().min(1, "Address is required"),
-});
-
-const memberFormSchema = z.object({
-    name: z.string().min(1, "Name is required"),
-    gender: z.string(),
-    age: z.number().int().positive(),
-});
-
-
 const groupFormSchema = z.object({
-    leaderName: z.string().min(1, "Name is required"),
-    email: z.string().email(),
+    firstName: z.string().min(1, "First Name is required"),
+    lastName: z.string().min(1, "Last Name is required"),
+    email: z.string().email().optional(),
     phone: z.string().length(10, "Phone number must be 10 digits"),
-    address: z.string().min(1, "Address is required"),
-    age: z.number().int().positive(),
+    city: z.string().min(1, "Address is required"),
+    age: z.coerce.number().min(1, "Age is required"),
     gender: z.string(),
-    numberOfMembers: z.number().int().positive(),
-    members: z.array(memberFormSchema),
+    numberOfMembers: z.coerce.number().min(1, "At least one member is required"),
+    members: z.array(z.object({
+        firstName: z.string().min(1, "First Name is required"),
+        lastName: z.string().min(1, "Last Name is required"),
+        gender: z.string(),
+        age: z.coerce.number().int().positive(),
+        email: z.string().email().optional(),
+        phone: z.string().optional(),
+    })),
 });
 
-export { individualFormSchema, groupFormSchema };
+export { groupFormSchema };

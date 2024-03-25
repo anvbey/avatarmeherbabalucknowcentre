@@ -4,7 +4,7 @@ const contactForm = async (req, res) => {
     const { name, email, phone, subject, message } = req.body;
 
     try {
-        await sendMail(email, subject, 'contactForm', { name, phone, message});
+        await sendMail('contactForm', { name, phone, message, date: new Date(), email, subject});
         return res.status(200).json({ message: 'Email sent successfully' });
     } catch (error) {
         console.log(error);
@@ -13,7 +13,7 @@ const contactForm = async (req, res) => {
 }
 
 const registrationForm = async (req, res) => {
-
+    const { firstName, lastName, email, phone, city, age, gender, numberOfMembers, members } = req.body;
 }
 
 module.exports = {
