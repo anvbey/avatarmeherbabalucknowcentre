@@ -5,7 +5,6 @@ import Timeline from "../../components/about/Timeline";
 import Present from "../../components/about/Present";
 import Places from "../../components/about/BabaPlaces"
 import SideTab from "../../components/about/SideTab";
-
 const About = () => {
   
 
