@@ -6,8 +6,8 @@ import { Box, Button, FormControl, Grid, InputLabel, MenuItem, Select, TextField
 import MemberForm from "./MemberForm";
 
 const GroupForm = () => {
-    const [ isPreview, setIsPreview ] = useState(null);
-    const { getValues, control, handleSubmit, register, watch } = useForm({
+    const [ isPreview, setIsPreview ] = useState(false);
+    const { setValue, getValues, control, handleSubmit, register, watch } = useForm({
         resolver: zodResolver(groupFormSchema),
         defaultValues: {
             firstName: '',
@@ -17,7 +17,7 @@ const GroupForm = () => {
             city: '',
             age: '',
             gender: '',
-            numberOfMembers: '',
+            numberOfMembers: 1,
             members: []
         }
     })
@@ -29,13 +29,31 @@ const GroupForm = () => {
 
     const handlePreview = () => {
         const values = getValues();
-        if(values.firstName && values.phone && values.city && values.age && values.gender && values.numberOfMembers) {
-            setIsPreview(values);
+        if(values.firstName && values.lastName && values.phone && values.city && values.age && values.gender && values.numberOfMembers) {
+            setIsPreview(true);
         }
     }
 
+    const handleChange = (e) => {
+        const value = e.target.value;
+        setIsPreview(false);
+        setValue('numberOfMembers', value);
+    }
+
+    const removeParticipant = (index) => {
+        remove(index);
+        setValue('numberOfMembers', watch('numberOfMembers') - 1);
+        console.log(watch('numberOfMembers'))
+        if (watch('numberOfMembers') < 2) {
+            setIsPreview(false);
+        } else {
+            console.log(watch('members'))   
+            const value = watch('members')
+            setValue('members', value.slice(index, 1));
+        }
+    };
+
     const onSubmit = (values) => {
-        console.log("Hello")
         console.log(values)
     }
     return ( 
@@ -48,7 +66,7 @@ const GroupForm = () => {
                 <TextField label="First Name" name="firstName" {...register('firstName')} required fullWidth />
             </Grid>
             <Grid item xs={6}>
-                <TextField label="Last Name" name="lastName" {...register('lastName')} fullWidth />
+                <TextField label="Last Name" name="lastName" {...register('lastName')} required fullWidth />
             </Grid>
             <Grid item xs={6}>
                 <TextField label="Email" type="email" name="email" {...register('email')} fullWidth />
@@ -73,16 +91,21 @@ const GroupForm = () => {
                 <TextField label="City" name="city" {...register('city')} required fullWidth />
             </Grid>
             <Grid item xs={12} sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-                <TextField label="Number of Members" type="number" name="numberOfMembers" {...register('numberOfMembers')} required sx={{width: '15vw'}}/>
+                <TextField label="Number of Members" type="number" name="numberOfMembers" required sx={{width: '15vw'}} onChange={handleChange} value={watch('numberOfMembers')}/>
             </Grid>
         </Grid>
-        {isPreview && Array.from({length: watch('numberOfMembers')-1}).map((_, index) => (
-            <MemberForm control={control} index={index} remove={remove} key={index}/>
-        ))}
-        {!isPreview && <Button variant="contained" color="secondary" sx={{ width: '25vw' }} onClick={handlePreview}>
+        {isPreview && Array.from({ length: watch('numberOfMembers') -1 }).map((_, index) => (
+                <Box key={index} sx={{ border: '1px solid #ccc', borderRadius: '5px', padding: '10px', position: 'relative', marginBottom: '10px' }}>
+                    <MemberForm control={control} index={index}/>
+                    <Button variant="contained" color="error" onClick={() => removeParticipant(index)} sx={{ position: 'absolute', top: '-10px', right: '-10px' }}>
+                        Remove
+                    </Button>
+                </Box>
+            ))}
+        {watch('numberOfMembers') > 1 && !isPreview && <Button variant="contained" color="secondary" sx={{ width: '25vw' }} onClick={handlePreview}>
             Continue
         </Button>}   
-        {isPreview && <Button variant="contained" color="secondary" type="submit" sx={{ width: '25vw' }}>
+        {(watch('numberOfMembers') < 2 || isPreview) && <Button variant="contained" color="secondary" type="submit" sx={{ width: '25vw' }}>
             Submit
         </Button>}
     </Box>

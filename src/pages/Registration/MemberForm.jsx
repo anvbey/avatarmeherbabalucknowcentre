@@ -1,7 +1,7 @@
 import { Box, FormControl, Grid, InputLabel, MenuItem, Select, TextField, Typography } from '@mui/material';
 import { useController } from 'react-hook-form';
 
-const MemberForm = ({ control, index, remove }) => {
+const MemberForm = ({ control, index }) => {
     const { field: firstNameField } = useController({
         name: `members[${index}].firstName`,
         control,
@@ -9,7 +9,8 @@ const MemberForm = ({ control, index, remove }) => {
     })
     const { field: lastNameField } = useController({
         name: `members[${index}].lastName`,
-        control
+        control,
+        rules: { required: 'Last Name is required' }
     })
     const { field: ageField } = useController({
         name: `members[${index}].age`,
@@ -35,7 +36,7 @@ const MemberForm = ({ control, index, remove }) => {
                     <TextField label={`First Name`} {...firstNameField} required fullWidth />
                 </Grid>
                 <Grid item xs={4}>
-                    <TextField label={`Last Name`} {...lastNameField} fullWidth />
+                    <TextField label={`Last Name`} {...lastNameField} required fullWidth />
                 </Grid>
                 <Grid item xs={4}>
                     <TextField label={`Age`} type='number' {...ageField} required fullWidth />
