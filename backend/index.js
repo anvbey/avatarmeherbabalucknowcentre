@@ -7,9 +7,6 @@ const port = process.env.PORT || 8080;
 const app = new express();
 app.use(cors(
     {
-        origin: [
-            'http://localhost:3000',
-        ],
         methods: ['GET', 'POST', 'PUT', 'DELETE']
     }
 ));
