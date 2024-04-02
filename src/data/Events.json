@@ -3,22 +3,139 @@
         "year" : "2024",
         "events": [
             {
-                "title": "",
-                "desc": "",
+                "title": "Avatar Meher Baba's 130th Birthday Celebration",
+                "desc": "Avatar Meher Baba was born on 25th February 1894 in Pune, Maharashtra. AMB Lucknow Centre celebrated Meher Baba's 130th birthday as per the following schedule -\nSession 1 - 10 PM on 24th February 2024 to 5 AM on 25th February 2024\nSession 2 - 5 PM to 8 PM on 25th February 2024",
+                "startDate": "24/02/2024",
+                "endDate": "25/02/2024",
+                "locationUrl": "https://maps.app.goo.gl/yq32pCwYeMgbnAdG9",
                 "thumbnailUrl": "",
-                "youtubeUrl": "",
+                "youtubeUrl": "https://www.youtube.com/playlist?list=PLr576AYU9KnrKHwwfbMJBBFYh48xG4DVA",
+                "alternateUrl": "https://www.youtube.com/@meherlucknow",
+                "highlightUrl": "null"
             },
             {
-                "title": "",
-                "desc": "",
+                "title": "Meher Prem Sammelan - May 2024",
+                "desc": "Avatar Meher Baba Lucknow Centre will celebrate Meher Prem Sammelan to commemorate Beloved Baba's visit to Lucknow on 16th May, 1946.",
+                "startDate": "16/05/2024",
+                "endDate": "16/05/2024",
+                "locationUrl": "https://maps.app.goo.gl/yq32pCwYeMgbnAdG9",
                 "thumbnailUrl": "",
-                "youtubeUrl": "",
+                "youtubeUrl": "null",
+                "alternateUrl": "https://www.youtube.com/@meherlucknow",
+                "highlightUrl": "null"
             },
             {
-                "title": "",
-                "desc": "",
+                "title": "Meher Prem Sammelan - October 2024 (100 Years of Meher Baba's First Visit To Lucknow)",
+                "desc": "Avatar Meher Baba Lucknow Centre will celebrate Meher Prem Sammelan, honoring Beloved Baba's visit to Lucknow in 1943 and commemorating the 31st anniversary of the establishment of the Avatar Meher Baba Lucknow Centre. This year also signifies the centenary of Meher Baba's first visit to Lucknow in March 1924, an occasion that will be celebrated by the AMB Lucknow Centre.",
+                "startDate": "22/10/2024",
+                "endDate": "23/10/2024",
+                "locationUrl": "https://maps.app.goo.gl/kiNwKZpTZLHipaoZ7",
                 "thumbnailUrl": "",
-                "youtubeUrl": "",
+                "youtubeUrl": "null",
+                "alternateUrl": "https://www.youtube.com/@meherlucknow",
+                "highlightUrl": "null"
+            }
+        ]
+    },
+    {
+        "year" : "2023",
+        "events": [
+            {
+                "title": "Avatar Meher Baba's 129th Birthday Celebration",
+                "desc": "Avatar Meher Baba was born on 25th February 1894 in Pune, Maharashtra. AMB Lucknow Centre celebrated Meher Baba's 129th birthday as per the following schedule -\nSession 1 - 10 PM on 24th February 2023 to 5 AM on 25th February 2024\nSession 2 - 5 PM to 8 PM on 25th February 2023",
+                "startDate": "24/02/2023",
+                "endDate": "25/02/2023",
+                "locationUrl": "https://maps.app.goo.gl/yq32pCwYeMgbnAdG9",
+                "thumbnailUrl": "",
+                "youtubeUrl": "https://www.youtube.com/playlist?list=PLr576AYU9KnrkGLE6HjCO1DQowwd2Y4Qn",
+                "alternateUrl": "https://www.youtube.com/@meherlucknow",
+                "highlightUrl": "null"
+            },
+            {
+                "title": "Meher Prem Sammelan - May 2023",
+                "desc": "Avatar Meher Baba Lucknow Centre celebrated Meher Prem Sammelan to commemorate Beloved Baba's visit to Lucknow on 16th May, 1946.",
+                "startDate": "16/05/2023",
+                "endDate": "16/05/2023",
+                "locationUrl": "https://maps.app.goo.gl/yq32pCwYeMgbnAdG9",
+                "thumbnailUrl": "",
+                "youtubeUrl": "null",
+                "alternateUrl": "https://www.youtube.com/@meherlucknow",
+                "highlightUrl": "null"
+            },
+            {
+                "title": "Meher Prem Sammelan - October 2023",
+                "desc": "Avatar Meher Baba Lucknow Centre celebrated Meher Prem Sammelan to commemorate Beloved Baba's visit to Lucknow in 1943 and Avatar Meher Baba Lucknow Centre's 30th anniversary.\nSession 1 - 4 PM to 8:30 PM on 22nd October 2023\nSession 2 - 10 AM to 1 PM on 23rd October 2023\nSession 3 - 4 PM to 8 PM on 23rd October 2023",
+                "startDate": "22/10/2023",
+                "endDate": "23/10/2023",
+                "locationUrl": "https://maps.app.goo.gl/yq32pCwYeMgbnAdG9",
+                "thumbnailUrl": "",
+                "youtubeUrl": "https://www.youtube.com/playlist?list=PLr576AYU9KnoUkgBSfm0m33NIHmS0p7WF",
+                "alternateUrl": "https://www.youtube.com/@meherlucknow",
+                "highlightUrl": "null"
+            }
+        ]
+    },
+    {
+        "year" : "2022",
+        "events": [
+            {
+                "title": "Avatar Meher Baba's 128th Birthday Celebration",
+                "desc": "Avatar Meher Baba was born on 25th February 1894 in Pune, Maharashtra. AMB Lucknow Centre celebrated Meher Baba's 128th birthday as per the following schedule -\nSession 1 - 10 PM on 24th February 2022 to 5 AM on 25th February 2022\nSession 2 - 5 PM to 8 PM on 25th February 2022",
+                "startDate": "24/02/2022",
+                "endDate": "25/02/2022",
+                "locationUrl": "https://maps.app.goo.gl/yq32pCwYeMgbnAdG9",
+                "thumbnailUrl": "",
+                "youtubeUrl": "https://www.youtube.com/playlist?list=PLr576AYU9KnqkxZBqz-F1-pqzOeQtdMkv",
+                "alternateUrl": "https://www.youtube.com/@meherlucknow",
+                "highlightUrl": "null"
+            },
+            {
+                "title": "Meher Prem Sammelan - May 2022",
+                "desc": "Avatar Meher Baba Lucknow Centre celebrated Meher Prem Sammelan to commemorate Beloved Baba's visit to Lucknow on 16th May, 1946.",
+                "startDate": "16/05/2022",
+                "endDate": "16/05/2022",
+                "locationUrl": "https://maps.app.goo.gl/yq32pCwYeMgbnAdG9",
+                "thumbnailUrl": "",
+                "youtubeUrl": "https://www.youtube.com/playlist?list=PLr576AYU9KnqGYUrijWQFyqGSvQA-BvRp",
+                "alternateUrl": "https://www.youtube.com/@meherlucknow",
+                "highlightUrl": "null"
+            },
+            {
+                "title": "Meher Prem Sammelan - October 2022",
+                "desc": "Avatar Meher Baba Lucknow Centre celebrated Meher Prem Sammelan to commemorate Beloved Baba's visit to Lucknow in 1943 and Avatar Meher Baba Lucknow Centre's 29th anniversary.",
+                "startDate": "23/10/2022",
+                "endDate": "23/10/2022",
+                "locationUrl": "https://maps.app.goo.gl/yq32pCwYeMgbnAdG9",
+                "thumbnailUrl": "",
+                "youtubeUrl": "https://www.youtube.com/playlist?list=PLr576AYU9KnoXcAMdjnHn2xosJxN8K2LU",
+                "alternateUrl": "https://www.youtube.com/@meherlucknow",
+                "highlightUrl": "null"
+            }
+        ]
+    },{
+        "year" : "2021",
+        "events": [
+            {
+                "title": "Meher Prem Sammelan - May 2021",
+                "desc": "Avatar Meher Baba Lucknow Centre celebrated Meher Prem Sammelan virtually to commemorate Beloved Baba's visit to Lucknow on 16th May, 1946.",
+                "startDate": "16/05/2021",
+                "endDate": "16/05/2021",
+                "location": "Virtually on YouTube",
+                "thumbnailUrl": "",
+                "youtubeUrl": "https://www.youtube.com/playlist?list=PLr576AYU9Knp2axt6SsiNChDkhpnpUnFX",
+                "alternateUrl": "https://www.youtube.com/@meherlucknow",
+                "highlightUrl": "null"
+            },
+            {
+                "title": "Meher Prem Sammelan - October 2021",
+                "desc": "Avatar Meher Baba Lucknow Centre celebrated Meher Prem Sammelan virtually as well as physically at the AMB Lucknow centre to commemorate Beloved Baba's visit to Lucknow in 1943 and Avatar Meher Baba Lucknow Centre's 28th anniversary.",
+                "startDate": "22/10/2021",
+                "endDate": "23/10/2021",
+                "locationUrl": "https://maps.app.goo.gl/yq32pCwYeMgbnAdG9",
+                "thumbnailUrl": "",
+                "youtubeUrl": "https://www.youtube.com/playlist?list=PLr576AYU9KnpAxeFfACRkMzN70t8D73KN",
+                "alternateUrl": "https://www.youtube.com/@meherlucknow",
+                "highlightUrl": "null"
             }
         ]
     }
