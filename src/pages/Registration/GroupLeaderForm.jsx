@@ -1,4 +1,5 @@
 import { useState } from "react";
+import axios from "axios";
 import { groupFormSchema } from "../../lib/formSchema/registrationFormSchema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm, useFieldArray } from "react-hook-form";
@@ -30,6 +31,7 @@ const GroupForm = () => {
     const handlePreview = () => {
         const values = getValues();
         if(values.firstName && values.lastName && values.phone && values.city && values.age && values.gender && values.numberOfMembers) {
+            
             setIsPreview(true);
         }
     }
@@ -41,20 +43,23 @@ const GroupForm = () => {
     }
 
     const removeParticipant = (index) => {
+        setIsPreview(false);
         remove(index);
         setValue('numberOfMembers', watch('numberOfMembers') - 1);
         console.log(watch('numberOfMembers'))
-        if (watch('numberOfMembers') < 2) {
-            setIsPreview(false);
-        } else {
-            console.log(watch('members'))   
-            const value = watch('members')
-            setValue('members', value.slice(index, 1));
+        if (watch('numberOfMembers') >= 2) {
+            setTimeout(() => {
+                setIsPreview(true);
+            }, 300);
         }
     };
 
-    const onSubmit = (values) => {
-        console.log(values)
+    const onSubmit = async (values) => {
+        if(values.numberOfMembers !== values.members.length + 1) {
+            values.members = values.members.filter((_, index) => index < values.members.length - 1);
+        }
+        const result = await axios.post('http://localhost:8080/form/registration', values);
+        console.log(result.data.message)
     }
     return ( 
         <Box component="form" onSubmit={handleSubmit(onSubmit)} sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '15px'}}>

@@ -1,6 +1,6 @@
 const { createTransport } = require('nodemailer');
 const hbs = require('nodemailer-express-handlebars');
-const path = require('path');
+const { resolve } = require('path');
 
 const transporter = createTransport({
     service: 'gmail',
@@ -13,10 +13,10 @@ const transporter = createTransport({
 
 const handlebarsOptions = {
     viewEngine: {
-        partialsDir: path.resolve('./templates/'),
+        partialsDir: resolve('./templates/'),
         defaultLayout: false,
     },
-    viewPath: path.resolve('./templates/')
+    viewPath: resolve('./templates/')
 }
 
 const sendMail = async (template, context) => {
