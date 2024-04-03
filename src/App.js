@@ -1,21 +1,45 @@
 import { Routes, Route } from "react-router-dom";
-// import NavBarComponent from "./components/Navbar";
-// import AboutPage from "./ParentDir/AboutPage";
-// import EventPage from "./ParentDir/EventPage";
-// import ContactPage from "./ParentDir/ContactPage";
-// import FooterComponent from "./ParentDir/Footer/FooterComponent";
+import Footer from "./components/footer/Footer";
+import Navbar from "./components/navbar/Navbar";
+import Home from "./pages/Home/Home";
+import { Box } from "@mui/material";
+import About from "./pages/About/About";
+import Contact from "./pages/Contact/Contact";
+import Events from "./pages/Events/Events";
+import Registration from "./pages/Registration/Registration";
+import HighlightEvent from "./pages/Events/HighlightEvent";
 
 function App() {
   return (
-    <div className="App">
-      {/* <NavBarComponent /> */}
-      <Routes>
-        {/* <Route path="/" element={<HomePage />} />
-        <Route path="/library" element={<EventPage />} />
-        <Route path="/contact" element={<ContactPage />} /> */}
-      </Routes>
-      {/* <FooterComponent /> */}
-    </div>
+    <Box
+      className="App"
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        minHeight: "100vh",
+      }}
+    >
+
+      <Navbar />
+
+      <Box
+        sx={{
+          flex: "1", // Make the content area flexible to fill available space
+        }}
+      >
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/oct2024" element={<HighlightEvent />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/oct2024/register" element={<Registration />} />
+        </Routes>
+      </Box>
+
+      <Footer />
+      
+    </Box>
   );
 }
 

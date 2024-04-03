@@ -1,7 +1,25 @@
-import React from 'react'
+import React from "react";
+import HeroComponent from "../../components/home/HeroComponent";
+import AboutMeherBaba from "../../components/home/AboutMeherBaba";
+import AboutLucknowCentre from "../../components/home/AboutLucknowCentre";
+import Quotes from "../../components/home/Quotes";
+import { Box } from "@mui/material";
 
-export default function Archives() {
+function Home() {
   return (
-    <div>Archives</div>
-  )
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+      }}
+    >
+      <HeroComponent />
+      <Quotes />
+      <AboutMeherBaba />
+      <Quotes />
+      <AboutLucknowCentre />
+    </Box>
+  );
 }
+
+export default Home;
