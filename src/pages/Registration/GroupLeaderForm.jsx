@@ -58,7 +58,8 @@ const GroupForm = () => {
         if(values.numberOfMembers !== values.members.length + 1) {
             values.members = values.members.filter((_, index) => index < values.members.length - 1);
         }
-        await axios.post('http://localhost:8080/form/registration', values);
+        const result = await axios.post('http://localhost:8080/form/registration', values);
+        console.log(result.data.message)
     }
     return ( 
         <Box component="form" onSubmit={handleSubmit(onSubmit)} sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '15px'}}>

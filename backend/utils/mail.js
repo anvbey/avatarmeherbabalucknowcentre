@@ -1,6 +1,6 @@
-import { createTransport } from 'nodemailer';
-import hbs from 'nodemailer-express-handlebars';
-import { resolve } from 'path';
+const { createTransport } = require('nodemailer');
+const hbs = require('nodemailer-express-handlebars');
+const { resolve } = require('path');
 
 const transporter = createTransport({
     service: 'gmail',
@@ -33,6 +33,6 @@ const sendMail = async (template, context) => {
     console.log(info)
 }
 
-export default {
+module.exports = {
     sendMail
 }
