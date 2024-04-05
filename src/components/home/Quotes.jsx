@@ -1,37 +1,29 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
+import Bg from "../../assets/QuotesBg.png";
+import "./Quotes.css";
 
 function Quotes() {
   return (
     <Box
+      className="Quotes"
       sx={{
-        background: "linear-gradient(45deg, #60D49C 40%, #FFFFFF 95%)",
-        width: "100%",
-        margin: "10px 0 30px 0",
+        backgroundImage: `url(${Bg})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        margin: "10px 0"
       }}
     >
-      <Typography
-        variant="h6"
-        sx={{
-          textAlign: "center",
-          fontFamily: "'Open Sans Hebrew', sans-serif",
-          margin: "40px 0 0 0px",
-          fontSize: "30px",
-        }}
-      >
-        If you have the peace of a frozen lake, you will realize Me.
-      </Typography>
-      <Typography
-        variant="h6"
-        sx={{
-          textAlign: "right",
-          fontFamily: "'Open Sans Hebrew', sans-serif",
-          margin: "0px 20px 40px 0",
-          fontSize: "30px",
-        }}
-      >
-        -Meher Baba Calling
-      </Typography>
+      <p className="quote">
+        "If you have the peace of a frozen lake, you will realize Me."
+      </p>
+      <p className="quote">
+        Meher Baba Calling
+      </p>
     </Box>
   );
 }

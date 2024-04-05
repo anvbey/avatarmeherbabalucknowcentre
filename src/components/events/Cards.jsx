@@ -1,30 +1,47 @@
 import * as React from "react";
-import {
-  Typography,
-  Card,
-  CardHeader,
-  CardContent,
-  CardMedia,
-} from "@mui/material";
+import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
 import MeherPrem from "../../assets/MeherPrem.jpg";
 
-export default function RecipeReviewCard() {
+
+export default function ImgMediaCard() {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345, margin: "10px" }}>
       <CardMedia
         component="img"
-        height="194"
+        alt="green iguana"
+        height="140"
         image={MeherPrem}
-        alt="Paella dish"
       />
-      <CardHeader title="Baba's Birthday Celebration" />
       <CardContent>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-between",
+            alignItems: "flex-end",
+          }}
+        >
+          <Typography gutterBottom variant="h6" sx={{margin: " 0 30px 0 0"}} component="div">
+            Meher Prem Sammelan
+          </Typography>
+          <Typography gutterBottom variant="body2" component="div">
+            22/10/23
+          </Typography>
+        </Box>
         <Typography variant="body2" color="text.secondary">
-          This impressive paella is a perfect party dish and a fun meal to cook
-          together with your guests. Add 1 cup of frozen peas along with the
-          mussels, if you like.
+          Description
         </Typography>
       </CardContent>
+      <CardActions>
+        <Button size="small">Youtube Link</Button>
+        <Button size="small">Learn More</Button>
+      </CardActions>
     </Card>
   );
 }

@@ -2,31 +2,46 @@ import React from "react";
 import { Box, Grid } from "@mui/material";
 import Card from "../../components/events/Cards"; // Assuming Card component exists
 import DropDown from "../../components/events/AutoComplete"; // Assuming DropDown component exists
+import "./Events.css";
 
 const Events = () => {
   return (
-    <Box sx={{ display: "flex", marginTop: "80px" }}>
-      {" "}
-      {/* Set full viewport height */}
-      <Box sx={{ display: "flex", flexDirection: "column", flexGrow: 1 }}>
-        {" "}
-        {/* Main content area */}
-        <DropDown /> {/* Place dropdown at the top */}
-        <Grid container spacing={2} sx={{ mt: 2, px: 2 }}>
-          {" "}
-          {/* Card grid with spacing and margins */}
-          <Grid item xs={12} md={6} lg={4}>
-            {" "}
-            {/* Adjust grid layout as needed */}
-            <Card />
-          </Grid>
-          <Grid item xs={12} md={6} lg={4}>
-            <Card />
-          </Grid>
-          <Grid item xs={12} md={6} lg={4}>
-            <Card />
-          </Grid>
-        </Grid>
+    <Box
+      sx={{
+        width: "100%",
+        minHeight: "80vh",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "flex-start",
+        alignItems: "center",
+      }}
+    >
+      <Box
+        sx={{
+          width: "80vw",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "flex-start",
+          alignItems: "flex-start",
+        }}
+      >
+        <DropDown />
+      </Box>
+      <Box
+        className="cards"
+        sx={{
+          width: "100vw",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          marginTop: "80px",
+          flexWrap: "wrap", // Allow cards to wrap to the next row
+          gap: "10px",
+        }}
+      >
+        <Card />
+        <Card />
+        <Card />
       </Box>
     </Box>
   );

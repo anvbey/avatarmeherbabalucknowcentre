@@ -8,6 +8,7 @@ import Contact from "./pages/Contact/Contact";
 import Events from "./pages/Events/Events";
 import Registration from "./pages/Registration/Registration";
 import HighlightEvent from "./pages/Events/HighlightEvent";
+import Bg from "./assets/Bg.png"
 
 function App() {
   return (
@@ -16,6 +17,13 @@ function App() {
       sx={{
         display: "flex",
         flexDirection: "column",
+        backgroundImage: `url(${Bg})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
         minHeight: "100vh",
       }}
     >
@@ -23,9 +31,6 @@ function App() {
       <Navbar />
 
       <Box
-        sx={{
-          flex: "1", // Make the content area flexible to fill available space
-        }}
       >
         <Routes>
           <Route path="/" element={<Home />} />

@@ -10,7 +10,7 @@ const YouTubeEmbed = ({ videoId }) => {
         height="315"
         src={srcUrl}
         title="YouTube video player"
-        frameborder="0"
+        frameBorder="0"
         allow="accelerometer; 
     autoplay; 
     clipboard-write; 
@@ -18,7 +18,7 @@ const YouTubeEmbed = ({ videoId }) => {
     gyroscope; 
     picture-in-picture; 
     web-share"
-        allowfullscreen
+    allowFullScreen
       ></iframe>
     </div>
   );

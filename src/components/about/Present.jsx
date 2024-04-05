@@ -14,8 +14,6 @@ function Present() {
         Avatar Meher Baba Lucknow Centre
       </Typography>
       <AboutCenter />
-      <AboutCenter />
-      <AboutCenter />
     </Box>
   );
 }

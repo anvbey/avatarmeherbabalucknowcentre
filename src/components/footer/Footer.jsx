@@ -1,25 +1,25 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-
+import Bg from "../../assets/QuotesBg.png";
+import "./Footer.css"
 function Footer() {
   return (
     <Box
       sx={{
-        backgroundColor: "#000",
+        width: "100%",
         color: "#fff",
         textAlign: "center",
-        padding: "10px 0",
-        height: "30px",
+        margin: "20px 0 0 0",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        position: "fixed",
-        bottom: 0,
-        width: "100%",
-        marginTop: "40px"
+        position: "relative",
+        backgroundImage: `url(${Bg})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
       }}
     >
-      <Typography variant="body1">
+      <Typography className="footer">
         © 2023 Avatar Meher Baba Lucknow Centre
       </Typography>
     </Box>
