@@ -23,7 +23,7 @@ export default function ComboBox() {
       renderInput={(params) => (
         <TextField {...params} label="Select Year" variant="standard" />
       )}
-      style={{ width: staticWidth, marginLeft: "20px" }}
+      style={{ width: staticWidth, margin: "10px 0 0 10px" }}
     />
   );
 }

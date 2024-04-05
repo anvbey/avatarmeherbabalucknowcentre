@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import Netting from "../../assets/BabaMeetingKids.jpg";
 import { Typography, Box } from "@mui/material";
-
+import "./AboutMeherBaba.css"
 function AboutMeherBaba() {
   const imageRef = useRef(null);
 
@@ -15,21 +15,28 @@ function AboutMeherBaba() {
   }, []);
   return (
     <Box
+    className="about-meher-baba-container"
       sx={{
         display: "flex",
+        flexDirection: "column",
+
         justifyContent: "flex-start",
+        alignItems: "flex-start",
+        margin: "0 40px"
       }}
     >
+    <p className="about-meher-baba-heading">About Meher Baba</p>
+      
       <Box
+        className="about-meher-baba"
         sx={{
           display: "flex",
-          flexDirection: "column",
-          alignItems: "start",
-          margin: "0 40px",
+          alignItems: "center",
+          justifyContent: "center",
         }}
       >
-        <Typography variant="h3">About Lucknow Centre</Typography>
-        <Typography variant="h6">
+        
+        <p className="about-meher-baba-content">
           Meher Baba, the Avatar. “Meher Baba” means “Compassionate Father.” It
           is the name given to Him, their spiritual Master, by a group of His
           disciples in the early 1920s after signs of His spiritual status
@@ -45,17 +52,19 @@ function AboutMeherBaba() {
           Prophet, the Buddha, the Christ, the Messiah of this age. Most
           commonly in India, He is referred to as the “Avatar,” a Sanskrit word
           meaning “descent of God.”
-        </Typography>
-      </Box>
-      <img
+        </p>
+
+        <img
+        className="meher-baba-image"
         ref={imageRef}
         src={Netting}
         alt={"item.title"}
         loading="lazy"
-        width="340"
-        height="340"
-        style={{ borderRadius: "10px", marginRight: "40px" }}
+        
+        style={{ borderRadius: "10px" }}
       />
+      </Box>
+
     </Box>
   );
 }

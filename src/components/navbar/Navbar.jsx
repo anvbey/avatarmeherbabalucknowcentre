@@ -21,13 +21,14 @@ function Navbar() {
   };
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1 , margin: " 0 0 80px 0"}}>
       <AppBar
         position="fixed"
         elevation={0}
         sx={{
           borderBottom: "2.5px solid #C4C698",
           backgroundColor: "#FBFAF5",
+          height: "68px"
         }}
       >
         <Toolbar>
@@ -95,7 +96,7 @@ function Navbar() {
                 display: { xs: "none", sm: "block" },
               }}
             >
-              <Link to="/oct2024"> Meher Prem Sammelan October 2024</Link>
+              <Link to="/oct2024"> Oct' 2024</Link>
             </Typography>
             <Typography
               variant="h6"

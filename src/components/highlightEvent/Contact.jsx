@@ -9,60 +9,49 @@ const ContactCard = ({ title, email }) => (
 );
 
 const VerticalDividerMiddle = () => {
-  const contactData = [
-    { title: "General Query", email: "(+91) 123 456 7890)" },
-    { title: "Accommodation", email: "(+91) 123 456 7890)" },
-    { title: "Transportation", email: "(+91) 123 456 7890)" },
-  ];
-
   return (
     <Box
       sx={{
-        width: "100%",
+        width: "90%",
       }}
     >
-      <Typography variant="h2" align="left">
-        Contact
-      </Typography>
+      <p>Contact</p>
       <Box
         sx={{
           display: "flex",
+          flexDirection: "column",
           justifyContent: "space-between",
-          padding: "0 20px",
         }}
       >
         <Box
           sx={{
             display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
+            flexDirection: "row",
+            alignItems: "flex-start",
           }}
         >
-          <Typography variant="h5">Transportation</Typography>
-          <Typography variant="body1">(+91) 123 456 7890</Typography>
+          <p>Transportation:</p>
+          <p>(+91) 123 456 7890</p>
         </Box>
         <Box
           sx={{
             display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
+            flexDirection: "row",
+            alignItems: "flex-start",
           }}
         >
-          <Typography variant="h5">Accommodation</Typography>
-          <Typography variant="body1">(+91) 123 456 7890</Typography>
+          <p>Accommodation:</p>
+          <p>(+91) 123 456 7890</p>
         </Box>
         <Box
           sx={{
             display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
+            flexDirection: "row",
+            alignItems: "flex-start",
           }}
         >
-          <Typography variant="h5">General</Typography>
-          <Typography variant="body1">(+91) 123 456 7890</Typography>
+          <p>General:</p>
+          <p>(+91) 123 456 7890</p>
         </Box>
       </Box>
     </Box>
