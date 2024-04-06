@@ -8,6 +8,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
 import { Link } from "react-router-dom";
+import meherLucknow from "../../assets/Meher_Lucknow.png"
 
 function Navbar() {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -36,11 +37,11 @@ function Navbar() {
             <Box
               component="img"
               sx={{
-                height: 50,
+                height: 70,
                 width: 150,
               }}
               alt="The alternate text"
-              src="https://avatarmeherbabatrust.org/wp-content/uploads/2020/08/Meher-Babas-Sig.png"
+              src={meherLucknow}
             ></Box>
           </Link>
 
@@ -97,7 +98,7 @@ function Navbar() {
                 display: { xs: "none", sm: "block" },
               }}
             >
-              <Link to="/oct2024"> Oct' 2024</Link>
+              <Link to="/oct2024"> October 2024</Link>
             </Typography>
 
             <Typography

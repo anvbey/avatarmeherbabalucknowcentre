@@ -12,6 +12,10 @@ body {
   background-color: #FBFAF5;
 }
 
+p {
+  margin: 0px;
+}
+
 body::-webkit-scrollbar {
   width: 0; /* Hide horizontal scrollbar */
 }
