@@ -1,8 +1,16 @@
-import * as React from "react";
+import React from "react";
 import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
 
-export default function ComboBox() {
+const DropDown = ({ handleYearChange }) => {
+  const year = [
+    { label: "2024", year: 2024 },
+    { label: "2023", year: 2023 },
+    { label: "2022", year: 2022 },
+    { label: "2021", year: 2021 },
+    { label: "2020", year: 2020 },
+  ];
+
   const defaultProps = {
     options: year,
     getOptionLabel: (option) => option.label,
@@ -24,12 +32,10 @@ export default function ComboBox() {
         <TextField {...params} label="Select Year" variant="standard" />
       )}
       style={{ width: staticWidth, margin: "10px 0 0 10px" }}
+      defaultValue={year[0]}
+      onChange={(event, value) => handleYearChange(event, value)}
     />
   );
-}
+};
 
-const year = [
-  { label: "2024", year: 1994 },
-  { label: "2023", year: 1972 },
-  { label: "2022", year: 1974 },
-];
+export default DropDown;
