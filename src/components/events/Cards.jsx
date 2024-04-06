@@ -43,7 +43,7 @@ export default function ImgMediaCard({ year }) {
           <CardMedia
             component="img"
             alt="green iguana"
-            height="140"
+            
             image={MeherPrem}
           />
           <CardContent>
