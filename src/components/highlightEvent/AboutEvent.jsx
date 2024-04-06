@@ -25,7 +25,7 @@ function AboutEvent() {
         }}
       >
         <Box
-          
+          className="meher-prem-content-container"
           sx={{
             flex: 5,
             marginRight: "50px",
@@ -47,13 +47,13 @@ function AboutEvent() {
           </p>
           <Button
             variant="contained"
-            href="#contained-buttons"
+            href="/oct2024/register"
             sx={{ width: "100px", marginTop: "10px" }}
           >
             Register!
           </Button>
         </Box>
-        <Box sx={{ flex: 5, alignContent: "flex-end" }}>
+        <Box sx={{ flex: 5 , justifyContent: "flex-end" }}>
           <YouTubeEmbed />
         </Box>
       </Box>

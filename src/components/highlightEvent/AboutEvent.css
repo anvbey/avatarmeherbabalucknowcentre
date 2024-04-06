@@ -137,6 +137,27 @@
       margin: 0 0 0 40px;
     }
   }
+
+  @media screen and (max-width: 950px) {
+    .about-meher-prem{
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+    }
+    .meher-prem-content{
+      text-align:right;
+    }
+    .meher-prem-content-container{
+      align-items: center;
+    }
+    .about-meher-prem-container{
+      justify-content: "center";
+      align-items: "center";
+    }
+    .meher-prem-heading{
+      text-align: center;
+    }
+  }
   
   @media screen and (min-width: 1089px) {
     .about-meher-prem {

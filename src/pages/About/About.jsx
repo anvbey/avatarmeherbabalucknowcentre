@@ -9,7 +9,7 @@ const About = () => {
   
 
   return (
-    <Box sx={{ margin: "80px 60px 0 60px" }}>
+    <Box sx={{ margin: "0 60px 0 60px" }}>
       <SideTab/>
       <Overview/>
       <Timeline/>

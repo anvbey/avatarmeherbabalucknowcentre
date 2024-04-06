@@ -12,7 +12,6 @@ const HighlightEvent = () => {
     <Box
       display="flex"
       flexDirection="column"
-      justifyContent="flex-start"
       alignItems="center"
     >
       <img
@@ -21,10 +20,9 @@ const HighlightEvent = () => {
         alt={"item.title"}
         loading="lazy"
         style={{
-          marginTop: "80px",
           borderRadius: "8px",
           width: "90%",
-          maxHeight: "90vh"
+          maxHeight: "85vh"
         }}
       />
       <AboutEvent />

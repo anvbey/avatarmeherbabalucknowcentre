@@ -10,15 +10,15 @@ import ExpandableTimelineElement from "./ExpandableTimelineElement ";
 
 function Timeline() {
   return (
-    <Box
+    <Box id="lucknow"
       sx={{
         margin: "20px 0",
       }}
     >
-      <Typography variant="h3" id="lucknow">
+      <Typography variant="h3">
         Baba's visit to Lucknow Timeline
       </Typography>
-      <Typography variant="body-1" id="lucknow">
+      <Typography variant="body-1" >
         Meher Baba visited Lucknow 7 times during His physical life.
       </Typography>
       <VerticalTimeline>
