@@ -1,10 +1,22 @@
-import React from "react";
-import { Box, Grid } from "@mui/material";
-import Card from "../../components/events/Cards"; // Assuming Card component exists
-import DropDown from "../../components/events/AutoComplete"; // Assuming DropDown component exists
+import React, { useState } from "react";
+import { Box, Typography } from "@mui/material";
+import Card from "../../components/events/Cards";
+import DropDown from "../../components/events/AutoComplete";
 import "./Events.css";
+import data from "../../data/Events.json"
 
 const Events = () => {
+  const [selectedYear, setSelectedYear] = useState(new Date().getFullYear().toString()); // State to hold selected year
+
+  // Function to handle year selection change
+  const handleYearChange = (event, value) => {
+    setSelectedYear(value.label);
+  };
+
+  const eventsForSelectedYear = data.find(
+    (item) => item.year === selectedYear
+  )?.events || [];
+
   return (
     <Box
       sx={{
@@ -25,7 +37,7 @@ const Events = () => {
           alignItems: "flex-start",
         }}
       >
-        <DropDown />
+        <DropDown handleYearChange={handleYearChange} /> {/* Pass the handleYearChange function */}
       </Box>
       <Box
         className="cards"
@@ -39,9 +51,13 @@ const Events = () => {
           gap: "10px",
         }}
       >
-        <Card />
-        <Card />
-        <Card />
+      {eventsForSelectedYear.length === 0 ? (
+        <Typography variant="body1">No events available for the selected year</Typography>
+      ) : (
+        // If there are events, map over them and render the Card component
+        <Card year={selectedYear} />
+      )}
+         {/* Pass the selected year */}
       </Box>
     </Box>
   );
