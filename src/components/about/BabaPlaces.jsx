@@ -5,8 +5,8 @@ import IronBridge from "./visitedPlaces/IronBridge";
 
 function BabaPlaces() {
   return (
-    <Box>
-      <Typography variant="h3">Baba's Places to visit in Lucknow</Typography>
+    <Box id="places">
+      <Typography variant="h3" >Baba's Places to visit in Lucknow</Typography>
       <Charbagh />
       <IronBridge />
     </Box>

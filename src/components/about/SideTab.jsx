@@ -19,8 +19,27 @@ const SideTab = () => {
       <SideTabButton onClick={() => toggleSideTab('sideButton')}>
         <ContentPasteSearch/>
       </SideTabButton>
-      <div>
-        <a href="#lucknow" onClick={() => toggleSideTab('link')}>lucknow</a>
+      <div style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center"
+      }}>
+        <a href="#overview" style={{
+          marginBottom: "30px",
+          textAlign: "center"
+        }} onClick={() => toggleSideTab('link')}>Overview</a>
+        <a href="#lucknow" style={{
+          marginBottom: "30px",
+          textAlign: "center"
+        }} onClick={() => toggleSideTab('link')}>Timeline</a>
+        <a href="#present" style={{
+          marginBottom: "30px",
+          textAlign: "center"
+        }} onClick={() => toggleSideTab('link')}>About Lucknow Centre</a>
+        <a href="#places" style={{
+          marginBottom: "30px",
+          textAlign: "center"
+        }} onClick={() => toggleSideTab('link')}>Baba's Places to visit in Lucknow</a>
       </div>
     </SideTabContainer>
   )

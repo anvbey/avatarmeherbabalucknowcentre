@@ -4,12 +4,13 @@ import AboutCenter from "./AboutCentre";
 
 function Present() {
   return (
-    <Box>
+    <Box id="present">
       <Typography
         variant="h3"
         sx={{
           marginBottom: "20px",
         }}
+        
       >
         Avatar Meher Baba Lucknow Centre
       </Typography>
