@@ -9,6 +9,7 @@ function Present() {
         variant="h3"
         sx={{
           marginBottom: "20px",
+          fontFamily: "Playfair Display SC, serif",
         }}
         
       >

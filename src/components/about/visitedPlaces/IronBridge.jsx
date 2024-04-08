@@ -5,7 +5,7 @@ import MeherPrem from "../../../assets/MeherPrem.jpg";
 function IronBridge() {
   return (
     <Box>
-      <Typography variant="h4">Iron Bridge</Typography>
+      <Typography variant="h4" sx={{ fontFamily: 'Playfair Display, serif' }}>Iron Bridge</Typography>
       <Box sx={{ display: "block" }}>
         <Box
           sx={{

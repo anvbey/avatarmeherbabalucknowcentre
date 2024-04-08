@@ -14,7 +14,7 @@ function Charbagh() {
 
   return (
     <Box>
-      <Typography variant="h4">Charbagh Railway Station</Typography>
+      <Typography variant="h4" sx={{ fontFamily: 'Playfair Display, serif' }}>Charbagh Railway Station</Typography>
       <div style={style}>
         <Box
           sx={{

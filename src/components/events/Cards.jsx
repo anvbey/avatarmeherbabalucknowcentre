@@ -34,7 +34,7 @@ export default function ImgMediaCard({ year }) {
       sx={{
         display: "flex",
         flexDirection: "row",
-        justifyContent: "center",
+        justifyContent: "space-between",
         flexWrap: "wrap",
       }}
     >
@@ -42,8 +42,7 @@ export default function ImgMediaCard({ year }) {
         <Card key={index} sx={{ margin: "20px", flexBasis: "300px" }}>
           <CardMedia
             component="img"
-            alt="green iguana"
-            
+            alt="Thumbnail"
             image={MeherPrem}
           />
           <CardContent>
@@ -55,7 +54,8 @@ export default function ImgMediaCard({ year }) {
                 fontSize: "16px",
                 fontWeight: "bold",
                 borderBottom: "1px solid #ccc",
-                minHeight: "100px"
+                minHeight: "100px",
+                fontFamily: 'Playfair Display SC, serif'
               }}
               component="div"
             >
@@ -65,18 +65,18 @@ export default function ImgMediaCard({ year }) {
             <Typography
               gutterBottom
               variant="body2"
-              sx={{ margin: " 0 0 10px 0" }}
+              sx={{ margin: " 0 0 10px 0", fontFamily: 'Playfair Display, serif' }}
               component="div"
             >
               Date: {event.startDate}
             </Typography>
-            <Typography variant="body2" color="text.secondary">
+            <Typography variant="body2" color="text.secondary" sx={{ fontFamily: 'Playfair Display, serif' }}>
               {showFullDescription[index]
                 ? event.desc
                 : `${event.desc.slice(0, 100)}...`}
             </Typography>
             {!showFullDescription[index] && (
-              <Button size="small" onClick={() => handleLearnMore(index)}>
+              <Button size="small" onClick={() => handleLearnMore(index)} sx={{ fontFamily: 'Playfair Display, serif' }}>
                 See More
               </Button>
             )}
@@ -87,10 +87,11 @@ export default function ImgMediaCard({ year }) {
                 size="small"
                 href={event.youtubeUrl || event.alternateUrl}
                 target="_blank"
+                sx={{ fontFamily: 'Playfair Display, serif' }}
               >
                 Youtube Link
               </Button>
-              <Button size="small" onClick={() => handleLearnLess(index)}>
+              <Button size="small" onClick={() => handleLearnLess(index)} sx={{ fontFamily: 'Playfair Display, serif' }}>
                 See Less
               </Button>
             </CardActions>

@@ -11,6 +11,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #FBFAF5;
 }
+p{
+  margin: 0;
+}
 
 p {
   margin: 0px;
