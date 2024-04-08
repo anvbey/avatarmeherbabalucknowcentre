@@ -15,7 +15,11 @@ const VerticalDividerMiddle = () => {
         width: "90%",
       }}
     >
-      <p>Contact</p>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap"
+        rel="stylesheet"
+      />
+      <p style={{ fontFamily: 'DM Sans, sans-serif' }}>Contact</p>
       <Box
         sx={{
           display: "flex",
@@ -30,8 +34,8 @@ const VerticalDividerMiddle = () => {
             alignItems: "flex-start",
           }}
         >
-          <p>Transportation:</p>
-          <p>(+91) 123 456 7890</p>
+          <p style={{ fontFamily: 'DM Sans, sans-serif' }}>Transportation:</p>
+          <p style={{ fontFamily: 'DM Sans, sans-serif' }}>(+91) 123 456 7890</p>
         </Box>
         <Box
           sx={{
@@ -40,8 +44,8 @@ const VerticalDividerMiddle = () => {
             alignItems: "flex-start",
           }}
         >
-          <p>Accommodation:</p>
-          <p>(+91) 123 456 7890</p>
+          <p style={{ fontFamily: 'DM Sans, sans-serif' }}>Accommodation:</p>
+          <p style={{ fontFamily: 'DM Sans, sans-serif' }}>(+91) 123 456 7890</p>
         </Box>
         <Box
           sx={{
@@ -50,8 +54,8 @@ const VerticalDividerMiddle = () => {
             alignItems: "flex-start",
           }}
         >
-          <p>General:</p>
-          <p>(+91) 123 456 7890</p>
+          <p style={{ fontFamily: 'DM Sans, sans-serif' }}>General:</p>
+          <p style={{ fontFamily: 'DM Sans, sans-serif' }}>(+91) 123 456 7890</p>
         </Box>
       </Box>
     </Box>

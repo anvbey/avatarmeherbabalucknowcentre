@@ -15,7 +15,7 @@ function Timeline() {
         margin: "20px 0",
       }}
     >
-      <Typography variant="h3">
+      <Typography variant="h3" sx={{ fontFamily: 'Playfair Display SC, serif' }}>
         Baba's visit to Lucknow Timeline
       </Typography>
       <Typography variant="body-1" >
@@ -86,7 +86,6 @@ function Timeline() {
           className="vertical-timeline-element--education"
           date="April 2013"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
         >
           <h3 className="vertical-timeline-element-title">1970</h3>
           <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
@@ -104,7 +103,6 @@ function Timeline() {
           className="vertical-timeline-element--education"
           date="November 2012"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
         >
           <h3 className="vertical-timeline-element-title">1980</h3>
           <h4 className="vertical-timeline-element-subtitle">
@@ -119,7 +117,6 @@ function Timeline() {
           className="vertical-timeline-element--education"
           date="2002 - 2006"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
         >
           <h3 className="vertical-timeline-element-title">1990</h3>
           <h4 className="vertical-timeline-element-subtitle">

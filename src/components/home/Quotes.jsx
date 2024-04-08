@@ -15,13 +15,17 @@ function Quotes() {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        margin: "10px 0"
+        margin: "10px 0",
       }}
     >
-      <p className="quote">
+      <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap"
+        rel="stylesheet"
+      />
+      <p className="quote" style={{ fontFamily: 'DM Sans, sans-serif' }}>
         "If you have the peace of a frozen lake, you will realize Me."
       </p>
-      <p className="quote">
+      <p className="quote" style={{ fontFamily: 'DM Sans, sans-serif' }}>
         Meher Baba Calling
       </p>
     </Box>

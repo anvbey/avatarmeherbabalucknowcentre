@@ -42,7 +42,7 @@ const Events = () => {
       <Box
         className="cards"
         sx={{
-          width: "100vw",
+          width: "80vw",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",

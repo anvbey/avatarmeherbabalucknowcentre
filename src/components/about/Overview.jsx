@@ -10,11 +10,12 @@ function Overview() {
         justifyContent: "center",
       }}
     >
-      <Typography variant="h3">Overview</Typography>
+      <Typography variant="h3" sx={{ fontFamily: 'Playfair Display SC, serif' }}>Overview</Typography>
       <Typography
         variant="body1"
         sx={{
           marginBottom: "40px",
+          fontFamily: 'DM Sans, sans-serif'
         }}
       >
         Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -41,6 +42,7 @@ function Overview() {
           variant="body1"
           sx={{
             margin: "10px 0 20px 0",
+            fontFamily: 'DM Sans, sans-serif'
           }}
         >
           Meher Prem Sammelan 2019

@@ -5,7 +5,8 @@ import "./AboutEvent.css";
 
 function AboutEvent() {
   return (
-    <Box className="about-meher-prem-container"
+    <Box
+      className="about-meher-prem-container"
       sx={{
         display: "flex",
         flexDirection: "column",
@@ -15,8 +16,18 @@ function AboutEvent() {
         maxWidth: "90%",
       }}
     >
-      <p className="meher-prem-heading">About Meher Prem Sammelan</p>
-      <Box className="about-meher-prem"
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&display=swap"
+      />
+      <p
+        className="about-meher-baba-heading"
+        style={{ fontFamily: "Playfair Display SC, serif" }}
+      >
+        About Meher Prem Sammelan
+      </p>
+      <Box
+        className="about-meher-prem"
         sx={{
           flex: 4,
           display: "flex",
@@ -34,7 +45,11 @@ function AboutEvent() {
             justifyContent: "space-around",
           }}
         >
-          <p className="meher-prem-content">
+        <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap"
+        rel="stylesheet"
+      />
+          <p className="meher-prem-content" style={{ fontFamily: 'DM Sans, sans-serif' }}>
             Meher Prem Sammelan, a vibrant two-day festival, reverently
             celebrates 100 years of Baba's visit to Lucknow. Here we showcase
             the rich tapestry of language, literature, and culture. Explore the
@@ -53,7 +68,7 @@ function AboutEvent() {
             Register!
           </Button>
         </Box>
-        <Box sx={{ flex: 5 , justifyContent: "flex-end" }}>
+        <Box sx={{ flex: 5, justifyContent: "flex-end" }}>
           <YouTubeEmbed />
         </Box>
       </Box>
