@@ -1,37 +1,105 @@
-import React, { useState } from "react";
+import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
+import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
-import meherLucknow from "../../assets/Meher_Lucknow.png"
+import meherLucknow from "../../assets/Meher_Lucknow.png";
 
-function Navbar() {
-  const [anchorEl, setAnchorEl] = useState(null);
+const menuLinkStyle = {
+  color: "inherit",
+  textDecoration: "none",
+  fontFamily: "DM Sans, sans-serif",
+};
 
-  const handleMenuOpen = (event) => {
-    setAnchorEl(event.currentTarget);
+export default function PrimarySearchAppBar() {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
+
+  const isMenuOpen = Boolean(anchorEl);
+  const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
+
+  const handleMobileMenuClose = () => {
+    setMobileMoreAnchorEl(null);
   };
 
   const handleMenuClose = () => {
     setAnchorEl(null);
+    handleMobileMenuClose();
   };
 
+  const handleMobileMenuOpen = (event) => {
+    setMobileMoreAnchorEl(event.currentTarget);
+  };
+
+  const menuId = "primary-search-account-menu";
+  const renderMenu = (
+    <Menu
+      anchorEl={anchorEl}
+      anchorOrigin={{
+        vertical: "top",
+        horizontal: "right",
+      }}
+      id={menuId}
+      keepMounted
+      transformOrigin={{
+        vertical: "top",
+        horizontal: "right",
+      }}
+      open={isMenuOpen}
+      onClose={handleMenuClose}
+    >
+      <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
+      <MenuItem onClick={handleMenuClose}>My account</MenuItem>
+    </Menu>
+  );
+
+  const mobileMenuId = "primary-search-account-menu-mobile";
+  const renderMobileMenu = (
+    <Menu
+      anchorEl={mobileMoreAnchorEl}
+      anchorOrigin={{
+        vertical: "top",
+        horizontal: "right",
+      }}
+      id={mobileMenuId}
+      keepMounted
+      transformOrigin={{
+        vertical: "top",
+        horizontal: "right",
+      }}
+      open={isMobileMenuOpen}
+      onClose={handleMobileMenuClose}
+    >
+      <MenuItem onClick={handleMenuClose}>
+        <Link to="/oct2024" style={{ ...menuLinkStyle, color: '#065729', fontWeight: 'bold'}}>
+          Meher Prem Sammelan October 2024
+        </Link>
+      </MenuItem>
+      <MenuItem onClick={handleMenuClose}>
+        <Link to="/about" style={{ ...menuLinkStyle, color: '#065729', fontWeight: 'bold' }}>
+          About
+        </Link>
+      </MenuItem>
+      <MenuItem onClick={handleMenuClose}>
+        <Link to="/events" style={{ ...menuLinkStyle, color: '#065729', fontWeight: 'bold' }}>
+          Events
+        </Link>
+      </MenuItem>
+      <MenuItem onClick={handleMenuClose}>
+        <Link to="/contact" style={{ ...menuLinkStyle, color: '#065729', fontWeight: 'bold' }}>
+          Contact Us
+        </Link>
+      </MenuItem>
+    </Menu>
+  );
+
   return (
-    <Box sx={{ flexGrow: 1 , margin: " 0 0 80px 0"}}>
-      <AppBar
-        position="fixed"
-        elevation={0}
-        sx={{
-          borderBottom: "2.5px solid #C4C698",
-          backgroundColor: "#FBFAF5",
-          height: "68px"
-        }}
-      >
+    <Box sx={{ flexGrow: 1, width: "100vw", marginBottom: "10px" }}>
+      <AppBar position="static" sx={{ borderBottom: '2px solid #065729', backgroundColor: 'white', boxShadow: 'none' }}>
         <Toolbar>
           <Link to="/">
             <Box
@@ -45,109 +113,45 @@ function Navbar() {
             ></Box>
           </Link>
 
-          {/* Toggle button for smaller screens */}
-          <IconButton
-            size="large"
-            edge="end"
-            color="inherit"
-            onClick={handleMenuOpen}
-            sx={{ display: { xs: "block", sm: "none" } }}
-          >
-            <MenuIcon />
-          </IconButton>
-
-          {/* Menu for smaller screens */}
-          <Menu
-            anchorEl={anchorEl}
-            open={Boolean(anchorEl)}
-            onClose={handleMenuClose}
-          >
-            <MenuItem onClick={handleMenuClose}>
-              <Link to="/oct2024"> Meher Prem Sammelan October 2024</Link>
+          <Box sx={{ flexGrow: 1 }} />
+          <Box sx={{ display: { xs: "none", md: "flex" } }}>
+            <MenuItem onClick={handleMenuClose} style={{ ...menuLinkStyle, color: '#065729', fontWeight: 'bold'  }}>
+              <Link to="/oct2024" style={menuLinkStyle}>
+                Meher Prem Sammelan October 2024
+              </Link>
             </MenuItem>
-            <MenuItem onClick={handleMenuClose}>
-              <Link to="/about">About</Link>
+            <MenuItem onClick={handleMenuClose} style={{ ...menuLinkStyle, color: '#065729', fontWeight: 'bold' }}>
+              <Link to="/about" style={menuLinkStyle}>
+                About
+              </Link>
             </MenuItem>
-            <MenuItem onClick={handleMenuClose}>
-              <Link to="/events"> Events</Link>
+            <MenuItem onClick={handleMenuClose} style={{ ...menuLinkStyle, color: '#065729', fontWeight: 'bold' }}>
+              <Link to="/events" style={menuLinkStyle}>
+                Events
+              </Link>
             </MenuItem>
-            <MenuItem onClick={handleMenuClose}>
-              <Link to="/contact">Contact Us</Link>
+            <MenuItem onClick={handleMenuClose} style={{ ...menuLinkStyle, color: '#065729', fontWeight: 'bold' }}>
+              <Link to="/contact" style={menuLinkStyle}>
+                Contact Us
+              </Link>
             </MenuItem>
-          </Menu>
-
-          {/* Regular navigation links for larger screens */}
-          <Box
-            sx={{
-              display: "flex",
-              justifyContent: "flex-end",
-              alignItems: "center",
-              width: "100%",
-            }}
-          >
-            <Typography
-              variant="h6"
-              component="div"
-              sx={{
-                marginLeft: 8,
-                fontFamily: "'Open Sans Hebrew', sans-serif",
-                fontWeight: "bold",
-                color: "black",
-                textDecoration: "none",
-                display: { xs: "none", sm: "block" },
-              }}
+          </Box>
+          <Box sx={{ display: { xs: "flex", md: "none" } }}>
+            <IconButton
+              size="large"
+              aria-label="show more"
+              aria-controls={mobileMenuId}
+              aria-haspopup="true"
+              onClick={handleMobileMenuOpen}
+              color="inherit"
             >
-              <Link to="/oct2024"> October 2024</Link>
-            </Typography>
-            <Typography
-              variant="h6"
-              component="div"
-              sx={{
-                marginLeft: 8,
-                fontFamily: "'Open Sans Hebrew', sans-serif",
-                fontWeight: "bold",
-                color: "black",
-                textDecoration: "none",
-                display: { xs: "none", sm: "block" },
-              }}
-            >
-              <Link to="/about">About</Link>
-            </Typography>
-
-            <Typography
-              variant="h6"
-              component="div"
-              sx={{
-                marginLeft: 8,
-                fontFamily: "'Open Sans Hebrew', sans-serif",
-                fontWeight: "bold",
-                color: "black",
-                textDecoration: "none",
-                display: { xs: "none", sm: "block" },
-              }}
-            >
-              <Link to="/events"> Events</Link>
-            </Typography>
-
-            <Typography
-              variant="h6"
-              component="div"
-              sx={{
-                marginLeft: 8,
-                fontFamily: "'Open Sans Hebrew', sans-serif",
-                fontWeight: "bold",
-                color: "black",
-                textDecoration: "none",
-                display: { xs: "none", sm: "block" },
-              }}
-            >
-              <Link to="/contact">Contact Us</Link>
-            </Typography>
+              <MenuIcon style={{ color: '#065729', fontWeight: 'bold' }} />
+            </IconButton>
           </Box>
         </Toolbar>
       </AppBar>
+      {renderMobileMenu}
+      {renderMenu}
     </Box>
   );
 }
-
-export default Navbar;
