@@ -1,6 +1,8 @@
-import { Box, Typography } from "@mui/material";
 import React from "react";
+import { Box, Typography } from "@mui/material";
+
 import MeherPrem from "../../assets/MeherPrem.jpg";
+
 function Overview() {
   return (
     <Box  id="overview"

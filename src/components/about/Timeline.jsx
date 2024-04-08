@@ -1,12 +1,13 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
+
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+
 import "./Timeline.css";
-import ExpandableTimelineElement from "./ExpandableTimelineElement ";
 
 function Timeline() {
   return (

@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { Box, Typography } from "@mui/material";
+
 import Card from "../../components/events/Cards";
 import DropDown from "../../components/events/AutoComplete";
+
 import "./Events.css";
 import data from "../../data/Events.json"
 

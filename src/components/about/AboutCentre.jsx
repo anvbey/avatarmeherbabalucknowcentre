@@ -1,11 +1,12 @@
-import { Box, Typography } from "@mui/material";
 import React from "react";
+import { Box, Typography } from "@mui/material";
+
 import MeherPrem from "../../assets/MeherPrem.jpg";
 
 function AboutCentre() {
   return (
     <Box>
-      <Typography variant="h4" sx={{ fontFamily: 'Playfair Display, serif' }}>
+      <Typography variant="h4" sx={{ fontFamily: "Playfair Display, serif" }}>
         HISTORY OF AVATAR MEHER BABA CENTRE, LUCKNOW
       </Typography>
       <Box sx={{ display: "block" }}>
