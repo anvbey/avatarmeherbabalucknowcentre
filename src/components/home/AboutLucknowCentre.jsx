@@ -1,7 +1,10 @@
 import React, { useRef, useEffect } from "react";
+import { Box } from "@mui/material";
+
 import Netting from "../../assets/BabaMeetingKids.jpg";
-import { Typography, Box } from "@mui/material";
+
 import "./AboutMeherBaba.css";
+
 function AboutMeherBaba() {
   const imageRef = useRef(null);
 
@@ -13,13 +16,13 @@ function AboutMeherBaba() {
       });
     }
   }, []);
+
   return (
     <Box
       className="about-meher-baba-container"
       sx={{
         display: "flex",
         flexDirection: "column",
-
         justifyContent: "flex-start",
         alignItems: "flex-start",
         margin: "0 40px",
@@ -44,11 +47,14 @@ function AboutMeherBaba() {
           justifyContent: "center",
         }}
       >
-      <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap"
-        rel="stylesheet"
-      />
-        <p className="about-meher-baba-content" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+        <link
+          href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap"
+          rel="stylesheet"
+        />
+        <p
+          className="about-meher-baba-content"
+          style={{ fontFamily: "DM Sans, sans-serif" }}
+        >
           Meher Baba, the Avatar. “Meher Baba” means “Compassionate Father.” It
           is the name given to Him, their spiritual Master, by a group of His
           disciples in the early 1920s after signs of His spiritual status

@@ -1,6 +1,8 @@
-import { Box, Button, Typography } from "@mui/material";
 import React from "react";
+import { Box, Button } from "@mui/material";
+
 import YouTubeEmbed from "./YoutubeVideo";
+
 import "./AboutEvent.css";
 
 function AboutEvent() {

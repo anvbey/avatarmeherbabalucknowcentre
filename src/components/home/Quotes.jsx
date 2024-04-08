@@ -1,6 +1,8 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
+
 import Bg from "../../assets/QuotesBg.png";
+
 import "./Quotes.css";
 
 function Quotes() {

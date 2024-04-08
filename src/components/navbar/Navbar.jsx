@@ -1,12 +1,7 @@
 import * as React from "react";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
-import MenuItem from "@mui/material/MenuItem";
-import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
+import {AppBar, Box, Toolbar, IconButton, MenuItem, Menu, MenuIcon} from "@mui/material";
+
 import meherLucknow from "../../assets/Meher_Lucknow.png";
 
 const menuLinkStyle = {

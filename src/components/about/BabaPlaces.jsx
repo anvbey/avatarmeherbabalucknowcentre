@@ -1,5 +1,6 @@
-import { Box, Typography } from "@mui/material";
 import React from "react";
+import { Box, Typography } from "@mui/material";
+
 import Charbagh from "../about/visitedPlaces/Charbagh";
 import IronBridge from "./visitedPlaces/IronBridge";
 

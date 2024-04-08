@@ -1,11 +1,14 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
-import MeherPrem from "../../assets/MeherPrem.jpg";
+import { Box } from "@mui/material";
+
 import Schedule from "../../components/events/Schedule";
 import AboutEvent from "../../components/highlightEvent/AboutEvent";
 import Contact from "../../components/highlightEvent/Contact";
 
+import MeherPrem from "../../assets/MeherPrem.jpg";
+
 const HighlightEvent = () => {
+
   const imageRef = React.createRef();
 
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Divider, Box, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 const ContactCard = ({ title, email }) => (
   <Box>
