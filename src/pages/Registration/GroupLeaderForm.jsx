@@ -60,6 +60,9 @@ const GroupForm = () => {
     };
 
     const onSubmit = async (values) => {
+        if(watch('members').length < watch('numberOfMembers')-1) {
+            alert('Please update the members details');
+        }
         if(values.numberOfMembers !== values.members.length + 1) {
             values.members = values.members.filter((_, index) => index < values.members.length - 1);
         }
