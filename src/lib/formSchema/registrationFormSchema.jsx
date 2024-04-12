@@ -15,7 +15,7 @@ const groupFormSchema = z.object({
         gender: z.string(),
         age: z.coerce.number().min(1, "Age is required"),
         phone: z.string().optional(),
-    })),
+    }).optional()),
 });
 
 export { groupFormSchema };

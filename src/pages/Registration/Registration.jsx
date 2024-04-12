@@ -3,9 +3,7 @@ import GroupForm from './GroupLeaderForm';
 
 const Registration = () => {
     return (
-        <>
         <GroupForm/>
-        </>
     );
 };
 
