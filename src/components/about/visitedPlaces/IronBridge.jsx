@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
-import MeherPrem from "../../../assets/MeherPrem.jpg";
+import ironBridge from "../../../assets/ironBridge.jpg";
 
 function IronBridge() {
   return (
@@ -17,11 +17,11 @@ function IronBridge() {
           }}
         >
           <img
-            src={MeherPrem}
+            src={ironBridge}
             alt="Image description"
             style={{ width: "200px", height: "150px" }}
           />
-          <Typography variant="body1">Picture from the centre</Typography>
+          <Typography variant="body1">Iron Bridge, Lucknow</Typography>
         </Box>
         <Typography variant="body1">
           In February 1941, when Baba was on His travel to various locations of

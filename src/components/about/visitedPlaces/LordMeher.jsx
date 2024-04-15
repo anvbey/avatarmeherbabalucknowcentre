@@ -1,8 +1,8 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
-import MeherPrem from "../../../assets/MeherPrem.jpg";
+import lordMeher from "../../../assets/lordMeher.png";
 
-function Charbagh() {
+function LordMeher() {
   
   const style={
     '@media(minWidth: 780px)': {
@@ -14,7 +14,7 @@ function Charbagh() {
 
   return (
     <Box>
-      <Typography variant="h4" sx={{ fontFamily: 'Playfair Display, serif' }}>Charbagh Railway Station</Typography>
+      <Typography variant="h4" sx={{ fontFamily: 'Playfair Display, serif' }}>Lord Meher College</Typography>
       <div style={style}>
         <Box
           sx={{
@@ -26,27 +26,24 @@ function Charbagh() {
           }}
         >
           <img
-            src={MeherPrem}
+            src={lordMeher}
             alt="Image description"
             style={{ width: "200px", height: "150px" }}
           />
-          <Typography variant="body1">Picture from the centre</Typography>
+          <Typography variant="body1">Lord Meher School</Typography>
         </Box>
         <Typography variant="body1">
-          Meher Baba visited Lucknow 7 times during His physical life. He came
-          to Lucknow from various locations across different times by train and
-          hence, visited the Charbagh Railway station. Sometimes, He visited the
-          Charbagh Railway Station only to catch His connecting trains. When He
-          came to Lucknow for the first time in March 1924, He got down the
-          train traveling from Hyderabad to Nepal via Lucknow at the halt to buy
-          sandals outside the railway station. On 19th August 1924, Baba changed
-          trains at Lucknow while traveling from Moradabad to Bhopal. In
-          February 1954, He came to Lucknow from Meherastana via Kanpur and
-          caught a train from Lucknow to Mahabaleshwar.
+          The foundation stone of the school established by Shri K.D. Nigam ji was 
+          laid by Shri. Ali Akbar Shahpurzaman “Aloba” on 28th November 1996. The 
+          first session of the High School was inaugurated by Shri. V.S. Kalchuri “Bhau” 
+          on 21st March 2000. Apart from Bhau ji, Smt. Dolly Dastur, Shri. Jal Dastur, 
+          Shri. Krishna ji, Shri. Shridhar Kelkar, Shri. Mehernath Kalchuri, and Shri. Zhilpilvar 
+          ji also joined the program. The school is still running and it holds its annual Baba 
+          satsang program on 24th October every year.
         </Typography>
       </div>
     </Box>
   );
 }
 
-export default Charbagh;
+export default LordMeher;

@@ -26,9 +26,9 @@ function Timeline() {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           
-          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+          contentArrowStyle={{ borderRight: "10px solid  rgb(59, 48, 26)" }}
           date="March 1924"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          iconStyle={{ background: "rgb(85, 191, 255)", color: "#fff" }}
         >
           <h3 className="vertical-timeline-element-title">March 1924</h3>
           <h4 className="vertical-timeline-element-subtitle">
@@ -42,8 +42,8 @@ function Timeline() {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="August 1924"
-          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "10px solid  rgb(59, 48, 26)" }}
+          iconStyle={{ background: "rgb(196, 88, 254)", color: "#fff" }}
         >
           <h3 className="vertical-timeline-element-title">August 1924</h3>
           <h4 className="vertical-timeline-element-subtitle">
@@ -57,8 +57,8 @@ function Timeline() {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="February 1941"
-          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "10px solid  rgb(59, 48, 26)" }}
+          iconStyle={{ background: "rgb(49, 89, 255)", color: "#fff" }}
         >
           <h3 className="vertical-timeline-element-title">February 1941</h3>
           <h4 className="vertical-timeline-element-subtitle">
@@ -73,8 +73,8 @@ function Timeline() {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="March 1942"
-          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "10px solid  rgb(59, 48, 26)" }}
+          iconStyle={{ background: "rgb(7, 204, 0)", color: "#fff" }}
         >
           <h3 className="vertical-timeline-element-title">March 1942</h3>
           <h4 className="vertical-timeline-element-subtitle">
@@ -88,7 +88,8 @@ function Timeline() {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="October 1943"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "10px solid  rgb(59, 48, 26)" }}
+          iconStyle={{ background: "rgb(254, 255, 51)", color: "#fff" }}
         >
           <h3 className="vertical-timeline-element-title">October 1943</h3>
           <h4 className="vertical-timeline-element-subtitle">Aminabad</h4>
@@ -103,7 +104,8 @@ function Timeline() {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="May 1946"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "10px solid  rgb(59, 48, 26)" }}
+          iconStyle={{ background: "rgb(254, 154, 51)", color: "#fff" }}
         >
           <h3 className="vertical-timeline-element-title">May 1946</h3>          
           <p>
@@ -113,7 +115,8 @@ function Timeline() {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="February 1954"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "10px solid  rgb(59, 48, 26)" }}
+          iconStyle={{ background: "rgb(254, 2, 0)", color: "#fff" }}
         >
           <h3 className="vertical-timeline-element-title">February 1954</h3>          
           <p>

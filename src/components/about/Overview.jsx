@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 
-import MeherPrem from "../../assets/MeherPrem.jpg";
+import mbImage from "../../assets/overviewMB.jpg";
 
 function Overview() {
   return (
@@ -37,7 +37,7 @@ function Overview() {
           alignItems: "center",
         }}
       >
-        <img src={MeherPrem} width="500px" />
+        <img src={mbImage} width="500px" />
         <Typography
           variant="body1"
           sx={{
@@ -45,7 +45,7 @@ function Overview() {
             fontFamily: 'DM Sans, sans-serif'
           }}
         >
-          Meher Prem Sammelan 2019
+          Meher Baba at Mandali Hall, Meherazad
         </Typography>
       </Box>
     </Box>

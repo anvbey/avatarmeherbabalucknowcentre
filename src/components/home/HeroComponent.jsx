@@ -25,7 +25,8 @@ function HeroComponent() {
         loop
         muted
         controls={false}
-        width="70%"
+        width="90%"
+        maxHeight="85vh"
         controlsList="nodownload"
         className="videoPlayer"
         src={video}
