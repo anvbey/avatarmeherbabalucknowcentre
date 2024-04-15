@@ -1,28 +1,13 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 
-import MeherPrem from "../../assets/MeherPrem.jpg";
+import amblko from "../../assets/AMBLKO.jpg";
 
 function AboutCentre() {
   return (
     <Box>
       <Box sx={{ display: "block" }}>
-        <Box
-          sx={{
-            float: "right",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            padding: "10px",
-          }}
-        >
-          <img
-            src={MeherPrem}
-            alt="Image description"
-            style={{ width: "200px", height: "150px" }}
-          />
-          <Typography variant="body1">Picture from the centre</Typography>
-        </Box>
+        
         <Typography variant="body1">
         The Avatar Meher Baba Centre, Lucknow was established in the year 1975 at the 
         residence of Shri. S.S. Dubey and Smt. Shakuntala Dubey, in the presence of Shri. P.D. Pukar, 
@@ -44,9 +29,10 @@ function AboutCentre() {
 
         The celebration of Baba’s May visit of the year 1924 to Lucknow was first held on 
         15th – 16th May 1986 at the residence of Shri. K.K. Sharma. Since then, satsang programs 
-        are organized every year at the residence of Shri. K.K. Sharma on 15th May, at the AMB 
-        Centre on 16th May, and at Lord Meher School, founded by Shri. K.D. Nigam in the Indiranagar area of Lucknow on 17th May.<br/><br/>
+        are organized every year at the residence of Shri. K.K. Sharma on 15th May, and at the AMB 
+        Centre on 16th May.<br/><br/>
 
+        The Lord Meher School in the Indiranagar area of Lucknow founded by Shri. K.D. Nigam.
         The foundation stone of the Lord Meher School, Indiranagar was laid by Shri. Ali Akbar 
         Shahpurzaman ‘Aloba’ on 28th November 1996 and the first session of the High School 
         was inaugurated by the then Chairman of Avatar Meher Baba Perpetual Public Charitable 
@@ -81,11 +67,11 @@ function AboutCentre() {
           }}
         >
           <img
-            src={MeherPrem}
+            src={amblko}
             alt="Image description"
-            style={{ width: "200px", height: "150px" }}
+            style={{ width: "400px", height: "300px" }}
           />
-          <Typography variant="body1">Picture from the centre</Typography>
+          <Typography variant="body1">Meher Baba's Birthday Celebration at Centre</Typography>
         </Box>
         <Typography variant="body1">
         A stall was set up by AMB Centre, Lucknow in Lucknow Book Fair from 7th – 16th April 2017. 
@@ -97,9 +83,10 @@ function AboutCentre() {
         feeding program on 23rd October 1943, in which witnessed enthusiastic participation by Baba 
         lovers from various locations of the country.<br/><br/>
 
-        The centre also holds art workshops for the Baba Lovers in Lucknow, both, virtually and physically, 
-        regular satsangs are held at the AMB Centre, Lucknow on the first Sunday and 23rd day, each of 
-        every month. The centre organises feeding program at a nearby Ashram for lepers, blanket donation 
+        The centre also holds art workshops for the Baba Lovers in Lucknow, both, virtually and physically. 
+        Regular satsangs are held at the AMB Centre, Lucknow on the first Sunday and 23rd day, each of 
+        every month from 6 PM to 8 PM for the Baba lovers to gather and sing in His praise and learn His teachings through talks. 
+        The centre organises feeding program at a nearby Ashram for lepers, blanket donation 
         drives, etc. The Centre also maintains a library with Baba books for the Baba lovers and visitors in the Centre.<br/><br/>
 
         The Baba lovers of Lucknow remain ever zealous to keep working for Beloved Baba’s cause and spread 

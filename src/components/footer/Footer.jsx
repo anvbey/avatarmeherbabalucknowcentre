@@ -10,19 +10,19 @@ function Footer() {
     <Box
       sx={{
         width: "100%",
-        color: "#fff",
         textAlign: "center",
         margin: "20px 0 0 0",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
         position: "relative",
-        backgroundImage: `url(${Bg})`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
+        backgroundColor: "black"
       }}
     >
-      <Typography className="footer">
+      <Typography className="footer"
+        sx={{
+          color: "#fff"
+        }}>
         © 2023 Avatar Meher Baba Lucknow Centre
       </Typography>
     </Box>

@@ -52,16 +52,20 @@ function AboutEvent() {
         rel="stylesheet"
       />
           <p className="meher-prem-content" style={{ fontFamily: 'DM Sans, sans-serif' }}>
-            Meher Prem Sammelan, a vibrant two-day festival, reverently
-            celebrates 100 years of Baba's visit to Lucknow. Here we showcase
-            the rich tapestry of language, literature, and culture. Explore the
-            cultural heritage through Ghazals, Poetry Symposiums, Qawwali, Sufi
-            melodies, Plays, Movies and myriad exquisite experiences. Meher Prem
-            Sammelan, a vibrant two-day festival, reverently celebrates 100
-            years of Baba's visit to Lucknow. Meher Prem Sammelan, a vibrant
-            two-day festival, reverently celebrates 100 years of Baba's visit to
-            Lucknow.
+          Join us as we celebrate 100 years since Meher Baba's momentous visit to Lucknow 
+          with a special two-day Meher Prem Sammelan. Themed "Exploring Practicality 
+          in Spirituality," this event promises a profound journey of love and learning. 
+          Our program will feature soul-stirring songs, mesmerizing ghazals, uplifting 
+          qawwalis, and inspiring talks by esteemed Meher Baba lovers from around the globe. 
+          It's not just an event; it's an opportunity to connect with fellow devotees, deepen 
+          our understanding of spirituality, and renew our commitment to Meher Baba's message of love and truth. 
+          RSVP now to secure your spot and join us in celebrating Meher Baba's profound 
+          legacy and the enduring power of his love.
           </p>
+          <p style={{ fontFamily: 'DM Sans, sans-serif' }}>Dates:</p>
+          <p style={{ fontFamily: 'DM Sans, sans-serif' }}>22nd & 23rd October 2024</p>
+          <p style={{ fontFamily: 'DM Sans, sans-serif' }}>Location</p>
+          <p style={{ fontFamily: 'DM Sans, sans-serif' }}>Ravindralaya Auditorium, Charabagh, Lucknow</p>
           <Button
             variant="contained"
             href="/oct2024/register"

@@ -13,7 +13,7 @@ import LordMeher from "./visitedPlaces/LordMeher";
 function BabaPlaces() {
   return (
     <Box id="places">
-      <Typography variant="h3" sx={{ fontFamily: 'Playfair Display SC, serif' }} >Places of Lucknow related to Baba</Typography>
+      <Typography variant="h3" sx={{ fontFamily: 'Playfair Display SC, serif' }} >Places of Lucknow related to Meher Baba</Typography>
       <Charbagh />
       <IronBridge />
       <CentralHotel />

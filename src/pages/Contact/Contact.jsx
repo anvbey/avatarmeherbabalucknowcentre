@@ -167,7 +167,7 @@ const ContactForm = () => {
                   fontFamily: "Playfair Display, serif",
                 }}
               >
-                Email: info@example.com
+                Email: avatarmeherbabalucknowcentre@gmail.com
               </Typography>
               <Typography
                 variant="body2"
@@ -177,7 +177,7 @@ const ContactForm = () => {
                   fontFamily: "Playfair Display, serif",
                 }}
               >
-                Phone: +123 456 789
+                Phone: +91 9415 46 9415
               </Typography>
               <Typography
                 variant="body2"
@@ -187,7 +187,7 @@ const ContactForm = () => {
                   fontFamily: "Playfair Display, serif",
                 }}
               >
-                Address: 123 Main St, City, Country
+                Address: 169, Samar Vihar Colony, Alambagh, Lucknow, Uttar Pradesh, India. 226005
               </Typography>
             </Box>
           )}

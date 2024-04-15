@@ -36,7 +36,7 @@ function AboutMeherBaba() {
         className="about-meher-baba-heading"
         style={{ fontFamily: "Playfair Display SC, serif" }}
       >
-        About Meher Baba
+        Avatar Meher Baba Lucknow Centre
       </p>
 
       <Box
@@ -55,21 +55,17 @@ function AboutMeherBaba() {
           className="about-meher-baba-content"
           style={{ fontFamily: "DM Sans, sans-serif" }}
         >
-          Meher Baba, the Avatar. “Meher Baba” means “Compassionate Father.” It
-          is the name given to Him, their spiritual Master, by a group of His
-          disciples in the early 1920s after signs of His spiritual status
-          became apparent. Today, many thousands of people from every religious
-          tradition regard Meher Baba as the one long awaited — the Prophet, the
-          Buddha, the Christ, the Messiah of this age. Most commonly in India,
-          He is referred to as the “Avatar,” a Sanskrit word meaning “descent of
-          God.” Meher Baba, the Avatar. “Meher Baba” means “Compassionate
-          Father.” It is the name given to Him, their spiritual Master, by a
-          group of His disciples in the early 1920s after signs of His spiritual
-          status became apparent. Today, many thousands of people from every
-          religious tradition regard Meher Baba as the one long awaited — the
-          Prophet, the Buddha, the Christ, the Messiah of this age. Most
-          commonly in India, He is referred to as the “Avatar,” a Sanskrit word
-          meaning “descent of God.”
+          The Avatar Meher Baba Centre in Lucknow was inaugurated in Samar Vihar Colony 
+          on 23rd October 1993, Dr. H.P. Bharucha, from Navsari. Initially gathering in homes, 
+          the Meher Baba lovers community gradually expanded its reach. Monthly satsangs on the 
+          first Sunday and 23rd day of each month from 6 PM to 8 PM are held for Meher Baba lovers 
+          to gather and sing in His praise and learn from His teachings through the medium of talks.
+          Annual celebrations including Baba's birthday and commemorating His visits to Lucknow, are observed with reverence. 
+          Additionally, initiatives such as the Lord Meher School, founded in 1996, reflect 
+          Baba lovers' commitment to Meher Baba's teachings. Noteworthy events like the Silver Jubilee celebration 
+          in 2018 underscore decades of dedication to spreading Baba's message of Love. 
+          The Meher Baba lovers of Lucknow remain steadfast in their endeavor to uphold Baba's legacy 
+          and share his teachings with the world.
         </p>
 
         <img

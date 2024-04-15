@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import { Box } from "@mui/material";
 
-import Netting from "../../assets/BabaMeetingKids.jpg";
+import Netting from "../../assets/mb1.jpg";
 
 import "./AboutMeherBaba.css";
 
@@ -36,7 +36,7 @@ function AboutMeherBaba() {
         className="about-meher-baba-heading"
         style={{ fontFamily: "Playfair Display SC, serif" }}
       >
-        About Meher Baba
+        Meher Baba, the Avatar
       </p>
 
       <Box
