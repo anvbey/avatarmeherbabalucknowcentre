@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import { Box } from "@mui/material";
 
-import Netting from "../../assets/BabaMeetingKids.jpg";
+import Netting from "../../assets/LucknowCentre.jpeg";
 
 import "./AboutMeherBaba.css";
 

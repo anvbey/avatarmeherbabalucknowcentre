@@ -20,15 +20,13 @@ function Overview() {
           fontFamily: 'DM Sans, sans-serif'
         }}
       >
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged. It was popularised in the 1960s with the release
-        of Letraset sheets containing Lorem Ipsum passages, and more recently
-        with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum.
+        Welcome to the place where the spiritual journey of Avatar Meher Baba in Lucknow awaits you. 
+        Discover the essence of Meher Baba's visits to this city, tracing his footsteps through history. 
+        Learn about the Avatar Meher Baba Lucknow Centre, a serene haven where seekers gather to explore his teachings. 
+        Explore the places in Lucknow associated with Meher Baba, offering pilgrims a chance to connect with his divine presence. 
+        From tranquil gardens to humble abodes, each site holds a story of spiritual significance. 
+        Join us as we embark on a journey of discovery and reflection, embracing the timeless wisdom of 
+        Meher Baba in the heart of Lucknow.
       </Typography>
       <Box
         sx={{
