@@ -21,6 +21,8 @@ const GroupForm = () => {
             city: '',
             age: '',
             gender: '',
+            dateOfArrival: new Date(),
+            dateOfDeparture: new Date(),
             numberOfMembers: 1,
             members: []
         }
@@ -118,6 +120,33 @@ const GroupForm = () => {
                 <Grid item xs={12}>
                     <TextField label="City" name="city" {...register('city')} required fullWidth />
                     <p error={!!errors.city} style={{ color: 'red' }}>{errors.city?.message}</p>
+                </Grid>
+                <Grid item xs={6}>
+                    <TextField 
+                    label="Date and Time of Arrival"
+                    type="datetime-local" name="dateOfArrival" 
+                    InputLabelProps={{
+                        shrink: true,
+                        style: { color: 'gray' },
+                        }}
+                        InputProps={{
+                        style: { color: 'black' }
+                        }}
+                        
+                    {...register('dateOfArrival')} required fullWidth />
+                    <p error={!!errors.dateOfArrival} style={{ color: 'red' }}>{errors.dateOfArrival?.message}</p>
+                </Grid>
+                <Grid item xs={6}>
+                    <TextField label="Date and Time of Departure" type="datetime-local" name="dateOfDeparture" 
+                    InputLabelProps={{
+                        shrink: true,
+                        style: { color: 'gray' },
+                      }}
+                      InputProps={{
+                        style: { color: 'black' }
+                      }}
+                    {...register('dateOfDeparture')} required fullWidth />
+                    <p error={!!errors.dateOfDeparture} style={{ color: 'red' }}>{errors.dateOfDeparture?.message}</p>
                 </Grid>
                 <Grid item xs={12} sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: '10px'}}>
                     <div>
