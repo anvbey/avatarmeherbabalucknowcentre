@@ -70,26 +70,29 @@ export default function PrimarySearchAppBar() {
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}>
-        <Link to="/oct2024" style={{ ...menuLinkStyle, color: '#065729', fontWeight: 'bold'}}>
-          Meher Prem Sammelan October 2024
-        </Link>
-      </MenuItem>
-      <MenuItem onClick={handleMenuClose}>
-        <Link to="/about" style={{ ...menuLinkStyle, color: '#065729', fontWeight: 'bold' }}>
+      
+      <Link to="/oct2024" style={{ ...menuLinkStyle}}>
+        <MenuItem onClick={handleMenuClose} style={{color: '#065729', fontWeight: 'bold', justifyContent: 'center', textAlign: 'center'}}>
+          Meher Prem Sammelan<br/>
+          October 2024
+        </MenuItem>
+      </Link>
+      <Link to="/about" style={{ ...menuLinkStyle}}>
+        <MenuItem onClick={handleMenuClose} style={{color: '#065729', fontWeight: 'bold', justifyContent: 'center', textAlign: 'center'}}>  
           About
-        </Link>
-      </MenuItem>
-      <MenuItem onClick={handleMenuClose}>
-        <Link to="/events" style={{ ...menuLinkStyle, color: '#065729', fontWeight: 'bold' }}>
+        </MenuItem>
+      </Link>
+      <Link to="/events" style={{ ...menuLinkStyle}}>
+        <MenuItem onClick={handleMenuClose} style={{color: '#065729', fontWeight: 'bold', justifyContent: 'center', textAlign: 'center'}}>
           Events
-        </Link>
-      </MenuItem>
-      <MenuItem onClick={handleMenuClose}>
-        <Link to="/contact" style={{ ...menuLinkStyle, color: '#065729', fontWeight: 'bold' }}>
+        </MenuItem>
+      </Link>
+      <Link to="/contact" style={{ ...menuLinkStyle}}>
+        <MenuItem onClick={handleMenuClose} style={{color: '#065729', fontWeight: 'bold', justifyContent: 'center', textAlign: 'center'}}>
           Contact Us
-        </Link>
-      </MenuItem>
+        </MenuItem>
+      </Link>
+      
     </Menu>
   );
 

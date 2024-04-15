@@ -13,7 +13,7 @@ function Present() {
           fontFamily: "Playfair Display SC, serif",
         }}
       >
-        Avatar Meher Baba Lucknow Centre
+        History of Avatar Meher Baba Centre, Lucknow
       </Typography>
       <AboutCenter />
     </Box>

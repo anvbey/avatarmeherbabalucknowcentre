@@ -17,7 +17,7 @@ function Timeline() {
       }}
     >
       <Typography variant="h3" sx={{ fontFamily: 'Playfair Display SC, serif' }}>
-        Baba's visit to Lucknow Timeline
+      Chronology of Meher Baba’s Lucknow visits
       </Typography>
       <Typography variant="body-1" >
         Meher Baba visited Lucknow 7 times during His physical life.
@@ -27,25 +27,27 @@ function Timeline() {
           className="vertical-timeline-element--work"
           
           contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-          date="2011 - present"
+          date="March 1924"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
         >
           <h3 className="vertical-timeline-element-title">March 1924</h3>
+          <h4 className="vertical-timeline-element-subtitle">
+            Charbagh Railway Station
+          </h4>
           <p>
-            Baba was traveling by train from Hyderabad to Nepal via Lucknow. He
-            got down the train at the halt to buy sandals outside the railway
-            station.
+          Baba was traveling by train from Hyderabad to Nepal via Lucknow. 
+          He got down the train at the halt to buy sandals outside the railway station.
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2010 - 2011"
+          date="August 1924"
           contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
         >
-          <h3 className="vertical-timeline-element-title">1940</h3>
+          <h3 className="vertical-timeline-element-title">August 1924</h3>
           <h4 className="vertical-timeline-element-subtitle">
-            San Francisco, CA
+            Charbagh Railway Station
           </h4>
           <p>
             Baba changed trains at Lucknow while traveling from Moradabad to
@@ -54,79 +56,68 @@ function Timeline() {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2008 - 2010"
+          date="February 1941"
           contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
         >
-          <h3 className="vertical-timeline-element-title">1950</h3>
+          <h3 className="vertical-timeline-element-title">February 1941</h3>
           <h4 className="vertical-timeline-element-subtitle">
-            Los Angeles, CA
+            Iron Bridge
           </h4>
           <p>
-            On His travel to various locations of North India, Baba came to
-            Lucknow and contacted Masts. During this visit, He first met Nasiban
-            Mastani, a mast of the 6th plane.
+          On His travel to various locations of North India, 
+          Baba came to Lucknow and contacted Masts. During this visit, 
+          He first met Nasiban Mastani, a mast of the 6th plane.
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2006 - 2008"
+          date="March 1942"
           contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
         >
-          <h3 className="vertical-timeline-element-title">1960</h3>
+          <h3 className="vertical-timeline-element-title">March 1942</h3>
           <h4 className="vertical-timeline-element-subtitle">
-            San Francisco, CA
+            Aminabad
           </h4>
           <p>
-            Meher Baba visited Lucknow and contacted more masts. He met ‘Allah
-            vala’ mast for the first time. He also met Nasiban Mastani again.
+          Meher Baba visited Lucknow and contacted more masts. He met ‘Allah vala’ mast for the first time. 
+          He also met Nasiban Mastani again.
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
-          date="April 2013"
+          date="October 1943"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
         >
-          <h3 className="vertical-timeline-element-title">1970</h3>
-          <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
+          <h3 className="vertical-timeline-element-title">October 1943</h3>
+          <h4 className="vertical-timeline-element-subtitle">Aminabad</h4>
           <p>
-            Baba came to Lucknow on 20th October 1943 from Kolkata. He met
-            ‘Allah vala’ mast, Badi Bibi, and Nasiban Mastani. On 23rd October
-            1943, He held a poor feeding program at Ganga Prasad Verma Memorial
-            Hall where 250-300 poor and needy people of all castes were fed.
-            After feeding the people, Baba called each one of them in a separate
-            room and gave them clothes and one rupee each. After this program,
-            Baba took a train to Jalandhar on the same day.
+          Baba came to Lucknow on 20th October 1943 from Kolkata. He met ‘Allah vala’ mast, Badi Bibi, and Nasiban Mastani. 
+          On 23rd October 1943, He held a poor feeding program at 
+          Ganga Prasad Verma Memorial Hall where 250-300 poor and needy people of all castes were fed. After feeding the people, 
+          Baba called each one of them in a separate room and gave them clothes and one rupee each. 
+          After this program, Baba took a train to Jalandhar on the same day.
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
-          date="November 2012"
+          date="May 1946"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
         >
-          <h3 className="vertical-timeline-element-title">1980</h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            Agile Development Scrum Master
-          </h4>
+          <h3 className="vertical-timeline-element-title">May 1946</h3>          
           <p>
-            Baba again contacted ‘Allah vala’ mast on 16th May 1946. He also
-            contacted Godri vala mast and ‘Mastani jhopdi vali’ mast.
+          Baba again contacted ‘Allah vala’ mast on 16th May 1946. He also contacted Godri vala mast and ‘Mastani jhopdi vali’ mast.
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
-          date="2002 - 2006"
+          date="February 1954"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
         >
-          <h3 className="vertical-timeline-element-title">1990</h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            Bachelor Degree
-          </h4>
+          <h3 className="vertical-timeline-element-title">February 1954</h3>          
           <p>
-            Meher Baba, accompanied by His Mandali came to Lucknow from
-            Meherastana via Kanpur. He took a train from Lucknow to
-            Mahabaleshwar.
+          Meher Baba, accompanied by His Mandali came to Lucknow from Meherastana via Kanpur. He took a train from Lucknow to Mahabaleshwar. 
           </p>
         </VerticalTimelineElement>
       </VerticalTimeline>
