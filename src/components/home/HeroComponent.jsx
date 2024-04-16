@@ -16,7 +16,7 @@ function HeroComponent() {
         width: "100%",
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center",
+        justifyContent: "flex-start",
         alignItems: "center",
       }}
     >

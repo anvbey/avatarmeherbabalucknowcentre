@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
+import "./Contact.css";
 
 const ContactCard = ({ title, email }) => (
   <Box>
@@ -15,11 +16,16 @@ const VerticalDividerMiddle = () => {
         width: "90%",
       }}
     >
-    <link
+      <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap"
         rel="stylesheet"
       />
-      <p style={{ fontFamily: 'DM Sans, sans-serif' }}>Contact</p>
+      <p
+        className="contact-heading"
+        style={{ fontFamily: "Playfair Display SC, serif" }}
+      >
+        Contact
+      </p>
       <Box
         sx={{
           display: "flex",
@@ -34,6 +40,10 @@ const VerticalDividerMiddle = () => {
             alignItems: "flex-start",
           }}
         >
+          <p className="contact-content" style={{ fontFamily: "DM Sans, sans-serif" }}>Accommodation:</p>
+          <p className="contact-content" style={{ fontFamily: "DM Sans, sans-serif" }}>
+            (+91) 123 456 7890
+          </p>
           <p style={{ fontFamily: 'DM Sans, sans-serif' }}>Accommodation:</p>
           <p style={{ fontFamily: 'DM Sans, sans-serif' }}>Mr. Amit Sharma - </p>
           <p style={{ fontFamily: 'DM Sans, sans-serif' }}>(+91) 9794839059</p>
@@ -50,6 +60,10 @@ const VerticalDividerMiddle = () => {
           <p style={{ fontFamily: 'DM Sans, sans-serif' }}>General:</p>
           <p style={{ fontFamily: 'DM Sans, sans-serif' }}>Mr. Sanjay Dubey - </p>
           <p style={{ fontFamily: 'DM Sans, sans-serif' }}>(+91) 9415469415</p>
+          <p className="contact-content" style={{ fontFamily: "DM Sans, sans-serif" }}>General:</p>
+          <p className="contact-content" style={{ fontFamily: "DM Sans, sans-serif" }}>
+            (+91) 123 456 7890
+          </p>
         </Box>
       </Box>
     </Box>
