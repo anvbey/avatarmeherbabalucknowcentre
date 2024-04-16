@@ -1,0 +1,91 @@
+.contact-heading {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 365px) {
+  .contact-content {
+    font-size: 8px;
+  }
+  .contact-heading {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 366px) {
+  .contact-content {
+    font-size: 10px;
+  }
+  .contact-heading {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+@media screen and (min-width: 525px) {
+  .contact-content {
+    font-size: 10px;
+  }
+  .contact-heading {
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .contact-content {
+    font-size: 10px;
+  }
+  .contact-heading {
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 683px) {
+  .contact-content {
+    font-size: 10px;
+  }
+  .contact-heading {
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .contact-content {
+    font-size: 13px;
+  }
+  .contact-heading {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .contact-content {
+    text-align: right;
+  }
+
+  .contact-heading {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1089px) {
+  .contact-content {
+    font-size: 16px;
+  }
+  .contact-heading {
+    font-size: 25px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 1459px) {
+  .contact-content {
+    font-size: 30px;
+  }
+  .contact-heading {
+    font-size: 40px;
+    font-weight: bold;
+  }
+}
