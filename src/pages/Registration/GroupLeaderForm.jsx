@@ -69,15 +69,18 @@ const GroupForm = () => {
     };
 
     const onSubmit = async (values) => {
-        if(watch('members').length < watch('numberOfMembers')-1) {
-            alert('Please update the members details');
-        }
         if(values.numberOfMembers !== values.members.length + 1) {
             values.members = values.members.filter((_, index) => index < values.members.length - 1);
         }
-        const result = await axios.post('http://localhost:8080/form/registration', values);
-        console.log(result.data.message)
-        // console.log(values)
+        fetch('https://3i11a61k0e.execute-api.ap-south-1.amazonaws.com/dev1/storeData', {
+            mode: 'no-cors',
+            method: 'POST',
+            headers: {
+                'x-api-key': 'C9yfSdhFSq24mNNSeQZMq8ybeYYqTwsi83g6jKLh',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({values})
+        })
     }
     return ( 
         <Box sx={{padding: '5%'}}>
