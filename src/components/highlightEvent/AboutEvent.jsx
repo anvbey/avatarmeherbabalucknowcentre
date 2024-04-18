@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Button } from "@mui/material";
+import { Link } from "react-router-dom";
 
 import YouTubeEmbed from "./YoutubeVideo";
 
@@ -66,13 +67,11 @@ function AboutEvent() {
           <p style={{ fontFamily: 'DM Sans, sans-serif' }}>22nd & 23rd October 2024</p>
           <p style={{ fontFamily: 'DM Sans, sans-serif' }}>Location</p>
           <p style={{ fontFamily: 'DM Sans, sans-serif' }}>Ravindralaya Auditorium, Charabagh, Lucknow</p>
-          <Button
-            variant="contained"
-            href="/oct2024/register"
-            sx={{ width: "100px", marginTop: "10px" }}
-          >
-            Register!
-          </Button>
+          <Link to="/oct2024/register" style={{ textDecoration: 'none' }}>
+            <Button variant="contained" sx={{ width: '100px', marginTop: '10px' }}>
+              Register!
+            </Button>
+          </Link>
         </Box>
         <Box sx={{ flex: 5, justifyContent: "flex-end" }}>
           <YouTubeEmbed />
