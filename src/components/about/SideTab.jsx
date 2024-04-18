@@ -31,15 +31,15 @@ const SideTab = () => {
         <a href="#lucknow" style={{
           marginBottom: "30px",
           textAlign: "center"
-        }} onClick={() => toggleSideTab('link')}>Timeline</a>
+        }} onClick={() => toggleSideTab('link')}>Chronology of Meher Baba’s Lucknow visits</a>
         <a href="#present" style={{
           marginBottom: "30px",
           textAlign: "center"
-        }} onClick={() => toggleSideTab('link')}>About Lucknow Centre</a>
+        }} onClick={() => toggleSideTab('link')}>History of Avatar Meher Baba Centre, Lucknow</a>
         <a href="#places" style={{
           marginBottom: "30px",
           textAlign: "center"
-        }} onClick={() => toggleSideTab('link')}>Baba's Places to visit in Lucknow</a>
+        }} onClick={() => toggleSideTab('link')}>Places of Lucknow related to Meher Baba</a>
       </div>
     </SideTabContainer>
   )

@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
-import {AppBar, Box, Toolbar, IconButton, MenuItem, Menu} from "@mui/material";
+import { AppBar, Box, Toolbar, IconButton, MenuItem, Menu } from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
 
 import meherLucknow from "../../assets/Meher_Lucknow.png";
@@ -14,6 +14,19 @@ const menuLinkStyle = {
 export default function PrimarySearchAppBar() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
+  const [prevScrollPos, setPrevScrollPos] = React.useState(0);
+  const [visible, setVisible] = React.useState(true);
+
+  const handleScroll = () => {
+    const currentScrollPos = window.pageYOffset;
+    setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+    setPrevScrollPos(currentScrollPos);
+  };
+
+  React.useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [prevScrollPos, visible]);
 
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
@@ -70,32 +83,33 @@ export default function PrimarySearchAppBar() {
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}>
-        <Link to="/oct2024" style={{ ...menuLinkStyle, color: '#065729', fontWeight: 'bold'}}>
-          Meher Prem Sammelan October 2024
-        </Link>
-      </MenuItem>
-      <MenuItem onClick={handleMenuClose}>
-        <Link to="/about" style={{ ...menuLinkStyle, color: '#065729', fontWeight: 'bold' }}>
+      <Link to="/oct2024" style={{ ...menuLinkStyle }}>
+        <MenuItem onClick={handleMenuClose} style={{ color: '#065729', fontWeight: 'bold', justifyContent: 'center', textAlign: 'center' }}>
+          Meher Prem Sammelan<br />
+          October 2024
+        </MenuItem>
+      </Link>
+      <Link to="/about" style={{ ...menuLinkStyle }}>
+        <MenuItem onClick={handleMenuClose} style={{ color: '#065729', fontWeight: 'bold', justifyContent: 'center', textAlign: 'center' }}>
           About
-        </Link>
-      </MenuItem>
-      <MenuItem onClick={handleMenuClose}>
-        <Link to="/events" style={{ ...menuLinkStyle, color: '#065729', fontWeight: 'bold' }}>
+        </MenuItem>
+      </Link>
+      <Link to="/events" style={{ ...menuLinkStyle }}>
+        <MenuItem onClick={handleMenuClose} style={{ color: '#065729', fontWeight: 'bold', justifyContent: 'center', textAlign: 'center' }}>
           Events
-        </Link>
-      </MenuItem>
-      <MenuItem onClick={handleMenuClose}>
-        <Link to="/contact" style={{ ...menuLinkStyle, color: '#065729', fontWeight: 'bold' }}>
+        </MenuItem>
+      </Link>
+      <Link to="/contact" style={{ ...menuLinkStyle }}>
+        <MenuItem onClick={handleMenuClose} style={{ color: '#065729', fontWeight: 'bold', justifyContent: 'center', textAlign: 'center' }}>
           Contact Us
-        </Link>
-      </MenuItem>
+        </MenuItem>
+      </Link>
     </Menu>
   );
 
   return (
-    <Box sx={{ flexGrow: 1, width: "100vw", marginBottom: "10px" }}>
-      <AppBar position="static" sx={{ borderBottom: '2px solid #065729', backgroundColor: 'white', boxShadow: 'none' }}>
+    <Box sx={{ flexGrow: 1, width: "100vw", marginBottom: "80px" }}>
+      <AppBar position="fixed" sx={{ borderBottom: '2px solid #065729', backgroundColor: 'white', boxShadow: 'none', top: visible ? '0' : '-100px', transition: 'top 0.6s' }}>
         <Toolbar>
           <Link to="/">
             <Box
@@ -111,7 +125,7 @@ export default function PrimarySearchAppBar() {
 
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
-            <MenuItem onClick={handleMenuClose} style={{ ...menuLinkStyle, color: '#065729', fontWeight: 'bold'  }}>
+            <MenuItem onClick={handleMenuClose} style={{ ...menuLinkStyle, color: '#065729', fontWeight: 'bold' }}>
               <Link to="/oct2024" style={menuLinkStyle}>
                 Meher Prem Sammelan October 2024
               </Link>

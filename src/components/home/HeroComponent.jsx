@@ -16,7 +16,7 @@ function HeroComponent() {
         width: "100%",
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center",
+        justifyContent: "flex-start",
         alignItems: "center",
       }}
     >
@@ -25,7 +25,8 @@ function HeroComponent() {
         loop
         muted
         controls={false}
-        width="70%"
+        width="90%"
+        maxHeight="85vh"
         controlsList="nodownload"
         className="videoPlayer"
         src={video}

@@ -6,7 +6,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import MeherPrem from "../../assets/MeherPrem.jpg";
+import MeherPrem from "../../assets/Oct2024Banner.png";
 import data from "../../data/Events.json";
 
 export default function ImgMediaCard({ year }) {

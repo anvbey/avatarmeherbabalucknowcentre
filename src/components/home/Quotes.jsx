@@ -18,6 +18,7 @@ function Quotes() {
         justifyContent: "center",
         alignItems: "center",
         margin: "10px 0",
+        padding: "10px"
       }}
     >
       <link
