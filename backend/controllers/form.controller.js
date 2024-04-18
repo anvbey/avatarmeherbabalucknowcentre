@@ -20,14 +20,15 @@ const contactForm = async (req, res) => {
 };
 
 const registrationForm = async (req, res) => {
-  const { firstName, lastName, email, phone, city, age, gender, members } =
+  const { firstName, lastName, email, phone, city, age, gender, dateOfArrival, dateOfDeparture, members } =
     req.body;
+    const DoA = dateOfArrival.split('T')[0]+" "+dateOfArrival.split('T')[1];
+    const DoD = dateOfDeparture.split('T')[0]+" "+dateOfDeparture.split('T')[1];
   try {
     await pg.query("BEGIN");
-    console.log(req.body)
     const id = await pg.query(
-      `INSERT INTO registrations (first_name, last_name, email, phone, city, age, gender) values ($1, $2, $3, $4, $5, $6, $7) RETURNING id`,
-      [firstName, lastName, email, phone, city, age, gender]
+      `INSERT INTO registrations (first_name, last_name, email, phone, city, age, gender, date_of_arrival, date_of_departure) values ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING id`,
+      [firstName, lastName, email, phone, city, age, gender, DoA, DoD]
     );
     const groupLeadId = id.rows[0].id;
     await pg.query(

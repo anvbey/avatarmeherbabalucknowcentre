@@ -2,29 +2,29 @@ import { Box, FormControl, Grid, InputLabel, MenuItem, Select, TextField, Typogr
 import { useController } from 'react-hook-form';
 
 const MemberForm = ({ control, index }) => {
-    const { field: firstNameField } = useController({
+    const { field: firstNameField, fieldState: firstNameFieldState } = useController({
         name: `members[${index}].firstName`,
         control,
         rules: { required: 'First Name is required' }
     })
-    const { field: lastNameField } = useController({
+    const { field: lastNameField, fieldState: lastNameFieldState } = useController({
         name: `members[${index}].lastName`,
         control,
         rules: { required: 'Last Name is required' }
     })
-    const { field: ageField } = useController({
+    const { field: ageField, fieldState: ageFieldState } = useController({
         name: `members[${index}].age`,
         control,
         rules: { required: 'Age is required' }
     })
-    const { field: phoneField } = useController({
+    const { field: phoneField, fieldState: phoneFieldState } = useController({
         name: `members[${index}].phone`,
         control
     })
-    const { field: genderField } = useController({
+    const { field: genderField, fieldState: genderFieldState } = useController({
         name: `members[${index}].gender`,
         control,
-        rules: { required: true}
+        rules: { required: true }
     })
     return ( 
         <Box sx={{ gap: '50px' }}>
@@ -34,15 +34,19 @@ const MemberForm = ({ control, index }) => {
             <Grid container spacing={3}>
                 <Grid item xs={4}>
                     <TextField label={`First Name`} {...firstNameField} required fullWidth />
+                    <p error={firstNameFieldState.invalid} style={{ color: 'red' }}>{firstNameFieldState.error?.message}</p>
                 </Grid>
                 <Grid item xs={4}>
                     <TextField label={`Last Name`} {...lastNameField} required fullWidth />
+                    <p error={lastNameFieldState.invalid} style={{ color: 'red' }}>{lastNameFieldState.error?.message}</p>
                 </Grid>
                 <Grid item xs={4}>
                     <TextField label={`Age`} type='number' {...ageField} required fullWidth />
+                    <p error={ageFieldState.invalid} style={{ color: 'red' }}>{ageFieldState.error?.message}</p>
                 </Grid>
                 <Grid item xs={4}>
                     <TextField label={`Phone`} type='number' {...phoneField} fullWidth />
+                    <p error={phoneFieldState.invalid} style={{ color: 'red' }}>{phoneFieldState.error?.message}</p>
                 </Grid>
                 <Grid item xs={4} >
                     <FormControl fullWidth>
@@ -53,6 +57,7 @@ const MemberForm = ({ control, index }) => {
                         <MenuItem value="Other">Others</MenuItem>
                     </Select>
                     </FormControl>
+                    <p error={genderFieldState.invalid} style={{ color: 'red' }}>{genderFieldState.error?.message}</p>
                 </Grid>
             </Grid>
         </Box>
