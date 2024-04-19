@@ -68,7 +68,7 @@ function AboutCentre() {
         >
           <img
             src={amblko}
-            alt="Image description"
+            alt="description"
             style={{ width: "400px", height: "300px" }}
           />
           <Typography variant="body1">Meher Baba's Birthday Celebration at Centre</Typography>

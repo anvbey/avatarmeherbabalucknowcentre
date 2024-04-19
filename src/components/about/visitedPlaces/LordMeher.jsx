@@ -27,7 +27,7 @@ function LordMeher() {
         >
           <img
             src={lordMeher}
-            alt="Image description"
+            alt="description"
             style={{ width: "200px", height: "150px" }}
           />
           <Typography variant="body1">Lord Meher School</Typography>

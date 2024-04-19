@@ -27,7 +27,7 @@ function CentralHotel() {
         >
           <img
             src={central}
-            alt="Image description"
+            alt="description"
             style={{ width: "200px", height: "150px" }}
           />
           <Typography variant="body1">Central Hotel, Aminabad</Typography>

@@ -1,5 +1,4 @@
 import { useState } from "react";
-import axios from "axios";
 import { groupFormSchema } from "../../lib/formSchema/registrationFormSchema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm, useFieldArray } from "react-hook-form";
@@ -11,7 +10,7 @@ const GroupForm = () => {
         bool: false,
         members: 0
     });
-    const { setValue, getValues, control, handleSubmit, register, watch, formState: { errors } } = useForm({
+    const { setValue, control, handleSubmit, register, watch, formState: { errors } } = useForm({
         resolver: zodResolver(groupFormSchema),
         defaultValues: {
             firstName: '',
@@ -33,15 +32,7 @@ const GroupForm = () => {
         name: "members"
     })
 
-    const handlePreview = () => {
-        const values = getValues();
-        if(values.firstName && values.lastName && values.phone && values.city && values.age && values.gender && values.numberOfMembers) {
-            setIsPreview({
-                bool: true,
-                members: values.numberOfMembers
-            });
-        }
-    }
+  
 
     const handleChange = () => {
         const count = watch('numberOfMembers');
