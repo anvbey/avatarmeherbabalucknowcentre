@@ -27,7 +27,7 @@ function Charbagh() {
         >
           <img
             src={image}
-            alt="Image description"
+            alt="description"
             style={{ width: "300px", height: "200px" }}
           />
           <Typography variant="body1">Charbagh Railway Station</Typography>

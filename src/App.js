@@ -17,8 +17,6 @@ function App() {
     <Box
       className="App"
       sx={{
-        display: "flex",
-        flexDirection: "column",
         backgroundImage: `url(${Bg})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",

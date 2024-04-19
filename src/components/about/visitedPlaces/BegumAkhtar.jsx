@@ -27,7 +27,7 @@ function BegumAkhtar() {
         >
           <img
             src={akhtariTomb}
-            alt="Image description"
+            alt="description"
             style={{ width: "150px", height: "200px" }}
           />
           <Typography variant="body1">Begum Akhtar's Tomb</Typography>

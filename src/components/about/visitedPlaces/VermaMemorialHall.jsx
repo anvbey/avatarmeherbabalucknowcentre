@@ -27,7 +27,7 @@ function VermaMemorialHall() {
         >
           <img
             src={vermaHall}
-            alt="Image description"
+            alt="description"
             style={{ width: "200px", height: "150px" }}
           />
           <Typography variant="body1" >Foundation information of Ganga Prasad Verma Memorial Hall</Typography>
