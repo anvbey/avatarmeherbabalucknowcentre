@@ -1,13 +1,7 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import "./Contact.css";
 
-const ContactCard = ({ title, email }) => (
-  <Box>
-    <Typography variant="h5">{title}</Typography>
-    <Typography variant="body2">{email}</Typography>
-  </Box>
-);
 
 const VerticalDividerMiddle = () => {
   return (

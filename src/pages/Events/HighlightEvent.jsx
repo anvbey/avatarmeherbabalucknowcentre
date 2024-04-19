@@ -2,7 +2,6 @@ import React from "react";
 import { Box } from "@mui/material";
 
 import Quotes from "../../components/home/Quotes";
-import Schedule from "../../components/events/Schedule";
 import AboutEvent from "../../components/highlightEvent/AboutEvent";
 import Contact from "../../components/highlightEvent/Contact";
 

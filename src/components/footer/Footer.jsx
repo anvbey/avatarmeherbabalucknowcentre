@@ -1,8 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 
-import Bg from "../../assets/QuotesBg.png";
-
 import "./Footer.css";
 
 function Footer() {

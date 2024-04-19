@@ -18,7 +18,7 @@ function IronBridge() {
         >
           <img
             src={ironBridge}
-            alt="Image description"
+            alt="description"
             style={{ width: "200px", height: "150px" }}
           />
           <Typography variant="body1">Iron Bridge, Lucknow</Typography>
