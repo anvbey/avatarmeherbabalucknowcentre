@@ -1,9 +1,20 @@
 import { useState } from "react";
+import toast, { Toaster } from 'react-hot-toast';
+import { DateTimePicker } from '@mui/x-date-pickers/DateTimePicker';
+import dayjs from 'dayjs';
+import axios from 'axios';
 import { groupFormSchema } from "../../lib/formSchema/registrationFormSchema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm, useFieldArray } from "react-hook-form";
 import { Box, Button, FormControl, Grid, InputLabel, MenuItem, Select, TextField, Typography } from "@mui/material";
 import MemberForm from "./MemberForm";
+
+
+const Note = () => (
+    <Typography variant="subtitle1" color="textSecondary" align="center" sx={{ marginBottom: '20px' }}>
+        * You won't be able to make changes to entries once you have submitted the form. Please verify the details before submitting the form.
+    </Typography>
+);
 
 const GroupForm = () => {
     const [ isPreview, setIsPreview ] = useState({
@@ -20,8 +31,8 @@ const GroupForm = () => {
             city: '',
             age: '',
             gender: '',
-            dateOfArrival: new Date(),
-            dateOfDeparture: new Date(),
+            dateOfArrival: '',
+            dateOfDeparture: '',
             numberOfMembers: 1,
             members: []
         }
@@ -60,11 +71,20 @@ const GroupForm = () => {
     };
 
     const onSubmit = async (values) => {
+        if(watch('members').length < watch('numberOfMembers')-1) {
+            toast.error('Please update the members details',{
+                duration: 3000,
+                position: "top-right",
+            });
+        }
         if(values.numberOfMembers !== values.members.length + 1) {
             values.members = values.members.filter((_, index) => index < values.members.length - 1);
         }
+        if(dayjs(values.dateOfArrival).isAfter(dayjs(values.dateOfDeparture))) {
+            toast.error('Date of Arrival cannot be greater than Date of Departure');
+            return;
+        }
         fetch('https://3i11a61k0e.execute-api.ap-south-1.amazonaws.com/dev1/storeData', {
-            mode: 'no-cors',
             method: 'POST',
             headers: {
                 'x-api-key': 'C9yfSdhFSq24mNNSeQZMq8ybeYYqTwsi83g6jKLh',
@@ -72,13 +92,20 @@ const GroupForm = () => {
             },
             body: JSON.stringify({values})
         })
+        .then(
+            toast.success('Form submitted successfully')
+        )
+        .catch(error => {
+            toast.error(error.message);
+        })
     }
     return ( 
-        <Box sx={{padding: '5%'}}>
-            <Box component="form" onSubmit={handleSubmit(onSubmit)} sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '15px'}}>
+        <Box sx={{padding: '1.5% 5% 5% 5%'}}>
+            <Box component="form" onSubmit={handleSubmit(onSubmit)} sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px'}}>
             <Typography variant="h5" gutterBottom>
                 Registration Form
             </Typography>
+            <Note />
             <Grid container spacing={3}>
                 <Grid item xs={6}>
                     <TextField label="First Name" name="firstName" {...register('firstName')} required fullWidth />
@@ -89,7 +116,7 @@ const GroupForm = () => {
                     <p error={!!errors.lastName} style={{ color: 'red' }}>{errors.lastName?.message}</p>
                 </Grid>
                 <Grid item xs={6}>
-                    <TextField label="Email" type="email" name="email" {...register('email')} fullWidth />
+                    <TextField label="Email (optional)" type="email" name="email" {...register('email')} fullWidth />
                     <p error={!!errors.email} style={{ color: 'red' }}>{errors.email?.message}</p>
                 </Grid>
                 <Grid item xs={6}>
@@ -102,7 +129,7 @@ const GroupForm = () => {
                 </Grid>
                 <Grid item xs={6}>
                     <FormControl fullWidth>
-                    <InputLabel id='gender'>Gender</InputLabel>
+                    <InputLabel id='gender'>Gender *</InputLabel>
                     <Select name="gender" {...register('gender')} required labelId='gender' label='Gender'>
                         <MenuItem value="Male">Male</MenuItem>
                         <MenuItem value="Female">Female</MenuItem>
@@ -116,30 +143,17 @@ const GroupForm = () => {
                     <p error={!!errors.city} style={{ color: 'red' }}>{errors.city?.message}</p>
                 </Grid>
                 <Grid item xs={6}>
-                    <TextField 
-                    label="Date and Time of Arrival"
-                    type="datetime-local" name="dateOfArrival" 
-                    InputLabelProps={{
-                        shrink: true,
-                        style: { color: 'gray' },
-                        }}
-                        InputProps={{
-                        style: { color: 'black' }
-                        }}
-                        
-                    {...register('dateOfArrival')} required fullWidth />
+                    <DateTimePicker label="Date and Time of Arrival" name='dateOfArrival' onChange={(e) => {
+                        if(!e) return;
+                        setValue('dateOfArrival', e['$d'])} 
+                    }sx={{ width: '100%'}} />
                     <p error={!!errors.dateOfArrival} style={{ color: 'red' }}>{errors.dateOfArrival?.message}</p>
                 </Grid>
                 <Grid item xs={6}>
-                    <TextField label="Date and Time of Departure" type="datetime-local" name="dateOfDeparture" 
-                    InputLabelProps={{
-                        shrink: true,
-                        style: { color: 'gray' },
-                      }}
-                      InputProps={{
-                        style: { color: 'black' }
-                      }}
-                    {...register('dateOfDeparture')} required fullWidth />
+                    <DateTimePicker label='Date and Time of Departure' name='dateOfDeparture' onChange={(e) => {
+                        if(!e) return;
+                        setValue('dateOfDeparture', e['$d'])} 
+                    } required sx={{ width: '100%'}}/>
                     <p error={!!errors.dateOfDeparture} style={{ color: 'red' }}>{errors.dateOfDeparture?.message}</p>
                 </Grid>
                 <Grid item xs={12} sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: '10px'}}>
@@ -163,6 +177,7 @@ const GroupForm = () => {
             {(watch('numberOfMembers') < 2 || isPreview.bool) && <Button variant="contained" color="secondary" type="submit" sx={{ width: '25vw' }}>
                 Submit
             </Button>}
+            <Toaster />
         </Box>
     </Box>
      );
