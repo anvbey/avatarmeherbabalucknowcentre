@@ -92,7 +92,7 @@ const GroupForm = () => {
                     <p error={!!errors.lastName} style={{ color: 'red' }}>{errors.lastName?.message}</p>
                 </Grid>
                 <Grid item xs={6}>
-                    <TextField label="Email" type="email" name="email" {...register('email')} fullWidth />
+                    <TextField label="Email (optional)" type="email" name="email" {...register('email')} fullWidth />
                     <p error={!!errors.email} style={{ color: 'red' }}>{errors.email?.message}</p>
                 </Grid>
                 <Grid item xs={6}>
@@ -106,7 +106,7 @@ const GroupForm = () => {
                 <Grid item xs={6}>
                     <FormControl fullWidth>
                     <InputLabel id='gender'>Gender</InputLabel>
-                    <Select name="gender" {...register('gender')} required labelId='gender' label='Gender'>
+                    <Select name="gender" {...register('gender')} required labelId='gender' label='Gender*'>
                         <MenuItem value="Male">Male</MenuItem>
                         <MenuItem value="Female">Female</MenuItem>
                         <MenuItem value="Other">Others</MenuItem>

@@ -45,7 +45,7 @@ const MemberForm = ({ control, index }) => {
                     <p error={ageFieldState.invalid} style={{ color: 'red' }}>{ageFieldState.error?.message}</p>
                 </Grid>
                 <Grid item xs={4}>
-                    <TextField label={`Phone`} type='number' {...phoneField} fullWidth />
+                    <TextField label={`Phone (optional)`} type='number' {...phoneField} fullWidth />
                     <p error={phoneFieldState.invalid} style={{ color: 'red' }}>{phoneFieldState.error?.message}</p>
                 </Grid>
                 <Grid item xs={4} >
