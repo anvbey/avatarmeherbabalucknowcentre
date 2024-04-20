@@ -1,5 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import { Box } from "@mui/material";
+import { LocalizationProvider } from "@mui/x-date-pickers";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 
 import Navbar from "./components/navbar/Navbar";
 import Home from "./pages/Home/Home";
@@ -14,6 +16,7 @@ import Bg from "./assets/Bg.png";
 
 function App() {
   return (
+    <LocalizationProvider dateAdapter={AdapterDayjs}>
     <Box
       className="App"
       sx={{
@@ -40,6 +43,7 @@ function App() {
       </Box>
       <Footer />
     </Box>
+    </LocalizationProvider>
   );
 }
 

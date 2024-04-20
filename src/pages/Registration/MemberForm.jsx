@@ -50,7 +50,7 @@ const MemberForm = ({ control, index }) => {
                 </Grid>
                 <Grid item xs={4} >
                     <FormControl fullWidth>
-                    <InputLabel id='gender'>Gender</InputLabel>
+                    <InputLabel id='gender'>Gender *</InputLabel>
                     <Select {...genderField} required labelId='gender' label='Gender'>
                         <MenuItem value="Male">Male</MenuItem>
                         <MenuItem value="Female">Female</MenuItem>
