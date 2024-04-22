@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 import Netting from "../../assets/mb1.jpg";
 
@@ -32,12 +32,14 @@ function AboutMeherBaba() {
         rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&display=swap"
       />
-      <p
-        className="about-meher-baba-heading"
-        style={{ fontFamily: "Playfair Display SC, serif" }}
+      <Typography
+        variant="h4"
+        sx={{
+          fontFamily: "Playfair Display SC, serif",
+        }}
       >
         Meher Baba, the Avatar
-      </p>
+      </Typography>
 
       <Box
         className="about-meher-baba"
@@ -51,9 +53,11 @@ function AboutMeherBaba() {
           href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap"
           rel="stylesheet"
         />
-        <p
-          className="about-meher-baba-content"
-          style={{ fontFamily: "DM Sans, sans-serif" }}
+        <Typography
+          variant="body1"
+          sx={{
+            fontFamily: "DM Sans, sans-serif",
+          }}
         >
           Meher Baba, the Avatar. “Meher Baba” means “Compassionate Father.” It
           is the name given to Him, their spiritual Master, by a group of His
@@ -62,15 +66,8 @@ function AboutMeherBaba() {
           tradition regard Meher Baba as the one long awaited — the Prophet, the
           Buddha, the Christ, the Messiah of this age. Most commonly in India,
           He is referred to as the “Avatar,” a Sanskrit word meaning “descent of
-          God.” Meher Baba, the Avatar. “Meher Baba” means “Compassionate
-          Father.” It is the name given to Him, their spiritual Master, by a
-          group of His disciples in the early 1920s after signs of His spiritual
-          status became apparent. Today, many thousands of people from every
-          religious tradition regard Meher Baba as the one long awaited — the
-          Prophet, the Buddha, the Christ, the Messiah of this age. Most
-          commonly in India, He is referred to as the “Avatar,” a Sanskrit word
-          meaning “descent of God.”
-        </p>
+          God.” Meher Baba, the Avatar. 
+        </Typography>
 
         <img
           className="meher-baba-image"

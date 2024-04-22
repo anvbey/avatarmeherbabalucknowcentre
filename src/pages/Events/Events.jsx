@@ -54,7 +54,7 @@ const Events = () => {
         }}
       >
       {eventsForSelectedYear.length === 0 ? (
-        <Typography variant="body1">No events available for the selected year</Typography>
+        <Typography variant="body1">No events available for the selected year.</Typography>
       ) : (
         // If there are events, map over them and render the Card component
         <Card year={selectedYear} />

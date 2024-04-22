@@ -28,6 +28,7 @@ const DropDown = ({ handleYearChange }) => {
       {...defaultProps}
       id="disable-clearable"
       disableClearable
+      freeSolo
       renderInput={(params) => (
         <TextField {...params} label="Select Year" variant="standard" />
       )}

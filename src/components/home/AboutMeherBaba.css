@@ -71,7 +71,7 @@
     font-weight: bold;
   }
   .meher-baba-image {
-    width: 350px;
+    width: 400px;
     height: 250px;
     justify-content: center;
     align-items: center;
@@ -95,7 +95,6 @@
   .meher-baba-image {
     width: 350px;
     height: 250px;
-
     margin: 0 0 0 40px;
   }
 }
@@ -114,7 +113,6 @@
   .meher-baba-image {
     width: 350px;
     height: 250px;
-
     margin: 0 0 0 40px;
   }
 }
@@ -133,7 +131,6 @@
   .meher-baba-image {
     width: 400px;
     height: 300px;
-
     margin: 0 0 0 40px;
   }
 }
@@ -152,7 +149,6 @@
   .meher-baba-image {
     width: 500px;
     height: 350px;
-
     margin: 0 0 0 40px;
   }
 }
@@ -171,7 +167,15 @@
   .meher-baba-image {
     width: 600px;
     height: 400px;
-
     margin: 0 0 0 40px;
+  }
+}
+
+/* New media query for screens up to 600px */
+@media screen and (max-width: 600px) {
+  .meher-baba-image {
+    width: 100%;
+    height: auto;
+    margin: 0;
   }
 }

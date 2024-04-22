@@ -34,7 +34,8 @@ export default function ImgMediaCard({ year }) {
       sx={{
         display: "flex",
         flexDirection: "row",
-        justifyContent: "space-between",
+        justifyContent: "center",
+        alignItems: "center",
         flexWrap: "wrap",
       }}
     >
