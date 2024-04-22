@@ -3,12 +3,12 @@ import { useController } from 'react-hook-form';
 
 const MemberForm = ({ control, index }) => {
     const { field: firstNameField, fieldState: firstNameFieldState } = useController({
-        name: `members[${index}].firstName`,
+        name: `members[${index}].first_name`,
         control,
         rules: { required: 'First Name is required' }
     })
     const { field: lastNameField, fieldState: lastNameFieldState } = useController({
-        name: `members[${index}].lastName`,
+        name: `members[${index}].last_name`,
         control,
         rules: { required: 'Last Name is required' }
     })
