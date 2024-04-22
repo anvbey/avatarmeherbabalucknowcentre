@@ -14,13 +14,18 @@ function Footer() {
         alignItems: "center",
         justifyContent: "center",
         position: "relative",
-        backgroundColor: "black"
+        backgroundColor: "black",
       }}
     >
-      <Typography className="footer"
+      <Typography
+        variant="body1"
         sx={{
-          color: "#fff"
-        }}>
+          color: "white",
+          fontFamily: "DM Sans, sans-serif",
+          padding: "5px",
+          textAlign: "center",
+        }}
+      >
         © 2023 Avatar Meher Baba Lucknow Centre
       </Typography>
     </Box>

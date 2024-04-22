@@ -37,7 +37,7 @@ function Overview() {
           alignItems: "center",
         }}
       >
-        <img src={mbImage} width="500px" alt="desciption" />
+        <img src={mbImage} width="50%" alt="desciption" />
         <Typography
           variant="body1"
           sx={{

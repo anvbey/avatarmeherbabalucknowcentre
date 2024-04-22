@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 import Netting from "../../assets/LucknowCentre.jpeg";
 
@@ -32,12 +32,14 @@ function AboutMeherBaba() {
         rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&display=swap"
       />
-      <p
-        className="about-meher-baba-heading"
-        style={{ fontFamily: "Playfair Display SC, serif" }}
+      <Typography
+        variant="h4"
+        sx={{
+          fontFamily: "Playfair Display SC, serif",
+        }}
       >
         Avatar Meher Baba Lucknow Centre
-      </p>
+      </Typography>
 
       <Box
         className="about-meher-baba"
@@ -51,9 +53,11 @@ function AboutMeherBaba() {
           href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap"
           rel="stylesheet"
         />
-        <p
-          className="about-meher-baba-content"
-          style={{ fontFamily: "DM Sans, sans-serif" }}
+        <Typography
+          variant="body1"
+          sx={{
+            fontFamily: "DM Sans, sans-serif",
+          }}
         >
           The Avatar Meher Baba Centre in Lucknow was inaugurated in Samar Vihar Colony 
           on 23rd October 1993, Dr. H.P. Bharucha, from Navsari. Initially gathering in homes, 
@@ -66,7 +70,7 @@ function AboutMeherBaba() {
           in 2018 underscore decades of dedication to spreading Baba's message of Love. 
           The Meher Baba lovers of Lucknow remain steadfast in their endeavor to uphold Baba's legacy 
           and share his teachings with the world.
-        </p>
+        </Typography>
 
         <img
           className="meher-baba-image"

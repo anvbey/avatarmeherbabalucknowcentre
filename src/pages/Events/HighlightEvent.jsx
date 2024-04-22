@@ -7,26 +7,21 @@ import Contact from "../../components/highlightEvent/Contact";
 
 import MeherPrem from "../../assets/Oct2024Banner.png";
 
+import "./HighlightEvent.css";
+
 const HighlightEvent = () => {
-
-  const imageRef = React.createRef();
-
   return (
     <Box
       display="flex"
       flexDirection="column"
       alignItems="center"
+      width="100vw"
     >
       <img
-        ref={imageRef}
+        className="highlight-image"
         src={MeherPrem}
         alt={"item.title"}
         loading="lazy"
-        style={{
-          borderRadius: "8px",
-          width: "90%",
-          maxHeight: "85vh"
-        }}
       />
       <Quotes />
       <AboutEvent />
@@ -42,8 +37,8 @@ const HighlightEvent = () => {
       >
         <Typography variant="h3">Session-wise Schedule</Typography>
         <Schedule />
-      </Box>*/}
-      <Contact /> 
+      </Box>
+      <Contact /> */}
     </Box>
   );
 };

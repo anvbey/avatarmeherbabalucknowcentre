@@ -1,5 +1,5 @@
 import React from "react";
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 import Bg from "../../assets/QuotesBg.png";
 
@@ -17,20 +17,33 @@ function Quotes() {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        margin: "10px 0",
-        padding: "10px"
+        margin: "30px 0",
+        padding: "10px",
+        width: "100%",
       }}
     >
       <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap"
         rel="stylesheet"
       />
-      <p className="quote" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+      <Typography
+          variant="body1"
+          sx={{
+            fontFamily: "DM Sans, sans-serif",
+            textAlign: "center",
+          }}
+        >
         "If you have the peace of a frozen lake, you will realize Me."
-      </p>
-      <p className="quote" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+      </Typography>
+      <Typography
+          variant="body1"
+          sx={{
+            fontFamily: "DM Sans, sans-serif",
+            textAlign: "center",
+          }}
+        >
         Meher Baba Calling
-      </p>
+      </Typography>
     </Box>
   );
 }

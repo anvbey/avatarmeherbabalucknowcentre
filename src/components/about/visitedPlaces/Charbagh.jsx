@@ -18,7 +18,6 @@ function Charbagh() {
       <div style={style}>
         <Box
           sx={{
-            float: "right",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
@@ -28,7 +27,7 @@ function Charbagh() {
           <img
             src={image}
             alt="description"
-            style={{ width: "300px", height: "200px" }}
+            style={{ width: "200px", height: "150px" }}
           />
           <Typography variant="body1">Charbagh Railway Station</Typography>
         </Box>
