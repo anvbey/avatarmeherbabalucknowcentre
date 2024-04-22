@@ -24,8 +24,8 @@ const GroupForm = () => {
     const { setValue, control, handleSubmit, register, watch, formState: { errors } } = useForm({
         resolver: zodResolver(groupFormSchema),
         defaultValues: {
-            firstName: '',
-            lastName: '',
+            first_name: '',
+            last_name: '',
             email: '',
             phone: '',
             city: '',
@@ -43,7 +43,15 @@ const GroupForm = () => {
         name: "members"
     })
 
-  
+    const handlePreview = () => {
+        const values = getValues();
+        if(values.first_name && values.last_name && values.phone && values.city && values.age && values.gender && values.numberOfMembers) {
+            setIsPreview({
+                bool: true,
+                members: values.numberOfMembers
+            });
+        }
+    }
 
     const handleChange = () => {
         const count = watch('numberOfMembers');
@@ -85,6 +93,7 @@ const GroupForm = () => {
             return;
         }
         fetch('https://3i11a61k0e.execute-api.ap-south-1.amazonaws.com/dev1/storeData', {
+            mode: 'cors',
             method: 'POST',
             headers: {
                 'x-api-key': 'C9yfSdhFSq24mNNSeQZMq8ybeYYqTwsi83g6jKLh',
@@ -99,6 +108,7 @@ const GroupForm = () => {
             toast.error(error.message);
         })
     }
+    
     return ( 
         <Box sx={{padding: '1.5% 5% 5% 5%'}}>
             <Box component="form" onSubmit={handleSubmit(onSubmit)} sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px'}}>
@@ -108,12 +118,12 @@ const GroupForm = () => {
             <Note />
             <Grid container spacing={3}>
                 <Grid item xs={6}>
-                    <TextField label="First Name" name="firstName" {...register('firstName')} required fullWidth />
-                    <p error={!!errors.firstName} style={{ color: 'red' }}>{errors.firstName?.message}</p>
+                    <TextField label="First Name" name="first_name" {...register('first_name')} required fullWidth />
+                    <p error={!!errors.first_name} style={{ color: 'red' }}>{errors.first_name?.message}</p>
                 </Grid>
                 <Grid item xs={6}>
-                    <TextField label="Last Name" name="lastName" {...register('lastName')} required fullWidth />
-                    <p error={!!errors.lastName} style={{ color: 'red' }}>{errors.lastName?.message}</p>
+                    <TextField label="Last Name" name="last_name" {...register('last_name')} required fullWidth />
+                    <p error={!!errors.last_name} style={{ color: 'red' }}>{errors.last_name?.message}</p>
                 </Grid>
                 <Grid item xs={6}>
                     <TextField label="Email (optional)" type="email" name="email" {...register('email')} fullWidth />
