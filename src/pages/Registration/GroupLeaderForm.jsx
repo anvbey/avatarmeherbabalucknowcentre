@@ -92,11 +92,22 @@ const GroupForm = () => {
             body: JSON.stringify({values})
         })
         .then(
-            toast.success('Form submitted successfully')
+            toast.success('Form submitted successfully', 
+            {duration: 5000}),
+            setTimeout(() => {
+                window.location.href = '/oct2024';
+            }, 3000) // Redirect after 3 seconds
         )
         .catch(error => {
             toast.error(error.message);
         })
+    }
+
+    function displaySuccessMessage(message) {
+        const successMessageElement = document.createElement('div');
+        successMessageElement.textContent = message;
+        successMessageElement.style.color = 'green';
+        document.body.appendChild(successMessageElement);
     }
     
     return ( 

@@ -30,7 +30,7 @@ function CentralHotel() {
             alt="description"
             style={{ width: "200px", height: "150px" }}
           />
-          <Typography variant="body1">Central Hotel, Aminabad</Typography>
+          <Typography variant="body1" style={{padding: "10px" }}>Central Hotel, Aminabad</Typography>
         </Box>
         <Typography variant="body1">
           In September 1943, there was news that Kolkata, Lucknow, and many other places in India 

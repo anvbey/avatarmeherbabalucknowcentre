@@ -40,7 +40,7 @@ function LordMeher() {
             alt="description"
             style={{ width: "200px", height: "150px" }}
           />
-          <Typography variant="body1">Lord Meher School</Typography>
+          <Typography variant="body1" style={{padding: "10px" }}>Lord Meher School</Typography>
         </Box>
       </div>
     </Box>

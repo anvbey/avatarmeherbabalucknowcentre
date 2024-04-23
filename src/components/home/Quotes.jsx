@@ -18,7 +18,7 @@ function Quotes({quote, reference}) {
         justifyContent: "center",
         alignItems: "center",
         margin: "30px 0",
-        padding: "10px",
+        padding: "10px 0",
         width: "100%",
       }}
     >

@@ -37,20 +37,6 @@ function AboutCentre() {
         Shahpurzaman ‘Aloba’ on 28th November 1996 and the first session of the High School 
         was inaugurated by the then Chairman of Avatar Meher Baba Perpetual Public Charitable 
         Trust, Shri. Bhau Kalchuri on 21st March 2000. <br/><br/>
-
-        A stall was set up by AMB Centre, Lucknow in Lucknow Book Fair from 7th – 16th April 2017. 
-        It had a huge collection of Baba books and people visiting the fair were attracted towards 
-        the stall and curious to know about Baba.<br/><br/>
-
-        To celebrate the Silver Jubilee of the AMBC, Lucknow, a two-day event was organized on 
-        22nd -23rd October 2018 at Ganga Prasad Verma Memorial Hall, where Baba had held His poor 
-        feeding program on 23rd October 1943, in which witnessed enthusiastic participation by Baba 
-        lovers from various locations of the country.<br/><br/>
-
-        The Baba lovers of Lucknow remain ever zealous to keep working for Beloved Baba’s 
-        cause and spread His message of Love and Truth among the masses through many more 
-        Baba programs and related activities in the times to come.<br/><br/>
-
         </Typography>
       </Box>
       <Typography variant="h4" sx={{ fontFamily: "Playfair Display, serif" }}>
@@ -69,9 +55,11 @@ function AboutCentre() {
           <img
             src={amblko}
             alt="description"
-            style={{ maxWidth: "100%", height: "auto" }} // Modified style here
+            style={{ maxWidth: "70%", height: "auto", borderRadius: "8px"}} // Modified style here
           />
-          <Typography variant="body1">Meher Baba's Birthday Celebration at Centre</Typography>
+          <Typography variant="body1" style={{padding: "10px" }} >
+            Meher Baba's Birthday Celebration at Centre
+            </Typography>
         </Box>
         <Typography variant="body1">
         A stall was set up by AMB Centre, Lucknow in Lucknow Book Fair from 7th – 16th April 2017. 

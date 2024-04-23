@@ -30,7 +30,7 @@ function VermaMemorialHall() {
             alt="description"
             style={{ width: "200px", height: "150px" }}
           />
-          <Typography variant="body1" >Foundation information of Ganga Prasad Verma Memorial Hall</Typography>
+          <Typography variant="body1" style={{padding: "10px" }}>Foundation information of Ganga Prasad Verma Memorial Hall</Typography>
         </Box>
         <Typography variant="body1">
           On 23rd October 1943, with the help of the members of the Ram Teerth Publication League, 
