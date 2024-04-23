@@ -1,7 +1,7 @@
 import React from "react";
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
+import { List, ListItem } from "@mui/joy";
 import "./Contact.css";
-
 
 const VerticalDividerMiddle = () => {
   return (
@@ -14,12 +14,14 @@ const VerticalDividerMiddle = () => {
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap"
         rel="stylesheet"
       />
-      <p
-        className="contact-heading"
-        style={{ fontFamily: "Playfair Display SC, serif" }}
+      <Typography
+        variant="h4"
+        sx={{
+          fontFamily: "Playfair Display SC, serif",
+        }}
       >
         Contact
-      </p>
+      </Typography>
       <Box
         sx={{
           display: "flex",
@@ -30,34 +32,76 @@ const VerticalDividerMiddle = () => {
         <Box
           sx={{
             display: "flex",
-            flexDirection: "row",
+            flexDirection: "column",
             alignItems: "flex-start",
           }}
         >
-          <p className="contact-content" style={{ fontFamily: "DM Sans, sans-serif" }}>Accommodation:</p>
-          <p className="contact-content" style={{ fontFamily: "DM Sans, sans-serif" }}>
-            (+91) 123 456 7890
-          </p>
-          <p style={{ fontFamily: 'DM Sans, sans-serif' }}>Accommodation:</p>
-          <p style={{ fontFamily: 'DM Sans, sans-serif' }}>Mr. Amit Sharma - </p>
-          <p style={{ fontFamily: 'DM Sans, sans-serif' }}>(+91) 9794839059</p>
-          <p style={{ fontFamily: 'DM Sans, sans-serif' }}>Mr. Nitin Dubey - </p>
-          <p style={{ fontFamily: 'DM Sans, sans-serif' }}>(+91) 9654985984</p>
+          <Typography
+            variant="h6"
+            sx={{
+              fontFamily: "DM Sans, sans-serif",
+            }}
+          >
+            Accommodation:
+          </Typography>
+          <Box>
+            <List>
+              <List marker="disc">
+                <ListItem>
+                  <Typography
+                    variant="body1"
+                    sx={{
+                      fontFamily: "DM Sans, sans-serif",
+                    }}
+                  >
+                    Mr. Sanjay Dubey: (+91) 123 456 7890
+                  </Typography>
+                </ListItem>
+                <ListItem>
+                  <Typography
+                    variant="body1"
+                    sx={{
+                      fontFamily: "DM Sans, sans-serif",
+                    }}
+                  >
+                    Mr. Sanjay Dubey: (+91) 123 456 7890
+                  </Typography>
+                </ListItem>
+              </List>
+            </List>
+          </Box>
         </Box>
         <Box
           sx={{
             display: "flex",
-            flexDirection: "row",
+            flexDirection: "column",
             alignItems: "flex-start",
           }}
         >
-          <p style={{ fontFamily: 'DM Sans, sans-serif' }}>General:</p>
-          <p style={{ fontFamily: 'DM Sans, sans-serif' }}>Mr. Sanjay Dubey - </p>
-          <p style={{ fontFamily: 'DM Sans, sans-serif' }}>(+91) 9415469415</p>
-          <p className="contact-content" style={{ fontFamily: "DM Sans, sans-serif" }}>General:</p>
-          <p className="contact-content" style={{ fontFamily: "DM Sans, sans-serif" }}>
-            (+91) 123 456 7890
-          </p>
+          <Typography
+            variant="h6"
+            sx={{
+              fontFamily: "DM Sans, sans-serif",
+            }}
+          >
+            General Information:
+          </Typography>
+          <Box>
+            <List>
+              <List marker="disc">
+                <ListItem>
+                  <Typography
+                    variant="body1"
+                    sx={{
+                      fontFamily: "DM Sans, sans-serif",
+                    }}
+                  >
+                    Mr. Sanjay Dubey: (+91) 123 456 7890
+                  </Typography>
+                </ListItem>
+              </List>
+            </List>
+          </Box>
         </Box>
       </Box>
     </Box>

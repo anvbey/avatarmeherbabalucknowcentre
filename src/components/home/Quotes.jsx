@@ -3,7 +3,6 @@ import { Box, Typography } from "@mui/material";
 
 import Bg from "../../assets/QuotesBg.png";
 
-import "./Quotes.css";
 
 function Quotes({quote, reference}) {
   return (

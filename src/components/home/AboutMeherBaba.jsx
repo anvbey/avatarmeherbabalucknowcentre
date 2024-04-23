@@ -2,9 +2,7 @@ import React, { useRef, useEffect } from "react";
 import { Box, Typography } from "@mui/material";
 
 import Netting from "../../assets/mb1.jpg";
-
 import "./AboutMeherBaba.css";
-
 function AboutMeherBaba() {
   const imageRef = useRef(null);
 
@@ -21,11 +19,9 @@ function AboutMeherBaba() {
     <Box
       className="about-meher-baba-container"
       sx={{
+        width: "90%",
         display: "flex",
         flexDirection: "column",
-        justifyContent: "flex-start",
-        alignItems: "flex-start",
-        margin: "0 40px",
       }}
     >
       <link
@@ -33,6 +29,7 @@ function AboutMeherBaba() {
         href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&display=swap"
       />
       <Typography
+        className="about-meher-baba-title"
         variant="h4"
         sx={{
           fontFamily: "Playfair Display SC, serif",
@@ -59,14 +56,14 @@ function AboutMeherBaba() {
             fontFamily: "DM Sans, sans-serif",
           }}
         >
-          Meher Baba, the Avatar. “Meher Baba” means “Compassionate Father.” It
+          Meher Baba, the Avatar. “Meher Baba” means “Compassionate Father.” It
           is the name given to Him, their spiritual Master, by a group of His
           disciples in the early 1920s after signs of His spiritual status
           became apparent. Today, many thousands of people from every religious
-          tradition regard Meher Baba as the one long awaited — the Prophet, the
+          tradition regard Meher Baba as the one long-awaited — the Prophet, the
           Buddha, the Christ, the Messiah of this age. Most commonly in India,
           He is referred to as the “Avatar,” a Sanskrit word meaning “descent of
-          God.” Meher Baba, the Avatar. 
+          God.” Meher Baba, the Avatar.
         </Typography>
 
         <img
@@ -77,6 +74,15 @@ function AboutMeherBaba() {
           loading="lazy"
           style={{ borderRadius: "10px" }}
         />
+        <Typography
+          variant="body1"
+          sx={{
+            fontFamily: "DM Sans, sans-serif",
+          }}
+          style={{ padding: "10px" }}
+        >
+          Iron Bridge, Lucknow
+        </Typography>
       </Box>
     </Box>
   );
