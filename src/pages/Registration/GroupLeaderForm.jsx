@@ -2,7 +2,6 @@ import { useState } from "react";
 import toast, { Toaster } from 'react-hot-toast';
 import { DateTimePicker } from '@mui/x-date-pickers/DateTimePicker';
 import dayjs from 'dayjs';
-import axios from 'axios';
 import { groupFormSchema } from "../../lib/formSchema/registrationFormSchema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm, useFieldArray } from "react-hook-form";
@@ -101,13 +100,6 @@ const GroupForm = () => {
         .catch(error => {
             toast.error(error.message);
         })
-    }
-
-    function displaySuccessMessage(message) {
-        const successMessageElement = document.createElement('div');
-        successMessageElement.textContent = message;
-        successMessageElement.style.color = 'green';
-        document.body.appendChild(successMessageElement);
     }
     
     return ( 

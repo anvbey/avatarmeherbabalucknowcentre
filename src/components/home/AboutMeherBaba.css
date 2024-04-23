@@ -11,11 +11,6 @@
   font-weight: bold;
 }
 
-.meher-baba-image {
-  width: 80%;
-  height: 150px;
-}
-
 @media screen and (max-width: 365px) {
   .about-meher-baba {
     flex-direction: column;
@@ -54,6 +49,7 @@
     height: 230px;
   }
 }
+
 @media screen and (min-width: 525px) {
   .about-meher-baba {
     flex-direction: column;

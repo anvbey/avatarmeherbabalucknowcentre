@@ -4,12 +4,16 @@ import ironBridge from "../../../assets/ironBridge.jpg";
 
 function IronBridge() {
   return (
-    <Box>
-      <Typography variant="h4" sx={{ fontFamily: 'Playfair Display, serif' }}>Iron Bridge</Typography>
+    <Box sx={{
+      margin: "20px 0"
+    }}>
+      <Typography variant="h4" sx={{ fontFamily: "Playfair Display, serif" }}>
+        Iron Bridge
+      </Typography>
       <Box sx={{ display: "block" }}>
         <Box
           sx={{
-            float: "right",
+            float: "center",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
@@ -19,11 +23,24 @@ function IronBridge() {
           <img
             src={ironBridge}
             alt="description"
-            style={{ width: "200px", height: "150px" }}
+            style={{ width: "300px", height: "300px" }}
           />
-          <Typography variant="body1" style={{padding: "10px" }}>Iron Bridge, Lucknow</Typography>
+          <Typography
+            variant="body1"
+            sx={{
+              fontFamily: "DM Sans, sans-serif",
+            }}
+            style={{ padding: "10px" }}
+          >
+            Iron Bridge, Lucknow
+          </Typography>
         </Box>
-        <Typography variant="body1">
+        <Typography
+          variant="body1"
+          sx={{
+            fontFamily: "DM Sans, sans-serif",
+          }}
+        >
           In February 1941, when Baba was on His travel to various locations of
           North India, Baba came to Lucknow and contacted Masts. During this
           visit, He first met Nasiban Mastani, a mast of the 6th plane who used

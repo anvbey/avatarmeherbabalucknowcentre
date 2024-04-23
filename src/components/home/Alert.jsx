@@ -3,14 +3,14 @@ import Box from '@mui/material/Box';
 import Alert from '@mui/material/Alert';
 import IconButton from '@mui/material/IconButton';
 import Collapse from '@mui/material/Collapse';
-import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
 import CloseIcon from '@mui/icons-material/Close';
 
 export default function TransitionAlerts() {
   const [open, setOpen] = React.useState(true);
 
   return (
-    <Box sx={{ width: '100%' }}>
+    <Box sx={{ width: '90%' }}>
       <Collapse in={open}>
         <Alert
         severity="info"
@@ -28,7 +28,15 @@ export default function TransitionAlerts() {
           }
           sx={{ mb: 2 }}
         >
-          To register for Meher Prem Sammelan Oct'2024 [Click Here!]
+        <Typography
+        variant="body1"
+        sx={{
+          fontFamily: "DM Sans, sans-serif",
+        }}
+      >To register for Meher Prem Sammelan Oct'2024, <a href='/oct2024/register' style={{
+        fontWeight: "bold",
+      }}>Click Here!</a>
+      </Typography>
         </Alert>
       </Collapse>
     </Box>

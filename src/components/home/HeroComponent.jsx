@@ -26,7 +26,7 @@ function HeroComponent() {
         muted
         controls={false}
         width="90%"
-        maxHeight="85vh"
+        max-height="85vh"
         controlsList="nodownload"
         className="videoPlayer"
         src={video}
