@@ -72,7 +72,7 @@ function AboutMeherBaba() {
           src={Netting}
           alt={"item.title"}
           loading="lazy"
-          style={{ borderRadius: "10px" }}
+          style={{ borderRadius: "10px", margin: "20px"}}
         />
         <Typography
           variant="body1"

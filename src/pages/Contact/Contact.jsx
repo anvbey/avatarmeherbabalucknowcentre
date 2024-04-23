@@ -45,6 +45,7 @@ const ContactForm = () => {
           variant="h3"
           sx={{
             fontFamily: "Playfair Display SC, serif",
+            wordBreak: "break-all",
           }}
         >
           Connect with us
@@ -56,6 +57,7 @@ const ContactForm = () => {
             textAlign: "left",
             marginBottom: "16px",
             fontFamily: "Playfair Display, serif",
+            wordBreak: "break-all",
           }}
         >
           We would love to respond to your queries. <br />
@@ -80,6 +82,7 @@ const ContactForm = () => {
                 marginBottom: "16px",
                 textAlign: "left",
                 fontFamily: "DM Sans, sans-serif",
+                wordBreak: "break-all",
               }}
             >
               Send your request
@@ -142,6 +145,61 @@ const ContactForm = () => {
                 </Button>
               </Box>
             </form>
+
+            {isSmallScreen && (
+              <Box  p={3}  sx={{
+                marginTop: "10px",
+                color: "white",
+                backgroundColor: "#C4C698",
+                borderRadius: "0 0 16px 16px",
+              }}>
+                <Typography
+                  variant="h6"
+                  sx={{
+                    marginBottom: "16px",
+                    textAlign: "left",
+                    fontFamily: "DM Sans, sans-serif",
+                    wordBreak: "break-all",
+                  }}
+                >
+                  Reach Us
+                </Typography>
+                <Typography
+                  variant="body1"
+                  sx={{
+                    marginBottom: "8px",
+                    textAlign: "left",
+                    fontFamily: "DM Sans, sans-serif",
+                    wordBreak: "break-all", // Allow breaking long words
+                  }}
+                >
+                  Email: avatarmeherbabalucknowcentre@gmail.com
+                </Typography>
+                <Typography
+                  variant="body1"
+                  sx={{
+                    marginBottom: "8px",
+                    textAlign: "left",
+                    fontFamily: "DM Sans, sans-serif",
+                    wordBreak: "break-all",
+                  }}
+                >
+                  Phone: +91 9415 46 9415
+                </Typography>
+                <Typography
+                  variant="body1"
+                  sx={{
+                    marginBottom: "8px",
+                    textAlign: "left",
+                    fontFamily: "DM Sans, sans-serif",
+                    wordBreak: "break-all",
+                  }}
+                >
+                  Address: 169, Samar Vihar Colony, Alambagh, Lucknow, Uttar
+                  Pradesh, India. 226005
+                </Typography>
+              </Box>
+            )}
           </Box>
 
           {/* Right side with contact information */}
@@ -153,6 +211,7 @@ const ContactForm = () => {
                   marginBottom: "16px",
                   textAlign: "left",
                   fontFamily: "DM Sans, sans-serif",
+                  wordBreak: "break-all",
                 }}
               >
                 Reach Us
@@ -163,9 +222,10 @@ const ContactForm = () => {
                   marginBottom: "8px",
                   textAlign: "left",
                   fontFamily: "DM Sans, sans-serif",
+                  wordBreak: "break-all",
                 }}
               >
-                Email: avatarmeherbabalucknow centre@gmail.com
+                Email: avatarmeherbabalucknowcentre@gmail.com
               </Typography>
               <Typography
                 variant="body1"
@@ -173,6 +233,7 @@ const ContactForm = () => {
                   marginBottom: "8px",
                   textAlign: "left",
                   fontFamily: "DM Sans, sans-serif",
+                  wordBreak: "break-all",
                 }}
               >
                 Phone: +91 9415 46 9415
@@ -183,6 +244,7 @@ const ContactForm = () => {
                   marginBottom: "8px",
                   textAlign: "left",
                   fontFamily: "DM Sans, sans-serif",
+                  wordBreak: "break-all",
                 }}
               >
                 Address: 169, Samar Vihar Colony, Alambagh, Lucknow, Uttar
