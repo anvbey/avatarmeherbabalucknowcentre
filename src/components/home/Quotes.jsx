@@ -5,7 +5,7 @@ import Bg from "../../assets/QuotesBg.png";
 
 import "./Quotes.css";
 
-function Quotes() {
+function Quotes({quote, reference}) {
   return (
     <Box
       className="Quotes"
@@ -33,7 +33,7 @@ function Quotes() {
             textAlign: "center",
           }}
         >
-        "If you have the peace of a frozen lake, you will realize Me."
+        {quote}
       </Typography>
       <Typography
           variant="body1"
@@ -42,7 +42,7 @@ function Quotes() {
             textAlign: "center",
           }}
         >
-        Meher Baba Calling
+        {reference}
       </Typography>
     </Box>
   );

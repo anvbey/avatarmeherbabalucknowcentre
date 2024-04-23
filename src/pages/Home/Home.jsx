@@ -17,9 +17,9 @@ function Home() {
     >
       <Alert/>
       <HeroComponent />
-      <Quotes />
+      <Quotes quote={"If you have the peace of a frozen lake, you will realize Me."} reference={"Meher Baba Calling"}/>
       <AboutMeherBaba />
-      <Quotes />
+      <Quotes quote={"quote"} reference={"reference"}/>
       <AboutLucknowCentre />
     </Box>
   );

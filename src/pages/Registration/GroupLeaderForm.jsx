@@ -43,16 +43,6 @@ const GroupForm = () => {
         name: "members"
     })
 
-    const handlePreview = () => {
-        const values = getValues();
-        if(values.first_name && values.last_name && values.phone && values.city && values.age && values.gender && values.numberOfMembers) {
-            setIsPreview({
-                bool: true,
-                members: values.numberOfMembers
-            });
-        }
-    }
-
     const handleChange = () => {
         const count = watch('numberOfMembers');
         setIsPreview({
