@@ -1,177 +1,22 @@
-.about-meher-baba-container {
-  flex-direction: column;
-}
-
-.about-meher-baba-content {
-  text-align: justify;
-  width: 100%;
-}
-
-.about-meher-baba-heading {
-  font-weight: bold;
-}
-
-.meher-baba-image {
-  width: 80%;
-  height: 150px;
-}
-
-@media screen and (max-width: 365px) {
-  .about-meher-baba {
-    flex-direction: column;
-  }
-  .about-meher-baba-container {
-    flex-direction: column;
-    justify-content: center;
-  }
-  .about-meher-baba-content {
-    font-size: 8px;
-  }
-  .about-meher-baba-heading {
-    font-size: 16px;
-  }
-  .meher-baba-image {
-    width: 200px;
-    height: 170px;
-  }
-}
-
-@media screen and (min-width: 366px) {
-  .about-meher-baba {
-    flex-direction: column;
-  }
-  .about-meher-baba-container {
-    flex-direction: column;
-  }
-  .about-meher-baba-content {
-    font-size: 10px;
-  }
-  .about-meher-baba-heading {
-    font-size: 20px;
-  }
-  .meher-baba-image {
-    width: 300px;
-    height: 230px;
-  }
-}
-@media screen and (min-width: 525px) {
-  .about-meher-baba {
+@media (max-width: 984px) {
+  .about-meher-baba-container{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
-  .about-meher-baba-container {
+  .about-meher-baba {
     flex-direction: column;
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center all text */
   }
-  .about-meher-baba-content {
-    font-size: 10px;
-  }
-  .about-meher-baba-heading {
-    font-size: 16px;
-    font-weight: bold;
-  }
+
   .meher-baba-image {
-    width: 350px;
-    height: 250px;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  .about-meher-baba {
-    flex-direction: row;
-  }
-  .about-meher-baba-container {
-    flex-direction: column;
-  }
-  .about-meher-baba-content {
-    font-size: 10px;
-  }
-  .about-meher-baba-heading {
-    font-size: 16px;
-    font-weight: bold;
-  }
-  .meher-baba-image {
-    width: 350px;
-    height: 250px;
-
-    margin: 0 0 0 40px;
-  }
-}
-
-@media screen and (min-width: 683px) {
-  .about-meher-baba {
-    flex-direction: row;
-  }
-  .about-meher-baba-content {
-    font-size: 10px;
-  }
-  .about-meher-baba-heading {
-    font-size: 16px;
-    font-weight: bold;
-  }
-  .meher-baba-image {
-    width: 350px;
-    height: 250px;
-
-    margin: 0 0 0 40px;
-  }
-}
-
-@media screen and (min-width: 850px) {
-  .about-meher-baba {
-    flex-direction: row;
-  }
-  .about-meher-baba-content {
-    font-size: 13px;
-  }
-  .about-meher-baba-heading {
-    font-size: 20px;
-    font-weight: bold;
-  }
-  .meher-baba-image {
-    width: 400px;
-    height: 300px;
-
-    margin: 0 0 0 40px;
-  }
-}
-
-@media screen and (min-width: 1089px) {
-  .about-meher-baba {
-    flex-direction: row;
-  }
-  .about-meher-baba-content {
-    font-size: 16px;
-  }
-  .about-meher-baba-heading {
-    font-size: 25px;
-    font-weight: bold;
-  }
-  .meher-baba-image {
-    width: 500px;
-    height: 350px;
-
-    margin: 0 0 0 40px;
-  }
-}
-
-@media screen and (min-width: 1459px) {
-  .about-meher-baba {
-    flex-direction: row;
-  }
-  .about-meher-baba-content {
-    font-size: 30px;
-  }
-  .about-meher-baba-heading {
-    font-size: 40px;
-    font-weight: bold;
-  }
-  .meher-baba-image {
-    width: 600px;
-    height: 400px;
-
-    margin: 0 0 0 40px;
+    order: -1;
+    width: 80%; /* Occupy full width */
+    max-width: 100%; /* Limit to container width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px;
+    object-fit: contain; /* Maintain aspect ratio without distortion */
   }
 }

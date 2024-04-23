@@ -21,7 +21,7 @@ function Home() {
       <HeroComponent />
       <Quotes quote={"If you have the peace of a frozen lake, you will realize Me."} reference={"Meher Baba Calling"}/>
       <AboutMeherBaba />
-      <Quotes quote={"quote"} reference={"reference"}/>
+      <Quotes quote={"Wage war against your desires and Godhood will be your victory.	"} reference={"Meher Baba Calling"}/>
       <AboutLucknowCentre />
     </Box>
   );

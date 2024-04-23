@@ -2,9 +2,7 @@ import React, { useRef, useEffect } from "react";
 import { Box, Typography } from "@mui/material";
 
 import Netting from "../../assets/LucknowCentre.jpeg";
-
 import "./AboutLucknowCentre.css";
-
 function AboutMeherBaba() {
   const imageRef = useRef(null);
 
@@ -21,11 +19,9 @@ function AboutMeherBaba() {
     <Box
       className="about-meher-baba-container"
       sx={{
+        width: "90%",
         display: "flex",
         flexDirection: "column",
-        justifyContent: "flex-start",
-        alignItems: "flex-start",
-        margin: "0 40px",
       }}
     >
       <link
@@ -33,6 +29,7 @@ function AboutMeherBaba() {
         href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&display=swap"
       />
       <Typography
+        className="about-meher-baba-title"
         variant="h4"
         sx={{
           fontFamily: "Playfair Display SC, serif",
@@ -59,17 +56,21 @@ function AboutMeherBaba() {
             fontFamily: "DM Sans, sans-serif",
           }}
         >
-          The Avatar Meher Baba Centre in Lucknow was inaugurated in Samar Vihar Colony 
-          on 23rd October 1993, Dr. H.P. Bharucha, from Navsari. Initially gathering in homes, 
-          the Meher Baba lovers community gradually expanded its reach. Monthly satsangs on the 
-          first Sunday and 23rd day of each month from 6 PM to 8 PM are held for Meher Baba lovers 
-          to gather and sing in His praise and learn from His teachings through the medium of talks.
-          Annual celebrations including Baba's birthday and commemorating His visits to Lucknow, are observed with reverence. 
-          Additionally, initiatives such as the Lord Meher School, founded in 1996, reflect 
-          Baba lovers' commitment to Meher Baba's teachings. Noteworthy events like the Silver Jubilee celebration 
-          in 2018 underscore decades of dedication to spreading Baba's message of Love. 
-          The Meher Baba lovers of Lucknow remain steadfast in their endeavor to uphold Baba's legacy 
-          and share his teachings with the world.
+          The Avatar Meher Baba Centre in Lucknow was inaugurated in Samar Vihar
+          Colony on 23rd October 1993, Dr. H.P. Bharucha, from Navsari.
+          Initially gathering in homes, the Meher Baba lovers community
+          gradually expanded its reach. Monthly satsangs on the first Sunday and
+          23rd day of each month from 6 PM to 8 PM are held for Meher Baba
+          lovers to gather and sing in His praise and learn from His teachings
+          through the medium of talks. Annual celebrations including Baba's
+          birthday and commemorating His visits to Lucknow, are observed with
+          reverence. Additionally, initiatives such as the Lord Meher School,
+          founded in 1996, reflect Baba lovers' commitment to Meher Baba's
+          teachings. Noteworthy events like the Silver Jubilee celebration in
+          2018 underscore decades of dedication to spreading Baba's message of
+          Love. The Meher Baba lovers of Lucknow remain steadfast in their
+          endeavor to uphold Baba's legacy and share his teachings with the
+          world.
         </Typography>
 
         <img

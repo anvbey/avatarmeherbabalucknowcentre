@@ -23,9 +23,17 @@ const HighlightEvent = () => {
         alt={"item.title"}
         loading="lazy"
       />
-      <Quotes />
+      <Quotes
+        quote={
+          "If you do obey Me one hundred per cent with all sincerity, at any cost, it will be greater than lov ing Me."
+        }
+        reference={"Meher Baba Calling"}
+      />
       <AboutEvent />
-      <Quotes />
+      <Quotes quote={
+        "I have only one Message to give; and I repeat it age after age to one and all: LOVE GOD."
+      }
+      reference={"Meher Baba Calling"}/>
       {/*<Box
         sx={{
           display: "flex",
@@ -37,8 +45,8 @@ const HighlightEvent = () => {
       >
         <Typography variant="h3">Session-wise Schedule</Typography>
         <Schedule />
-      </Box>
-      <Contact /> */}
+      </Box>*/}
+      <Contact />
     </Box>
   );
 };
