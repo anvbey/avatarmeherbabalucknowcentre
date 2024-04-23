@@ -3,7 +3,7 @@ import { Box, Typography } from "@mui/material";
 
 import Netting from "../../assets/LucknowCentre.jpeg";
 
-import "./AboutMeherBaba.css";
+import "./AboutLucknowCentre.css";
 
 function AboutMeherBaba() {
   const imageRef = useRef(null);

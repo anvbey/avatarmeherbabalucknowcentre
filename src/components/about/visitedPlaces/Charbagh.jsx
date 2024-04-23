@@ -4,18 +4,14 @@ import image from "../../../assets/charbagh.png";
 
 function Charbagh() {
   
-  const style={
-    '@media(minWidth: 780px)': {
-      backgroundColor: 'red'
-    }, 
-    '@media(minWidth: 380px)': {
-      backgroundColor: 'black'
-    }}
-
   return (
-    <Box>
-      <Typography variant="h4" sx={{ fontFamily: 'Playfair Display, serif' }}>Charbagh Railway Station</Typography>
-      <div style={style}>
+    <Box sx={{
+      margin: "20px 0"
+    }}>
+      <Typography variant="h4" sx={{ fontFamily: "Playfair Display, serif" }}>
+        Charbagh Railway Station
+      </Typography>
+      <Box>
         <Box
           sx={{
             display: "flex",
@@ -27,20 +23,30 @@ function Charbagh() {
           <img
             src={image}
             alt="description"
-            style={{ width: "200px", height: "150px" }}
+            style={{ width: "300px", height: "250px" }}
           />
-          <Typography variant="body1" style={{padding: "10px" }}>Charbagh Railway Station</Typography>
+          <Typography variant="body1" style={{ padding: "10px" }}>
+            Charbagh Railway Station
+          </Typography>
         </Box>
-        <Typography variant="body1">
-          Meher Baba visited Lucknow 7 times during His physical life. He came to Lucknow from various 
-          locations across different times by train and hence, visited the Charbagh Railway station. 
-          Sometimes, He visited the Charbagh Railway Station only to catch His connecting trains. 
-          When He came to Lucknow for the first time in March 1924, He got down the train traveling 
-          from Hyderabad to Nepal via Lucknow at the halt to buy sandals outside the railway station. 
-          On 19th August 1924, Baba changed trains at Lucknow while traveling from Moradabad to Bhopal. 
-          In February 1954, He came to Lucknow from Meherastana via Kanpur and caught a train from Lucknow to Mahabaleshwar.
+        <Typography
+          variant="body1"
+          sx={{
+            fontFamily: "DM Sans, sans-serif",
+          }}
+        >
+          Meher Baba visited Lucknow 7 times during His physical life. He came
+          to Lucknow from various locations across different times by train and
+          hence, visited the Charbagh Railway station. Sometimes, He visited the
+          Charbagh Railway Station only to catch His connecting trains. When He
+          came to Lucknow for the first time in March 1924, He got down the
+          train traveling from Hyderabad to Nepal via Lucknow at the halt to buy
+          sandals outside the railway station. On 19th August 1924, Baba changed
+          trains at Lucknow while traveling from Moradabad to Bhopal. In
+          February 1954, He came to Lucknow from Meherastana via Kanpur and
+          caught a train from Lucknow to Mahabaleshwar.
         </Typography>
-      </div>
+      </Box>
     </Box>
   );
 }

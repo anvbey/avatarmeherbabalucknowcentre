@@ -36,7 +36,6 @@ const ContactForm = () => {
         <Typography
           variant="h3"
           sx={{
-            textAlign: "left",
             fontFamily: "Playfair Display SC, serif",
           }}
         >
@@ -47,7 +46,6 @@ const ContactForm = () => {
           variant="h6"
           sx={{
             textAlign: "left",
-            fontSize: "14px",
             marginBottom: "16px",
             fontFamily: "Playfair Display, serif",
           }}
@@ -73,7 +71,7 @@ const ContactForm = () => {
               sx={{
                 marginBottom: "16px",
                 textAlign: "left",
-                fontFamily: "Playfair Display SC, serif",
+                fontFamily: "DM Sans, sans-serif",
               }}
             >
               Send your request
@@ -146,40 +144,41 @@ const ContactForm = () => {
                 sx={{
                   marginBottom: "16px",
                   textAlign: "left",
-                  fontFamily: "Playfair Display SC, serif",
+                  fontFamily: "DM Sans, sans-serif",
                 }}
               >
                 Reach Us
               </Typography>
               <Typography
-                variant="body2"
+                variant="body1"
                 sx={{
                   marginBottom: "8px",
                   textAlign: "left",
-                  fontFamily: "Playfair Display, serif",
+                  fontFamily: "DM Sans, sans-serif",
                 }}
               >
-                Email: avatarmeherbabalucknowcentre@gmail.com
+                Email: avatarmeherbabalucknow centre@gmail.com
               </Typography>
               <Typography
-                variant="body2"
+                variant="body1"
                 sx={{
                   marginBottom: "8px",
                   textAlign: "left",
-                  fontFamily: "Playfair Display, serif",
+                  fontFamily: "DM Sans, sans-serif",
                 }}
               >
                 Phone: +91 9415 46 9415
               </Typography>
               <Typography
-                variant="body2"
+                variant="body1"
                 sx={{
                   marginBottom: "8px",
                   textAlign: "left",
-                  fontFamily: "Playfair Display, serif",
+                  fontFamily: "DM Sans, sans-serif",
                 }}
               >
-                Address: 169, Samar Vihar Colony, Alambagh, Lucknow, Uttar Pradesh, India. 226005
+                Address: 169, Samar Vihar Colony, Alambagh, Lucknow, Uttar
+                Pradesh, India. 226005
               </Typography>
             </Box>
           )}
