@@ -30,7 +30,7 @@ function BegumAkhtar() {
             alt="description"
             style={{ width: "150px", height: "200px" }}
           />
-          <Typography variant="body1">Begum Akhtar's Tomb</Typography>
+          <Typography variant="body1" style={{padding: "10px"}}>Begum Akhtar's Tomb</Typography>
         </Box>
         <Typography variant="body1">
           Begum Akhtar, also known as “Mallika-e-Ghazal” (Queen of Ghazals) lived in Lucknow. 

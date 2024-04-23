@@ -29,7 +29,7 @@ function Charbagh() {
             alt="description"
             style={{ width: "200px", height: "150px" }}
           />
-          <Typography variant="body1">Charbagh Railway Station</Typography>
+          <Typography variant="body1" style={{padding: "10px" }}>Charbagh Railway Station</Typography>
         </Box>
         <Typography variant="body1">
           Meher Baba visited Lucknow 7 times during His physical life. He came to Lucknow from various 
