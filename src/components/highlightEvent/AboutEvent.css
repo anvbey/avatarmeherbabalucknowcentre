@@ -22,6 +22,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      text-align: center;
     }
     .meher-prem-content {
       font-size: 8px;
@@ -43,6 +44,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      text-align: center;
     }
     .meher-prem-content {
       font-size: 10px;
@@ -161,6 +163,14 @@
     }
     .meher-prem-heading{
       text-align: center;
+    }
+  }
+
+  @media screen and (min-width: 950px) {
+    .about-meher-prem-container{
+      justify-content: flex-start;
+      align-items: flex-start;
+      text-align: left;
     }
   }
   

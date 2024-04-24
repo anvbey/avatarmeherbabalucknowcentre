@@ -7,7 +7,7 @@ function Present() {
   return (
     <Box id="present">
       <Typography
-        variant="h3"
+        variant="h4"
         sx={{
           marginBottom: "20px",
           fontFamily: "Playfair Display SC, serif",

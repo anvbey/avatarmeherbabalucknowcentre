@@ -32,7 +32,7 @@ function Quotes({quote, reference}) {
             textAlign: "center",
           }}
         >
-        {quote}
+        "{quote}"
       </Typography>
       <Typography
           variant="body1"
@@ -41,7 +41,7 @@ function Quotes({quote, reference}) {
             textAlign: "center",
           }}
         >
-        {reference}
+        - {reference}
       </Typography>
     </Box>
   );

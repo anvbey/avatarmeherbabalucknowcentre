@@ -8,7 +8,7 @@ function CentralHotel() {
     <Box sx={{
       margin: "20px 0"
     }}>
-      <Typography variant="h4" sx={{ fontFamily: "Playfair Display, serif" }}>
+      <Typography variant="h5" sx={{ fontFamily: "Playfair Display, serif" }}>
         Central Hotel, Aminabad
       </Typography>
       <Box >

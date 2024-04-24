@@ -1,5 +1,5 @@
 import React from "react";
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 import Overview from "../../components/about/Overview";
 import Timeline from "../../components/about/Timeline";
@@ -16,9 +16,14 @@ const About = () => {
       <Timeline />
       <Present />
       <Places />
-      <Box sx={{ marginTop: "10px" }}>
+      <Box id="documentary">
+      <Typography variant="h5" sx={{ fontFamily: "Playfair Display, serif" }}>
+        Documentary about the above-mentioned places -
+      </Typography>
+        <Box sx={{ marginTop: "10px" }}>
         <YouTubeEmbed />
       </Box>
+    </Box>
     </Box>
   );
 };

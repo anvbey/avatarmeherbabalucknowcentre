@@ -18,7 +18,7 @@ function Timeline() {
       }}
     >
       <Typography
-        variant="h3"
+        variant="h4"
         sx={{ fontFamily: "Playfair Display SC, serif" }}
       >
         Chronology of Meher Baba’s Lucknow Visits

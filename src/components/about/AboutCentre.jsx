@@ -56,7 +56,7 @@ function AboutCentre() {
           <br />
         </Typography>
       </Box>
-      <Typography variant="h4" sx={{ fontFamily: "Playfair Display, serif" }}>
+      <Typography variant="h5" sx={{ fontFamily: "Playfair Display, serif" }}>
         The Centre in recent times:
       </Typography>
       <Box sx={{ display: "block" }}>
@@ -90,6 +90,11 @@ function AboutCentre() {
             fontFamily: "DM Sans, sans-serif",
           }}
         >
+          Multiple events have been organised by AMB Centre, Lucknow under the
+          able guidance of our President Mr. Kamal Kishore Sharma and our 
+          Secretary Mr. Sanjay Dubey.
+          <br />
+          <br />
           A stall was set up by AMB Centre, Lucknow in Lucknow Book Fair from
           7th – 16th April 2017. It had a huge collection of Baba books and
           people visiting the fair were attracted towards the stall and curious
