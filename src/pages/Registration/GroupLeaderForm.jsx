@@ -90,15 +90,25 @@ const GroupForm = () => {
             },
             body: JSON.stringify({values})
         })
-        .then(
-            toast.success('Form submitted successfully', 
-            {duration: 5000}),
-            setTimeout(() => {
-                window.location.href = '/oct2024';
-            }, 3000) // Redirect after 3 seconds
-        )
+        .then(response => {
+            if(!response.ok) {
+                throw new Error('Something went wrong');
+            }
+            return response.json();
+        })
+        .then(data => {
+            if(data.statusCode === 200) {
+                toast.success('Form submitted successfully', 
+                {duration: 5000}),
+                setTimeout(() => {
+                    window.location.href = '/oct2024';
+                }, 3000) // Redirect after 3 seconds
+            } else {
+                toast.error(data.message);
+            }
+        })
         .catch(error => {
-            toast.error(error.message);
+            toast.error(`Form submission failed": ${error.message}`);
         })
     }
     
