@@ -5,7 +5,7 @@ import "./Contact.css";
 
 const VerticalDividerMiddle = () => {
   return (
-    <Box
+    <Box classname='eventContact'
       sx={{
         width: "90%",
       }}
@@ -54,7 +54,7 @@ const VerticalDividerMiddle = () => {
                       fontFamily: "DM Sans, sans-serif",
                     }}
                   >
-                    Mr. Sanjay Dubey: (+91) 123 456 7890
+                    Mr. Amit Sharma: (+91) 9794 839 059
                   </Typography>
                 </ListItem>
                 <ListItem>
@@ -64,7 +64,7 @@ const VerticalDividerMiddle = () => {
                       fontFamily: "DM Sans, sans-serif",
                     }}
                   >
-                    Mr. Sanjay Dubey: (+91) 123 456 7890
+                    Mr. Nitin Dubey: (+91) 9654 985 984
                   </Typography>
                 </ListItem>
               </List>
@@ -96,7 +96,7 @@ const VerticalDividerMiddle = () => {
                       fontFamily: "DM Sans, sans-serif",
                     }}
                   >
-                    Mr. Sanjay Dubey: (+91) 123 456 7890
+                    Mr. Sanjay Dubey: (+91) 9415 469 415
                   </Typography>
                 </ListItem>
               </List>

@@ -34,7 +34,7 @@ const ContactForm = () => {
     >
       <Box sx={{ margin: "60px" }}>
         <Typography
-          variant="h3"
+          variant="h4"
           sx={{
             fontFamily: "Playfair Display SC, serif",
             wordBreak: "break-all",
@@ -162,6 +162,28 @@ const ContactForm = () => {
                     marginBottom: "8px",
                     textAlign: "left",
                     fontFamily: "DM Sans, sans-serif",
+                    wordBreak: "break-all",
+                  }}
+                >
+                  Mr. Sanjay Dubey (Secretary)
+                </Typography>
+                <Typography
+                  variant="body1"
+                  sx={{
+                    marginBottom: "8px",
+                    textAlign: "left",
+                    fontFamily: "DM Sans, sans-serif",
+                    wordBreak: "break-all",
+                  }}
+                >
+                  Phone: +91 9415 469 415
+                </Typography>
+                <Typography
+                  variant="body1"
+                  sx={{
+                    marginBottom: "8px",
+                    textAlign: "left",
+                    fontFamily: "DM Sans, sans-serif",
                     wordBreak: "break-all", // Allow breaking long words
                   }}
                 >
@@ -176,19 +198,11 @@ const ContactForm = () => {
                     wordBreak: "break-all",
                   }}
                 >
-                  Phone: +91 9415 46 9415
-                </Typography>
-                <Typography
-                  variant="body1"
-                  sx={{
-                    marginBottom: "8px",
-                    textAlign: "left",
-                    fontFamily: "DM Sans, sans-serif",
-                    wordBreak: "break-all",
-                  }}
-                >
                   Address: 169, Samar Vihar Colony, Alambagh, Lucknow, Uttar
-                  Pradesh, India. 226005
+                  Pradesh, India. 226005 (<a href='https://maps.app.goo.gl/Hpu3YAggcdn6xHTp6' target='_blank' style={{
+        fontWeight: "bold",
+        color: "white"
+      }}>Location</a>)
                 </Typography>
               </Box>
             )}
@@ -209,27 +223,38 @@ const ContactForm = () => {
                 Reach Us
               </Typography>
               <Typography
-                variant="body1"
-                sx={{
-                  marginBottom: "8px",
-                  textAlign: "left",
-                  fontFamily: "DM Sans, sans-serif",
-                  wordBreak: "break-all",
-                }}
-              >
-                Email: avatarmeherbabalucknowcentre@gmail.com
-              </Typography>
-              <Typography
-                variant="body1"
-                sx={{
-                  marginBottom: "8px",
-                  textAlign: "left",
-                  fontFamily: "DM Sans, sans-serif",
-                  wordBreak: "break-all",
-                }}
-              >
-                Phone: +91 9415 46 9415
-              </Typography>
+                  variant="body1"
+                  sx={{
+                    marginBottom: "8px",
+                    textAlign: "left",
+                    fontFamily: "DM Sans, sans-serif",
+                    wordBreak: "break-all",
+                  }}
+                >
+                  Mr. Sanjay Dubey (Secretary)
+                </Typography>
+                <Typography
+                  variant="body1"
+                  sx={{
+                    marginBottom: "8px",
+                    textAlign: "left",
+                    fontFamily: "DM Sans, sans-serif",
+                    wordBreak: "break-all",
+                  }}
+                >
+                  Phone: +91 9415 469 415
+                </Typography>
+                <Typography
+                  variant="body1"
+                  sx={{
+                    marginBottom: "8px",
+                    textAlign: "left",
+                    fontFamily: "DM Sans, sans-serif",
+                    wordBreak: "break-all", // Allow breaking long words
+                  }}
+                >
+                  Email: avatarmeherbabalucknowcentre@gmail.com
+                </Typography>
               <Typography
                 variant="body1"
                 sx={{
@@ -240,7 +265,10 @@ const ContactForm = () => {
                 }}
               >
                 Address: 169, Samar Vihar Colony, Alambagh, Lucknow, Uttar
-                Pradesh, India. 226005
+                Pradesh, India. 226005 (<a href='https://maps.app.goo.gl/Hpu3YAggcdn6xHTp6' target='_blank' style={{
+        fontWeight: "bold",
+        color: "white"
+      }}>Location</a>)
               </Typography>
             </Box>
           )}

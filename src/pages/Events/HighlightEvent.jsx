@@ -25,7 +25,7 @@ const HighlightEvent = () => {
       />
       <Quotes
         quote={
-          "If you do obey Me one hundred per cent with all sincerity, at any cost, it will be greater than lov ing Me."
+          "If you do obey Me one hundred percent with all sincerity, at any cost, it will be greater than loving Me."
         }
         reference={"Meher Baba Calling"}
       />

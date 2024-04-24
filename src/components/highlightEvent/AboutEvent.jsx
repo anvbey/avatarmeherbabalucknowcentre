@@ -73,9 +73,10 @@ function AboutEvent() {
           sx={{
             fontFamily: "DM Sans, sans-serif",
             fontWeight: "bold",
+            marginTop: "10px"
           }}
         >
-            Date and Venue:
+            Date: 22nd & 23rd October 2024
           </Typography>
           <Typography
           variant="body1"
@@ -84,25 +85,9 @@ function AboutEvent() {
             fontWeight: "bold",
           }}
         >
-            22nd & 23rd October 2024
-          </Typography>
-          <Typography
-          variant="body1"
-          sx={{
-            fontFamily: "DM Sans, sans-serif",
-            fontWeight: "bold",
-          }}
-        >
-            Location
-          </Typography>
-          <Typography
-          variant="body1"
-          sx={{
-            fontFamily: "DM Sans, sans-serif",
-            fontWeight: "bold",
-          }}
-        >
-            Ravindralaya Auditorium, Charabagh, Lucknow
+            Venue: Ravindralaya Auditorium, Charabagh, Lucknow (<a href='https://maps.app.goo.gl/gQsxDw1uAKvFPicR7' target='_blank' style={{
+        fontWeight: "bold",
+      }}>Location</a>)
           </Typography>
           <Link to="/oct2024/register" style={{ textDecoration: "none" }}>
             <Button

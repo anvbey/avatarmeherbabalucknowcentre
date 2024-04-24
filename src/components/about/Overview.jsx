@@ -12,7 +12,7 @@ function Overview() {
         justifyContent: "center",
       }}
     >
-      <Typography variant="h3" sx={{ fontFamily: 'Playfair Display SC, serif' }}>Overview</Typography>
+      <Typography variant="h4" sx={{ fontFamily: 'Playfair Display SC, serif' }}>Overview</Typography>
       <Typography
         variant="body1"
         sx={{

@@ -55,11 +55,19 @@ function AboutMeherBaba() {
           sx={{
             fontFamily: "DM Sans, sans-serif",
           }}
-        >
-          Meher Baba, the Avatar. “Meher Baba” means “Compassionate Father.” It
-          is the name given to Him, their spiritual Master, by a group of His
-          disciples in the early 1920s after signs of His spiritual status
-          became apparent. Today, many thousands of people from every religious
+        > 
+          Merwan Sheriar Irani, known as Meher Baba, was born in Poona, India, 
+          on February 25, 1894, of Persian parents. His father, Sheriar Irani, 
+          was of Zoroastrian faith and a true seeker of God. “Meher Baba” means 
+          “Compassionate Father.” It is the name given to Him, their spiritual Master, 
+          by a group of His disciples in the early 1920s after signs of His spiritual status
+          became apparent. He observed Silence on July 10th, 1925 maintained this Silence 
+          until He dropped His physical body on January 31, 1969. 
+          In February of 1954, for the first time, Meher Baba publicly declared Himself 
+          to be the Avatar or Christ of the age. The Avatar is the direct descent of God 
+          into human form; previous Avatars known to history include 
+          Zoroaster, Ram, Krishna, Buddha, Jesus, and Mohammed.
+          Today, many thousands of people from every religious
           tradition regard Meher Baba as the one long-awaited — the Prophet, the
           Buddha, the Christ, the Messiah of this age. Most commonly in India,
           He is referred to as the “Avatar,” a Sanskrit word meaning “descent of
@@ -74,15 +82,6 @@ function AboutMeherBaba() {
           loading="lazy"
           style={{ borderRadius: "10px", margin: "20px"}}
         />
-        <Typography
-          variant="body1"
-          sx={{
-            fontFamily: "DM Sans, sans-serif",
-          }}
-          style={{ padding: "10px" }}
-        >
-          Iron Bridge, Lucknow
-        </Typography>
       </Box>
     </Box>
   );
