@@ -91,21 +91,18 @@ const GroupForm = () => {
             body: JSON.stringify({values})
         })
         .then(response => {
-            if(!response.ok) {
-                throw new Error('Something went wrong');
-            }
             return response.json();
         })
-        .then(data => {
-            if(data.statusCode === 200) {
-                toast.success('Form submitted successfully', 
-                {duration: 5000}),
-                setTimeout(() => {
-                    window.location.href = '/oct2024';
-                }, 3000) // Redirect after 3 seconds
-            } else {
-                toast.error(data.message);
-            }
+        .then(data=> {
+                if(data.status === 200) {
+                    toast.success('Form submitted successfully', 
+                    {duration: 5000});
+                    setTimeout(() => {
+                        window.location.href = '/oct2024';
+                    }, 3000) // Redirect after 3 seconds
+                } else if(data.status === 409) {
+                    toast.error(`${data.message}` `${data.violating_fields}`)
+                } else throw new Error(data.message);
         })
         .catch(error => {
             toast.error(`Form submission failed": ${error.message}`);
