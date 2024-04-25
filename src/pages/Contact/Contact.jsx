@@ -1,4 +1,5 @@
 import React from "react";
+import toast, { Toaster } from 'react-hot-toast';
 import {
   Box,
   Typography,
@@ -14,7 +15,7 @@ import contactFormSchema from "../../lib/formSchema/contactFormSchema";
 
 const ContactForm = () => {
   const onSubmit = (values) => {
-    console.log(values);
+    toast.error('Something went wrong while submitting the request. Kindly reach out to us at the details mentioned below for your queries.', {duration: 10000});
   };
 
   const { register, handleSubmit } = useForm({
@@ -281,6 +282,7 @@ const ContactForm = () => {
             </Box>
           )}
         </Box>
+        <Toaster />
       </Box>
     </Box>
   );
