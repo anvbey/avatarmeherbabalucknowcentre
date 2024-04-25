@@ -23,7 +23,7 @@ function Charbagh() {
           <img
             src={image}
             alt="description"
-            style={{ width: "300px", height: "250px" }}
+            style={{ width: "300px", height: "250px", borderRadius: "10px"}}
           />
           <Typography variant="body1" style={{ padding: "10px" }}>
             Charbagh Railway Station

@@ -23,7 +23,7 @@ function VermaMemorialHall() {
           <img
             src={vermaHall}
             alt="description"
-            style={{ width: "200px", height: "150px" }}
+            style={{ width: "200px", height: "150px", borderRadius: "10px" }}
           />
           <Typography
             variant="body1"

@@ -23,7 +23,7 @@ function IronBridge() {
           <img
             src={ironBridge}
             alt="description"
-            style={{ width: "300px", height: "300px" }}
+            style={{ width: "300px", height: "300px", borderRadius: "10px" }}
           />
           <Typography
             variant="body1"

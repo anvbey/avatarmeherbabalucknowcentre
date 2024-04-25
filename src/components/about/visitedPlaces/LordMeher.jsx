@@ -24,7 +24,7 @@ function LordMeher() {
           <img
             src={lordMeher}
             alt="description"
-            style={{ width: "200px", height: "150px" }}
+            style={{ width: "200px", height: "150px", borderRadius: "10px" }}
           />
           <Typography variant="body1" style={{ padding: "10px" }}>
             Lord Meher School

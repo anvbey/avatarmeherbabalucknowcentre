@@ -41,7 +41,16 @@ function Quotes({quote, reference}) {
             textAlign: "center",
           }}
         >
-        - {reference}
+        - Meher Baba
+      </Typography>
+      <Typography
+          variant="body1"
+          sx={{
+            fontFamily: "DM Sans, sans-serif",
+            textAlign: "center",
+          }}
+        >
+        (Source - {reference})
       </Typography>
     </Box>
   );

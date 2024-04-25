@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { Box } from "@mui/material";
 
-import video from "./WebsiteBanner.mp4";
+import video from "./WebsiteBannerNew.mp4";
 
 function HeroComponent() {
   const videoRef = useRef(null);
