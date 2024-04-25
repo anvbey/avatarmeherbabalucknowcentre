@@ -50,7 +50,7 @@ function BegumAkhtar() {
           Begum Akhtar was offered an opportunity by Adi Sr. to sing in front of
           Meher Baba in 1937-38. But at that time, she demanded a large sum of
           fees. Adi Sr. also proposed to sponsor her two-way travel from
-          Kolkata. But her demand was so high that Baba himself said told Adi
+          Kolkata. But her demand was so high that Baba himself told Adi
           Sr. to drop the plan and that one day she would herself come to Baba.
           After this, she was once again approached to present her Ghazals in
           Baba’s presence at Guruprasad, Pune, but this time she was severely

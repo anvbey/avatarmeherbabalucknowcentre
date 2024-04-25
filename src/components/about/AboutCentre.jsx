@@ -47,7 +47,7 @@ function AboutCentre() {
           16th May.
           <br />
           <br />
-          The Lord Meher School in the Indiranagar area of Lucknow founded by
+          The Lord Meher School in the Indiranagar area of Lucknow was founded by
           Shri. K.D. Nigam. The foundation stone of the Lord Meher School,
           Indiranagar was laid by Shri. Ali Akbar Shahpurzaman ‘Aloba’ on 28th
           November 1996 and the first session of the High School was inaugurated
@@ -104,7 +104,7 @@ function AboutCentre() {
           To celebrate the Silver Jubilee of the AMBC, Lucknow, a two-day event
           was organized on 22nd -23rd October 2018 at Ganga Prasad Verma
           Memorial Hall, where Baba had held His poor feeding program on 23rd
-          October 1943, in which witnessed enthusiastic participation by Baba
+          October 1943, which witnessed enthusiastic participation by Baba
           lovers from various locations of the country.
           <br />
           <br />

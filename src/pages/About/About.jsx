@@ -18,7 +18,7 @@ const About = () => {
       <Places />
       <Box id="documentary">
       <Typography variant="h5" sx={{ fontFamily: "Playfair Display, serif" }}>
-        Documentary about the above-mentioned places -
+        Documentary on the above-mentioned places -
       </Typography>
         <Box sx={{ marginTop: "10px" }}>
         <YouTubeEmbed />
