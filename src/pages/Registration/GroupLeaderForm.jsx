@@ -1,6 +1,7 @@
 import { useState } from "react";
 import toast, { Toaster } from 'react-hot-toast';
 import { DateTimePicker } from '@mui/x-date-pickers/DateTimePicker';
+import { Link } from 'react-router-dom';
 import dayjs from 'dayjs';
 import { groupFormSchema } from "../../lib/formSchema/registrationFormSchema";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -11,7 +12,7 @@ import MemberForm from "./MemberForm";
 
 const Note = () => (
     <Typography variant="subtitle1" color="textSecondary" align="center" sx={{ marginBottom: '20px' }}>
-        * You won't be able to make changes to entries once you have submitted the form. Please verify the details before submitting the form.
+        * Kindly verify the details before submitting the form as you won't be able to make changes post submitting.
     </Typography>
 );
 
@@ -101,11 +102,19 @@ const GroupForm = () => {
                         window.location.href = '/oct2024';
                     }, 3000) // Redirect after 3 seconds
                 } else if(data.status === 409) {
-                    toast.error(`${data.message}` `${data.violating_fields}`)
+                    const violatingFields = Object.values(data.violating_fields).join(', ');
+                    toast.error(`${data.message}: ${violatingFields}`);
                 } else throw new Error(data.message);
         })
         .catch(error => {
-            toast.error(`Form submission failed": ${error.message}`);
+            toast.error(<div>
+                Form submission failed. Kindly reach out to us at the phone numbers mentioned &nbsp;
+                <Link to="/oct2024" style={{ color: 'blue', textDecoration: 'underline' }}>
+                here.
+                </Link>
+                </div>,
+                {duration: 5000}
+            );
         })
     }
     
