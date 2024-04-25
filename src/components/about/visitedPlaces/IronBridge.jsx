@@ -50,9 +50,8 @@ function IronBridge() {
           they met in a Harijan (untouchables) settlement. Baba gave her a
           scarf. At first, she tied that scarf around her head but suddenly, she
           removed the scarf and gave it to a Harijan woman standing near her.
-          Looking at this, Baba gave her another scarf which she again removed
-          and tried. This shows us that if we have got the God Himself, why
-          would we need anything more to worry about.
+          Looking at this, Baba gave her another scarf which she again removed. 
+          This shows us that if we have got God Himself, we would not need anything more.
         </Typography>
       </Box>
     </Box>
