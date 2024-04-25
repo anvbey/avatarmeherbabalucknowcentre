@@ -7,6 +7,7 @@ function Overview() {
   return (
     <Box  id="overview"
       sx={{
+        margin: "20px 60px 0 60px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
@@ -37,7 +38,7 @@ function Overview() {
           alignItems: "center",
         }}
       >
-        <img src={mbImage} width="50%" alt="desciption" />
+        <img src={mbImage} width="50%" alt="desciption" style={{borderRadius: "10px"}}/>
         <Typography
           variant="body1"
           sx={{

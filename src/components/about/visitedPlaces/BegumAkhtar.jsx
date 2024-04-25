@@ -24,7 +24,7 @@ function BegumAkhtar() {
           <img
             src={akhtariTomb}
             alt="description"
-            style={{ width: "150px", height: "200px" }}
+            style={{ width: "150px", height: "200px", borderRadius: "10px" }}
           />
           <Typography
             variant="body1"

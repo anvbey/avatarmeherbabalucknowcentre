@@ -37,7 +37,6 @@ const ContactForm = () => {
           variant="h4"
           sx={{
             fontFamily: "Playfair Display SC, serif",
-            wordBreak: "break-all",
           }}
         >
           Connect with us
@@ -49,7 +48,6 @@ const ContactForm = () => {
             textAlign: "left",
             marginBottom: "16px",
             fontFamily: "Playfair Display, serif",
-            wordBreak: "break-all",
           }}
         >
           We would love to respond to your queries. <br />
@@ -74,7 +72,6 @@ const ContactForm = () => {
                 marginBottom: "16px",
                 textAlign: "left",
                 fontFamily: "DM Sans, sans-serif",
-                wordBreak: "break-all",
               }}
             >
               Send your request
@@ -151,7 +148,6 @@ const ContactForm = () => {
                     marginBottom: "16px",
                     textAlign: "left",
                     fontFamily: "DM Sans, sans-serif",
-                    wordBreak: "break-all",
                   }}
                 >
                   Reach Us
@@ -162,7 +158,6 @@ const ContactForm = () => {
                     marginBottom: "8px",
                     textAlign: "left",
                     fontFamily: "DM Sans, sans-serif",
-                    wordBreak: "break-all",
                   }}
                 >
                   Mr. Sanjay Dubey (Secretary)
@@ -173,7 +168,6 @@ const ContactForm = () => {
                     marginBottom: "8px",
                     textAlign: "left",
                     fontFamily: "DM Sans, sans-serif",
-                    wordBreak: "break-all",
                   }}
                 >
                   Phone: +91 9415 469 415
@@ -195,7 +189,6 @@ const ContactForm = () => {
                     marginBottom: "8px",
                     textAlign: "left",
                     fontFamily: "DM Sans, sans-serif",
-                    wordBreak: "break-all",
                   }}
                 >
                   Address: 169, Samar Vihar Colony, Alambagh, Lucknow, Uttar
@@ -217,7 +210,6 @@ const ContactForm = () => {
                   marginBottom: "16px",
                   textAlign: "left",
                   fontFamily: "DM Sans, sans-serif",
-                  wordBreak: "break-all",
                 }}
               >
                 Reach Us
@@ -228,7 +220,6 @@ const ContactForm = () => {
                     marginBottom: "8px",
                     textAlign: "left",
                     fontFamily: "DM Sans, sans-serif",
-                    wordBreak: "break-all",
                   }}
                 >
                   Mr. Sanjay Dubey (Secretary)
@@ -239,7 +230,6 @@ const ContactForm = () => {
                     marginBottom: "8px",
                     textAlign: "left",
                     fontFamily: "DM Sans, sans-serif",
-                    wordBreak: "break-all",
                   }}
                 >
                   Phone: +91 9415 469 415
@@ -261,7 +251,6 @@ const ContactForm = () => {
                   marginBottom: "8px",
                   textAlign: "left",
                   fontFamily: "DM Sans, sans-serif",
-                  wordBreak: "break-all",
                 }}
               >
                 Address: 169, Samar Vihar Colony, Alambagh, Lucknow, Uttar

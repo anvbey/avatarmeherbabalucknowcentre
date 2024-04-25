@@ -14,7 +14,10 @@ function Timeline() {
     <Box
       id="lucknow"
       sx={{
-        margin: "20px 0",
+        margin: "20px 60px 0 60px",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
       }}
     >
       <Typography

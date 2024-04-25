@@ -72,7 +72,7 @@ function AboutCentre() {
           <img
             src={amblko}
             alt="description"
-            style={{ maxWidth: "70%", height: "auto", borderRadius: "8px" }} // Modified style here
+            style={{ maxWidth: "70%", height: "auto", borderRadius: "10px" }} // Modified style here
           />
           <Typography
             variant="body1"
