@@ -88,6 +88,18 @@ const GroupForm = () => {
             toast.error('Date of Arrival cannot be greater than Date of Departure');
             return;
         }
+        const lowercaseValues = {
+            ...values,
+            first_name: values.first_name.toLowerCase(),
+            last_name: values.last_name.toLowerCase(),
+            email: values.email.toLowerCase(),
+            city: values.city.toLowerCase(),
+            members: values.members.map(member => ({
+                ...member,
+                first_name: member.first_name.toLowerCase(),
+                last_name: member.last_name.toLowerCase(),
+            }))
+        }
         fetch('https://3i11a61k0e.execute-api.ap-south-1.amazonaws.com/dev1/storeData', {
             mode: 'cors',
             method: 'POST',
@@ -95,12 +107,13 @@ const GroupForm = () => {
                 'x-api-key': 'C9yfSdhFSq24mNNSeQZMq8ybeYYqTwsi83g6jKLh',
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({values})
+            body: JSON.stringify({values: lowercaseValues})
         })
         .then(response => {
             return response.json();
         })
         .then(data=> {
+            console.log(data)
                 if(data.status === 200) {
                     toast.success('Form submitted successfully', 
                     {duration: 5000});
@@ -108,8 +121,13 @@ const GroupForm = () => {
                         window.location.href = '/oct2024';
                     }, 3000) // Redirect after 3 seconds
                 } else if(data.status === 409) {
-                    const violatingFields = Object.values(data.violating_fields).join(', ');
-                    toast.error(`${data.message}: ${violatingFields}`);
+                    const alreadyRegisteredMembers = data.already_registered_members.map(member => (
+                        `${member.first_name} ${member.last_name} (${member.age}, ${member.gender}, ${member.city})`
+                    ));
+                    toast.error(`Some participants are already registered: ${alreadyRegisteredMembers.join(', ')}`, {
+                        duration: 10000,
+                        position: "top-right",
+                    });
                 } else throw new Error(data.message);
         })
         .catch(error => {
