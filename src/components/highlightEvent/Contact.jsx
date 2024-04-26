@@ -5,7 +5,7 @@ import "./Contact.css";
 
 const VerticalDividerMiddle = () => {
   return (
-    <Box classname='eventContact'
+    <Box className='eventContact'
       sx={{
         width: "90%",
       }}

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import toast, { Toaster } from 'react-hot-toast';
 import { DateTimePicker } from '@mui/x-date-pickers/DateTimePicker';
 import { Link } from 'react-router-dom';
@@ -67,6 +67,12 @@ const GroupForm = () => {
             }, 4);
         }
     };
+
+    useEffect(() => {
+        return () => {
+            toast.dismiss();
+        }
+    })
 
     const onSubmit = async (values) => {
         if(watch('members').length < watch('numberOfMembers')-1) {
