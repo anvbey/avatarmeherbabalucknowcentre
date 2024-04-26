@@ -68,6 +68,10 @@ const GroupForm = () => {
         }
     };
 
+    const capitalizeFirstLetter = (str) => {
+        return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+    };
+
     useEffect(() => {
         return () => {
             toast.dismiss();
@@ -90,14 +94,14 @@ const GroupForm = () => {
         }
         const lowercaseValues = {
             ...values,
-            first_name: values.first_name.toLowerCase(),
-            last_name: values.last_name.toLowerCase(),
-            email: values.email.toLowerCase(),
-            city: values.city.toLowerCase(),
+            first_name: capitalizeFirstLetter(values.first_name),
+            last_name: capitalizeFirstLetter(values.last_name),
+            email: capitalizeFirstLetter(values.email),
+            city: capitalizeFirstLetter(values.city),
             members: values.members.map(member => ({
                 ...member,
-                first_name: member.first_name.toLowerCase(),
-                last_name: member.last_name.toLowerCase(),
+                first_name: capitalizeFirstLetter(member.first_name),
+                last_name: capitalizeFirstLetter(member.last_name),
             }))
         }
         fetch('https://3i11a61k0e.execute-api.ap-south-1.amazonaws.com/dev1/storeData', {
