@@ -72,7 +72,7 @@ const GroupForm = () => {
         return () => {
             toast.dismiss();
         }
-    })
+    }, [])
 
     const onSubmit = async (values) => {
         if(watch('members').length < watch('numberOfMembers')-1) {
