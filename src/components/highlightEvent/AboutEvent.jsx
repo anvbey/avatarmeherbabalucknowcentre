@@ -1,12 +1,21 @@
 import React from "react";
 import { Box, Button, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
+import toast, { Toaster } from 'react-hot-toast';
 
 import YouTubeEmbed from "./YoutubeVideo";
 
 import "./AboutEvent.css";
 
 function AboutEvent() {
+  const [open, setOpen] = React.useState(false);
+
+  const handleClick = () => {
+    toast.error('Registrations will start from 1st May, 2024',{
+      duration: 3000,
+  });
+  };
+
   return (
     <Box
       className="about-meher-prem-container"
@@ -51,11 +60,11 @@ function AboutEvent() {
             rel="stylesheet"
           />
           <Typography
-          variant="body1"
-          sx={{
-            fontFamily: "DM Sans, sans-serif",
-          }}
-        >
+            variant="body1"
+            sx={{
+              fontFamily: "DM Sans, sans-serif",
+            }}
+          >
             Join us as we celebrate 100 years since Meher Baba's momentous visit
             to Lucknow with a special two-day Meher Prem Sammelan. Themed
             "Exploring Practicality in Spirituality," this event promises a
@@ -69,34 +78,44 @@ function AboutEvent() {
             legacy and the enduring power of his love.
           </Typography>
           <Typography
-          variant="body1"
-          sx={{
-            fontFamily: "DM Sans, sans-serif",
-            fontWeight: "bold",
-            marginTop: "10px"
-          }}
-        >
+            variant="body1"
+            sx={{
+              fontFamily: "DM Sans, sans-serif",
+              fontWeight: "bold",
+              marginTop: "10px",
+            }}
+          >
             Date: 22nd & 23rd October 2024
           </Typography>
           <Typography
-          variant="body1"
-          sx={{
-            fontFamily: "DM Sans, sans-serif",
-            fontWeight: "bold",
-          }}
-        >
-            Venue: Ravindralaya Auditorium, Charabagh, Lucknow (<a href='https://maps.app.goo.gl/gQsxDw1uAKvFPicR7' target='_blank' style={{
-        fontWeight: "bold",
-      }}>Location</a>)
+            variant="body1"
+            sx={{
+              fontFamily: "DM Sans, sans-serif",
+              fontWeight: "bold",
+            }}
+          >
+            Venue: Ravindralaya Auditorium, Charabagh, Lucknow (
+            <a
+              href="https://maps.app.goo.gl/gQsxDw1uAKvFPicR7"
+              target="_blank"
+              style={{
+                fontWeight: "bold",
+              }}
+            >
+              Location
+            </a>
+            )
           </Typography>
-          <Link to="/oct2024/register" style={{ textDecoration: "none" }}>
+          
             <Button
               variant="contained"
               sx={{ width: "100px", marginTop: "10px" }}
+              onClick={handleClick}
             >
               Register!
             </Button>
-          </Link>
+            <Toaster />
+          
         </Box>
         <Box sx={{ flex: 5, margin: "10px" }}>
           <YouTubeEmbed />
