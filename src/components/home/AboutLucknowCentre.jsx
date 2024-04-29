@@ -56,20 +56,24 @@ function AboutMeherBaba() {
             fontFamily: "DM Sans, sans-serif",
           }}
         >
-          The Avatar Meher Baba centre in Lucknow is situated at 169, Samar Vihar 
-          Colony, Alambagh, Lucknow. While the Meher Baba lovers in Lucknow gathered 
-          at homes of each other for satsangs and talks about Baba in the early days, 
-          they gradually expanded their reach. And hence, the centre was inaugurated 
-          on 23rd October 1993 by Dr. HP Bharucha of Navsari, Gujarat.
-          Satsangs our held on the first Sunday and the 23rd day of each month at 
-          the centre for all Baba lovers to gather and sing in His praise and learn 
-          from His teachings through the medium of talks. Annual celebrations 
-          include Beloved Baba's birthday and programs commemorating His visits in Lucknow. 
-          The Lord Meher College, founded in 1996 reflects Lucknow Baba lovers' commitment 
-          to Baba's teachings. Noteworthy events like the silver jubilee celebration 
-          held in 2018 highlight decades of dedication of Baba lovers community in 
-          Lucknow of spreading His message of love. The Meher Baba lovers of Lucknow 
-          remain steadfast in their endeavour to uphold their Beloved Baba's 
+          Avatar Meher Baba Lucknow centre was inaugurated in 1993 by Dr H.P. Bharucha of Navsari, 
+          Gujarat. It all began with only a handful of Baba lovers getting together in His love & 
+          remembrance, & gradually grew into a big Baba family leading to establishing the centre. 
+          It was all possible as Baba had Himself sowed the seed of His love in the city of Lucknow 
+          by setting His foot on it 7 times over the years!
+          <br/>
+          To commemorate His visits to Lucknow, we lovingly organise annual Baba programs in the 
+          months of May & October! Baba’s birthday is celebrated every year with ‘Ratri Jagran’ & 
+          evening program with utmost love. Poor feeding is an inevitable part of it. Monthly programs 
+          on 1st Sunday & 23rd of each month are held for all Baba lovers to come 
+          & rejoice in His praise through songs & speeches.
+          Silver Jubilee year was celebrated in 2018 where Baba lovers all over India shared in our 
+          love & joy, making it the most memorable event. It highlights decades of dedication of 
+          Lucknow centre in spreading His message of love. Baba’s presence was palpable in every single moment!
+          <br/>
+          The Lord Meher College, founded in 1996 by Alobaji(Baba’s Mandali) reflects Lucknow Baba lovers' 
+          commitment to Baba's teachings.
+          Baba lovers of Lucknow remain steadfast in their endeavour to uphold their Beloved Baba's 
           legacy and share His teachings with the world.
         </Typography>
 
