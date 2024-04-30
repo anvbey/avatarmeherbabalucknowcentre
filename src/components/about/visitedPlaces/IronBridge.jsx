@@ -4,26 +4,26 @@ import ironBridge from "../../../assets/ironBridge.jpg";
 
 function IronBridge() {
   return (
-    <Box sx={{
-      margin: "20px 0"
-    }}>
+    <Box
+      sx={{
+        margin: "20px 0",
+      }}
+    >
       <Typography variant="h5" sx={{ fontFamily: "Playfair Display, serif" }}>
         Iron Bridge
       </Typography>
       <Box sx={{ display: "block" }}>
         <Box
           sx={{
-            float: "center",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            padding: "10px",
           }}
         >
           <img
             src={ironBridge}
             alt="description"
-            style={{ width: "300px", height: "300px", borderRadius: "10px" }}
+            style={{ maxWidth: "100%", height: "auto", borderRadius: "10px" }}
           />
           <Typography
             variant="body1"
@@ -50,8 +50,9 @@ function IronBridge() {
           they met in a Harijan (untouchables) settlement. Baba gave her a
           scarf. At first, she tied that scarf around her head but suddenly, she
           removed the scarf and gave it to a Harijan woman standing near her.
-          Looking at this, Baba gave her another scarf which she again removed. 
-          This shows us that if we have got God Himself, we would not need anything more.
+          Looking at this, Baba gave her another scarf which she again removed.
+          This shows us that if we have got God Himself, we would not need
+          anything more.
         </Typography>
       </Box>
     </Box>

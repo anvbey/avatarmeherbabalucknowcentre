@@ -1,20 +1,12 @@
 import React from "react";
 import { Box, Button, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-import toast, { Toaster } from 'react-hot-toast';
 
 import YouTubeEmbed from "./YoutubeVideo";
 
 import "./AboutEvent.css";
 
 function AboutEvent() {
-  const [open, setOpen] = React.useState(false);
-
-  const handleClick = () => {
-    toast.error('Registrations will start from 1st May, 2024',{
-      duration: 3000,
-  });
-  };
 
   return (
     <Box
@@ -106,16 +98,14 @@ function AboutEvent() {
             </a>
             )
           </Typography>
-          
+          <Link to="/oct2024/register">
             <Button
               variant="contained"
               sx={{ width: "100px", marginTop: "10px" }}
-              onClick={handleClick}
             >
               Register!
             </Button>
-            <Toaster />
-          
+          </Link>
         </Box>
         <Box sx={{ flex: 5, margin: "10px" }}>
           <YouTubeEmbed />
