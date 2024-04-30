@@ -77,8 +77,7 @@ const GroupForm = () => {
     const onSubmit = async (values) => {
         if(watch('members').length < watch('numberOfMembers')-1) {
             toast.error('Please update the members details',{
-                duration: 3000,
-                position: "top-right",
+                duration: 3000
             });
         }
         if(values.numberOfMembers !== values.members.length + 1) {
@@ -125,8 +124,7 @@ const GroupForm = () => {
                         `${member.first_name} ${member.last_name} (${member.age}, ${member.gender}, ${member.city})`
                     ));
                     toast.error(`Some participants are already registered: ${alreadyRegisteredMembers.join(', ')}`, {
-                        duration: 10000,
-                        position: "top-right",
+                        duration: 10000
                     });
                 } else throw new Error(data.message);
         })

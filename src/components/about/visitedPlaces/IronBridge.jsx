@@ -32,7 +32,7 @@ function IronBridge() {
             }}
             style={{ padding: "10px" }}
           >
-            Iron Bridge, Lucknow
+            Iron Bridge
           </Typography>
         </Box>
         <Typography

@@ -33,7 +33,7 @@ function CentralHotel() {
             }}
             style={{ padding: "10px" }}
           >
-            Central Hotel, Aminabad
+            Central Hotel
           </Typography>
         </Box>
         <Typography variant="body1" sx={{
@@ -54,7 +54,7 @@ function CentralHotel() {
           <br />
           When Baba was in Kolkata, He sent Chanji and Adi Sr. to Lucknow to
           make arrangements to feed poor people there. Baba reached Lucknow on
-          20th October 1943. Wednesday at 9:00 pm and stayed at the Central
+          20th October 1943, Wednesday at 9:00 pm and stayed at the Central
           Hotel.
         </Typography>
       </Box>
