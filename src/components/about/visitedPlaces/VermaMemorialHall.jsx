@@ -4,26 +4,27 @@ import vermaHall from "../../../assets/vermaHall.png";
 
 function VermaMemorialHall() {
   return (
-    <Box sx={{
-      margin: "20px 0"
-    }}>
+    <Box
+      sx={{
+        margin: "20px 0",
+      }}
+    >
       <Typography variant="h5" sx={{ fontFamily: "Playfair Display, serif" }}>
         Ganga Prasad Verma Memorial Hall
       </Typography>
       <Box>
         <Box
           sx={{
-            float: "right",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            padding: "10px",
+            marginTop: "20px",
           }}
         >
           <img
             src={vermaHall}
             alt="description"
-            style={{ width: "200px", height: "150px", borderRadius: "10px" }}
+            style={{ maxWidth: "50%", height: "auto", borderRadius: "10px" }}
           />
           <Typography
             variant="body1"

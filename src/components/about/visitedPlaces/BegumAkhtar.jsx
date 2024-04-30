@@ -12,20 +12,19 @@ function BegumAkhtar() {
         Begum Akhtar’s Tomb
       </Typography>
       <Box>
-        <Box
-          sx={{
-            float: "right",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            padding: "10px",
-          }}
-        >
-          <img
-            src={akhtariTomb}
-            alt="description"
-            style={{ width: "150px", height: "200px", borderRadius: "10px" }}
-          />
+      <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        marginTop: "20px",
+      }}
+    >
+      <img
+        src={akhtariTomb}
+        alt="description"
+        style={{ minWidth: "40%",maxWidth: "50%", height: "auto", borderRadius: "10px" }}
+      />
           <Typography
             variant="body1"
             style={{ padding: "10px" }}

@@ -3,28 +3,28 @@ import React from "react";
 import lordMeher from "../../../assets/lordMeher.png";
 
 function LordMeher() {
-
   return (
-    <Box sx={{
-      margin: "20px 0"
-    }}>
+    <Box
+      sx={{
+        margin: "20px 0",
+      }}
+    >
       <Typography variant="h5" sx={{ fontFamily: "Playfair Display, serif" }}>
         Lord Meher College
       </Typography>
       <Box>
-      <Box
+        <Box
           sx={{
-            float: "center",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            padding: "10px",
+            marginTop: "20px",
           }}
         >
           <img
             src={lordMeher}
             alt="description"
-            style={{ width: "200px", height: "150px", borderRadius: "10px" }}
+            style={{ maxWidth: "50%", height: "auto", borderRadius: "10px" }}
           />
           <Typography variant="body1" style={{ padding: "10px" }}>
             Lord Meher School
@@ -45,7 +45,6 @@ function LordMeher() {
           the program. The school is still running and it holds its annual Baba
           satsang program on 24th October every year.
         </Typography>
-        
       </Box>
     </Box>
   );
