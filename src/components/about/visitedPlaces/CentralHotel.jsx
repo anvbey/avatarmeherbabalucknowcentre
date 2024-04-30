@@ -3,28 +3,28 @@ import React from "react";
 import central from "../../../assets/central.jpg";
 
 function CentralHotel() {
-
   return (
-    <Box sx={{
-      margin: "20px 0"
-    }}>
+    <Box
+      sx={{
+        margin: "20px 0",
+      }}
+    >
       <Typography variant="h5" sx={{ fontFamily: "Playfair Display, serif" }}>
         Central Hotel, Aminabad
       </Typography>
-      <Box >
+      <Box>
         <Box
           sx={{
-            float: "right",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            padding: "10px",
+            marginTop: "20px",
           }}
         >
           <img
             src={central}
             alt="description"
-            style={{ width: "200px", height: "150px", borderRadius: "10px" }}
+            style={{ maxWidth: "100%", height: "auto", borderRadius: "10px" }}
           />
           <Typography
             variant="body1"
@@ -36,10 +36,12 @@ function CentralHotel() {
             Central Hotel
           </Typography>
         </Box>
-        <Typography variant="body1" sx={{
-          fontFamily: "DM Sans, sans-serif",
-        }}
->
+        <Typography
+          variant="body1"
+          sx={{
+            fontFamily: "DM Sans, sans-serif",
+          }}
+        >
           In September 1943, there was news that Kolkata, Lucknow, and many
           other places in India were hit by a famine. On 1st October 1943, Baba
           expressed His wish to visit Kolkata and when He reached there, He
