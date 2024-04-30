@@ -17,7 +17,7 @@ function Home() {
         alignItems: "center",
       }}
     >
-      
+      <Alert />
       <HeroComponent />
       <Quotes quote={"There is no such thing as \‘failure\’ on the journey towards Truth or God. It is merely a question of time."} reference={"The Awakener Magazine I/2/33"}/>
       <AboutMeherBaba />
