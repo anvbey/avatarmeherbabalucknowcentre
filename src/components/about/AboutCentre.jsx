@@ -15,8 +15,8 @@ function AboutCentre() {
         >
           The Avatar Meher Baba Centre, Lucknow was established in the year 1975
           at the residence of Shri. S.S. Dubey and Smt. Shakuntala Dubey, in the
-          presence of Shri. P.D. Pukar, Shri. G.D. Panchal, Shri. M.D. Shastri,
-          and Shri. S.R. Sharma. Shri. S.S. Dubey was the veteran Baba lover who
+          presence of Shri. Parmeshwari Dayal Pukar, Shri. Gulab Das Panchal, Shri. Matra Dutt Shastri,
+          and Shri. Salig Ram Sharma. Shri. S.S. Dubey was the veteran Baba lover who
           brought Beloved Baba’s name to Lucknow. By this time, Shri. S.S. Dubey
           had considerably spread Meher Baba’s name and love among his family,
           friends, colleagues, and neighbours, which resulted in a number of
@@ -91,7 +91,7 @@ function AboutCentre() {
           }}
         >
           Multiple events have been organised by AMB Centre, Lucknow under the
-          able guidance of our President Mr. Kamal Kishore Sharma and our 
+          able guidance of our President Mr. K.K. Sharma and our 
           Secretary Mr. Sanjay Dubey.
           <br />
           <br />
@@ -102,7 +102,7 @@ function AboutCentre() {
           <br />
           <br />
           To celebrate the Silver Jubilee of the AMBC, Lucknow, a two-day event
-          was organized on 22nd -23rd October 2018 at Ganga Prasad Verma
+          was organized on 22nd - 23rd October 2018 at Ganga Prasad Verma
           Memorial Hall, where Baba had held His poor feeding program on 23rd
           October 1943, which witnessed enthusiastic participation by Baba
           lovers from various locations of the country.
