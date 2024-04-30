@@ -220,61 +220,17 @@ export default function PrimarySearchAppBar() {
                 }}
               >
                 Contact Us
-              </Link>
-            </MenuItem>
-          </Menu>
-
-          {/* Regular navigation links for larger screens */}
-          <Box
-            sx={{
-              display: "flex",
-              justifyContent: "flex-end",
-              alignItems: "center",
-              width: "100%",
-            }}
-          >
-
-            <Typography
-              variant="h6"
-              component="div"
-              sx={{
-                marginLeft: 8,
-                fontFamily: "'Open Sans Hebrew', sans-serif",
-                fontWeight: "bold",
-                color: "black",
-                textDecoration: "none",
-                display: { xs: "none", sm: "block" },
-              }}
-            >
-              <Link to="/oct2024"> October 2024</Link>
-            </Typography>
-
-            <Typography
-              variant="h6"
-              component="div"
-              sx={{
-                marginLeft: 8,
-                fontFamily: "'Open Sans Hebrew', sans-serif",
-                fontWeight: "bold",
-                color: "black",
-                textDecoration: "none",
-                display: { xs: "none", sm: "block" },
-              }}
-            >
-              <Link to="/about">About</Link>
-            </Typography>
-
-            <Typography
-              variant="h6"
-              component="div"
-              sx={{
-                marginLeft: 8,
-                fontFamily: "'Open Sans Hebrew', sans-serif",
-                fontWeight: "bold",
-                color: "black",
-                textDecoration: "none",
-                display: { xs: "none", sm: "block" },
-              }}
+              </MenuItem>
+            </Link>
+          </Box>
+          <Box sx={{ display: { xs: "flex", md: "none" } }}>
+            <IconButton
+              size="large"
+              aria-label="show more"
+              aria-controls={mobileMenuId}
+              aria-haspopup="true"
+              onClick={handleMobileMenuOpen}
+              color="inherit"
             >
               <MenuIcon style={{ color: "#065729", fontWeight: "bold" }} />
             </IconButton>

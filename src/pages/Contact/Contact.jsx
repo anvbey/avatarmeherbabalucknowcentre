@@ -1,15 +1,21 @@
 import React from "react";
-import { Box, Typography, TextField, Button, Snackbar, Alert } from "@mui/material";
-import contactFormSchema from '../../lib/formSchema/contactFormSchema';
-import { useForm } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
+import toast, { Toaster } from 'react-hot-toast';
+import {
+  Box,
+  Typography,
+  TextField,
+  Button,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+
+import contactFormSchema from "../../lib/formSchema/contactFormSchema";
 
 const ContactForm = () => {
   const onSubmit = (values) => {
-    toast.error(
-      "Something went wrong while submitting the request. Kindly reach out to us at the details mentioned below for your queries.",
-      { duration: 10000 }
-    );
+    toast.error('Something went wrong while submitting the request. Kindly reach out to us at the details mentioned below for your queries.', {duration: 10000});
   };
 
   const { register, handleSubmit } = useForm({
@@ -84,7 +90,7 @@ const ContactForm = () => {
               <Box
                 display="flex"
                 flexDirection={isSmallScreen ? "column" : "row"}
-                gap={2} // Adjusted gap
+                gap={isSmallScreen ? 2 : 0} // Adjusted gap
                 marginBottom={2}
               >
                 <TextField
@@ -93,14 +99,14 @@ const ContactForm = () => {
                   fullWidth
                   {...register("name")}
                 />
-                
+                {isSmallScreen && (
                   <TextField
                     label="Phone"
                     variant="outlined"
                     fullWidth
                     {...register("phone")}
                   />
-                
+                )}
               </Box>
               <Box
                 display="flex"
@@ -139,15 +145,12 @@ const ContactForm = () => {
             </form>
 
             {isSmallScreen && (
-              <Box
-                p={3}
-                sx={{
-                  marginTop: "10px",
-                  color: "white",
-                  backgroundColor: "#C4C698",
-                  borderRadius: "0 0 16px 16px",
-                }}
-              >
+              <Box  p={3}  sx={{
+                marginTop: "10px",
+                color: "white",
+                backgroundColor: "#C4C698",
+                borderRadius: "0 0 16px 16px",
+              }}>
                 <Typography
                   variant="h6"
                   sx={{
@@ -198,18 +201,10 @@ const ContactForm = () => {
                   }}
                 >
                   Address: 169, Samar Vihar Colony, Alambagh, Lucknow, Uttar
-                  Pradesh, India. 226005 (
-                  <a
-                    href="https://maps.app.goo.gl/Hpu3YAggcdn6xHTp6"
-                    target="_blank"
-                    style={{
-                      fontWeight: "bold",
-                      color: "white",
-                    }}
-                  >
-                    Location
-                  </a>
-                  )
+                  Pradesh, India. 226005 (<a href='https://maps.app.goo.gl/Hpu3YAggcdn6xHTp6' target='_blank' style={{
+        fontWeight: "bold",
+        color: "white"
+      }}>Location</a>)
                 </Typography>
               </Box>
             )}
@@ -229,36 +224,36 @@ const ContactForm = () => {
                 Reach Us
               </Typography>
               <Typography
-                variant="body1"
-                sx={{
-                  marginBottom: "8px",
-                  textAlign: "left",
-                  fontFamily: "DM Sans, sans-serif",
-                }}
-              >
-                Mr. Sanjay Dubey (Secretary)
-              </Typography>
-              <Typography
-                variant="body1"
-                sx={{
-                  marginBottom: "8px",
-                  textAlign: "left",
-                  fontFamily: "DM Sans, sans-serif",
-                }}
-              >
-                Phone: +91 9415 469 415
-              </Typography>
-              <Typography
-                variant="body1"
-                sx={{
-                  marginBottom: "8px",
-                  textAlign: "left",
-                  fontFamily: "DM Sans, sans-serif",
-                  wordBreak: "break-all", // Allow breaking long words
-                }}
-              >
-                Email: avatarmeherbabalucknowcentre@gmail.com
-              </Typography>
+                  variant="body1"
+                  sx={{
+                    marginBottom: "8px",
+                    textAlign: "left",
+                    fontFamily: "DM Sans, sans-serif",
+                  }}
+                >
+                  Mr. Sanjay Dubey (Secretary)
+                </Typography>
+                <Typography
+                  variant="body1"
+                  sx={{
+                    marginBottom: "8px",
+                    textAlign: "left",
+                    fontFamily: "DM Sans, sans-serif",
+                  }}
+                >
+                  Phone: +91 9415 469 415
+                </Typography>
+                <Typography
+                  variant="body1"
+                  sx={{
+                    marginBottom: "8px",
+                    textAlign: "left",
+                    fontFamily: "DM Sans, sans-serif",
+                    wordBreak: "break-all", // Allow breaking long words
+                  }}
+                >
+                  Email: avatarmeherbabalucknowcentre@gmail.com
+                </Typography>
               <Typography
                 variant="body1"
                 sx={{
@@ -268,18 +263,10 @@ const ContactForm = () => {
                 }}
               >
                 Address: 169, Samar Vihar Colony, Alambagh, Lucknow, Uttar
-                Pradesh, India. 226005 (
-                <a
-                  href="https://maps.app.goo.gl/Hpu3YAggcdn6xHTp6"
-                  target="_blank"
-                  style={{
-                    fontWeight: "bold",
-                    color: "white",
-                  }}
-                >
-                  Location
-                </a>
-                )
+                Pradesh, India. 226005 (<a href='https://maps.app.goo.gl/Hpu3YAggcdn6xHTp6' target='_blank' style={{
+        fontWeight: "bold",
+        color: "white"
+      }}>Location</a>)
               </Typography>
             </Box>
           )}
