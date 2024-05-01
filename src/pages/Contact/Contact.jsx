@@ -175,6 +175,26 @@ const ContactForm = () => {
                     fontFamily: "DM Sans, sans-serif",
                   }}
                 >
+                  Mr. Kamal Kishore Sharma (President)
+                </Typography>
+                <Typography
+                  variant="body1"
+                  sx={{
+                    marginBottom: "8px",
+                    textAlign: "left",
+                    fontFamily: "DM Sans, sans-serif",
+                  }}
+                >
+                  Phone: +91 7607 001 888
+                </Typography>
+                <Typography
+                  variant="body1"
+                  sx={{
+                    marginBottom: "8px",
+                    textAlign: "left",
+                    fontFamily: "DM Sans, sans-serif",
+                  }}
+                >
                   Mr. Sanjay Dubey (Secretary)
                 </Typography>
                 <Typography
@@ -238,6 +258,26 @@ const ContactForm = () => {
               >
                 Reach Us
               </Typography>
+              <Typography
+                  variant="body1"
+                  sx={{
+                    marginBottom: "8px",
+                    textAlign: "left",
+                    fontFamily: "DM Sans, sans-serif",
+                  }}
+                >
+                  Mr. Kamal Kishore Sharma (President)
+                </Typography>
+                <Typography
+                  variant="body1"
+                  sx={{
+                    marginBottom: "8px",
+                    textAlign: "left",
+                    fontFamily: "DM Sans, sans-serif",
+                  }}
+                >
+                  Phone: +91 7607 001 888
+                </Typography>
               <Typography
                 variant="body1"
                 sx={{

@@ -67,6 +67,58 @@ const VerticalDividerMiddle = () => {
                     Mr. Nitin Dubey: (+91) 9654 985 984
                   </Typography>
                 </ListItem>
+                <ListItem>
+                  <Typography
+                    variant="body1"
+                    sx={{
+                      fontFamily: "DM Sans, sans-serif",
+                    }}
+                  >
+                    Mr. Santosh Srivastava: (+91) 9415 791 903
+                  </Typography>
+                </ListItem>
+              </List>
+            </List>
+          </Box>
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "flex-start",
+          }}
+        >
+          <Typography
+            variant="h6"
+            sx={{
+              fontFamily: "DM Sans, sans-serif",
+            }}
+          >
+            Volunteering:
+          </Typography>
+          <Box>
+            <List>
+              <List marker="disc">
+                <ListItem>
+                  <Typography
+                    variant="body1"
+                    sx={{
+                      fontFamily: "DM Sans, sans-serif",
+                    }}
+                  >
+                    Mr. R.K. Nigam: (+91) 9919 414 706
+                  </Typography>
+                </ListItem>
+                <ListItem>
+                  <Typography
+                    variant="body1"
+                    sx={{
+                      fontFamily: "DM Sans, sans-serif",
+                    }}
+                  >
+                    Mr. Anil Deo Sharma: (+91) 8765 919 955
+                  </Typography>
+                </ListItem>
               </List>
             </List>
           </Box>
@@ -96,7 +148,17 @@ const VerticalDividerMiddle = () => {
                       fontFamily: "DM Sans, sans-serif",
                     }}
                   >
-                    Mr. Sanjay Dubey: (+91) 9415 469 415
+                    Mr. Saurabh Dubey: (+91) 8588 982 207
+                  </Typography>
+                </ListItem>
+                <ListItem>
+                  <Typography
+                    variant="body1"
+                    sx={{
+                      fontFamily: "DM Sans, sans-serif",
+                    }}
+                  >
+                    Mr. Balendra Bajpai: (+91) 8175 806 666
                   </Typography>
                 </ListItem>
               </List>
