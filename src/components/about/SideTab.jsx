@@ -51,8 +51,8 @@ const SideTabContainer = styled.div`
   position: fixed;
   z-index: 3;
   @media screen and (max-width: 767px) {
-    width: 80vw;
-    left: ${props => props.isOpen ? '0' : '-93vw'};
+    width: 70vw;
+    left: ${props => props.isOpen ? '0' : '-83%'};
   }
   width: 12rem;
   height: 70vh;
@@ -76,5 +76,5 @@ const SideTabButton = styled.button`
   position: absolute;
   right: -38px;
   border-radius: 0 12px 12px 0;
-  padding: 4px 10px;
+  padding: 4px 6px 4px 10px;
 `
