@@ -19,7 +19,9 @@ const MemberForm = ({ control, index }) => {
     })
     const { field: phoneField, fieldState: phoneFieldState } = useController({
         name: `members[${index}].phone`,
-        control
+        control,
+        rules: { required: false },
+        defaultValue: "",
     })
     const { field: genderField, fieldState: genderFieldState } = useController({
         name: `members[${index}].gender`,
