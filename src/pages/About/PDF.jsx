@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { ScrollMode, ViewMode, Viewer } from '@react-pdf-viewer/core';
 import { pageNavigationPlugin } from '@react-pdf-viewer/page-navigation';
 import pdfFile from './Sample.pdf';
-import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 import '@react-pdf-viewer/core/lib/styles/index.css';
 
 function Pdf() {
