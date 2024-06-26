@@ -8,8 +8,10 @@ import Places from "../../components/about/BabaPlaces";
 import SideTab from "../../components/about/SideTab";
 import YouTubeEmbed from "../../components/about/DocumentaryVideo";
 import Quotes from "../../components/home/Quotes";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const { t } = useTranslation("About");
   return (
     <Box
       sx={{
@@ -22,23 +24,23 @@ const About = () => {
       <SideTab />
       <Overview />
       <Quotes
-        quote={"Do Your Best, Then Don't Worry, Be Happy! I Will Help You."}
-        reference={"Lord Meher Online Edition, Pg. 5414"}
+        quote={t("quote-1")}
+        reference={t("quote-1-reference")}
       />
       <Timeline />
       <Quotes
-        quote={"If you have the peace of a frozen lake, you will realize Me."}
-        reference={"Meher Baba Calling, Pg. 3"}
+        quote={t("quote-2")}
+        reference={t("quote-2-reference")}
       />
       <Present />
       <Quotes
-        quote={"Everything else may fail—Love never fails."}
-        reference={"Avatar, Pg. 169"}
+        quote={t("quote-3")}
+        reference={t("quote-3-reference")}
       />
       <Places />
       <Box id="documentary" sx={{ margin: "0 60px" }}>
         <Typography variant="h5" sx={{ fontFamily: "Playfair Display, serif" }}>
-          Documentary on the above-mentioned places -
+        {t("documentary-heading")}
         </Typography>
         <Box sx={{ marginTop: "10px" }}>
           <YouTubeEmbed />

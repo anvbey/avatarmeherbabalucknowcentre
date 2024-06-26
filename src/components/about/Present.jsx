@@ -2,8 +2,10 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 
 import AboutCenter from "./AboutCentre";
+import { useTranslation } from "react-i18next";
 
 function Present() {
+  const { t } = useTranslation("About");
   return (
     <Box id="present"
       sx={{
@@ -19,7 +21,7 @@ function Present() {
           fontFamily: "Playfair Display SC, serif",
         }}
       >
-        History of Avatar Meher Baba Centre, Lucknow
+      {t("history-heading")}
       </Typography>
       <AboutCenter />
     </Box>

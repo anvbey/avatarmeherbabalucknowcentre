@@ -6,6 +6,7 @@ import DropDown from "../../components/events/AutoComplete";
 
 import "./Events.css";
 import data from "../../data/Events.json"
+import { useTranslation } from "react-i18next";
 
 const Events = () => {
   const [selectedYear, setSelectedYear] = useState(new Date().getFullYear().toString()); // State to hold selected year
@@ -18,6 +19,8 @@ const Events = () => {
   const eventsForSelectedYear = data.find(
     (item) => item.year === selectedYear
   )?.events || [];
+
+  const { t } = useTranslation("Events");
 
   return (
     <Box

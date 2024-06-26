@@ -5,8 +5,10 @@ import { Link } from "react-router-dom";
 import YouTubeEmbed from "./YoutubeVideo";
 
 import "./AboutEvent.css";
+import { useTranslation } from "react-i18next";
 
 function AboutEvent() {
+  const { t } = useTranslation("HEvent");
 
   return (
     <Box
@@ -27,7 +29,8 @@ function AboutEvent() {
           fontFamily: "Playfair Display SC, serif",
         }}
       >
-        About Meher Prem Sammelan
+      {t("meher-prem-sammelan-heading")}
+
       </Typography>
       <Box
         className="about-meher-prem"
@@ -57,17 +60,7 @@ function AboutEvent() {
               fontFamily: "DM Sans, sans-serif",
             }}
           >
-            Join us as we celebrate 100 years since Meher Baba's momentous visit
-            to Lucknow with a special two-day Meher Prem Sammelan. Themed
-            "Exploring Practicality in Spirituality," this event promises a
-            profound journey of love and learning. Our program will feature
-            soul-stirring songs, mesmerizing ghazals, uplifting qawwalis, and
-            inspiring talks by esteemed Meher Baba lovers from around the globe.
-            It's not just an event; it's an opportunity to connect with fellow
-            devotees, deepen our understanding of spirituality, and renew our
-            commitment to Meher Baba's message of love and truth. RSVP now to
-            secure your spot and join us in celebrating Meher Baba's profound
-            legacy and the enduring power of his love.
+          {t("meher-prem-sammelan-description")}
           </Typography>
           <Typography
             variant="body1"
@@ -77,7 +70,7 @@ function AboutEvent() {
               marginTop: "10px",
             }}
           >
-            Date: 22nd & 23rd October 2024
+          {t("date")}
           </Typography>
           <Typography
             variant="body1"
@@ -86,10 +79,11 @@ function AboutEvent() {
               fontWeight: "bold",
             }}
           >
-            Venue: Ravindralaya Auditorium, Charabagh, Lucknow (
+          {t("venue")} (
             <a
               href="https://maps.app.goo.gl/gQsxDw1uAKvFPicR7"
               target="_blank"
+              rel="noreferrer"
               style={{
                 fontWeight: "bold",
               }}
@@ -101,9 +95,9 @@ function AboutEvent() {
           <Link to="/oct2024/register">
             <Button
               variant="contained"
-              sx={{ width: "100px", marginTop: "10px" }}
+              sx={{ width: "100px", marginTop: "10px", fontWeight: "bold"}}
             >
-              Register!
+              {t("register-button")}
             </Button>
           </Link>
         </Box>

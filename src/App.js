@@ -11,7 +11,6 @@ import About from "./pages/About/About";
 import Events from "./pages/Events/Events";
 import Contact from "./pages/Contact/Contact";
 import Footer from "./components/footer/Footer";
-import PDF from "./pages/About/PDF";
 
 import Bg from "./assets/Bg.png";
 
@@ -40,7 +39,6 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/events" element={<Events />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path='/pdf' element={<PDF />} />
         </Routes>
       </Box>
       <Footer />

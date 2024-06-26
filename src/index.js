@@ -5,14 +5,14 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
-import { Worker } from '@react-pdf-viewer/core';
+import "./i18n.js";
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js">
+      <React.Suspense fallback="loading...">
         <App />
-      </Worker>
+      </React.Suspense>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")

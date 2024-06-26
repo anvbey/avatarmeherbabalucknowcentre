@@ -8,8 +8,10 @@ import Contact from "../../components/highlightEvent/Contact";
 import MeherPrem from "../../assets/Oct2024Banner.png";
 
 import "./HighlightEvent.css";
+import { useTranslation } from "react-i18next";
 
 const HighlightEvent = () => {
+  const { t } = useTranslation("HEvent");
   return (
     <Box
       display="flex"
@@ -24,16 +26,14 @@ const HighlightEvent = () => {
         loading="lazy"
       />
       <Quotes
-        quote={
-          "If you do obey Me one hundred percent with all sincerity, at any cost, it will be greater than loving Me."
-        }
-        reference={"Meher Baba Calling"}
+        quote={t("quote-1")}
+        reference={t("quote-1-reference")}
       />
       <AboutEvent />
-      <Quotes quote={
-        "I have only one Message to give; and I repeat it age after age to one and all: LOVE GOD."
-      }
-      reference={"Meher Baba Calling"}/>
+      <Quotes
+        quote={t("quote-2")}
+        reference={t("quote-2-reference")}
+      />
       {/*<Box
         sx={{
           display: "flex",

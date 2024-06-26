@@ -9,6 +9,7 @@ import {
   Menu,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import LanguageSelector from "../language-selector";
 
 import meherLucknow from "../../assets/Meher_Lucknow.png";
 
@@ -171,8 +172,10 @@ export default function PrimarySearchAppBar() {
               src={meherLucknow}
             ></Box>
           </Link>
+          
 
           <Box sx={{ flexGrow: 1 }} />
+          <LanguageSelector />
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
             <Link to="/oct2024" style={menuLinkStyle}>
               <MenuItem

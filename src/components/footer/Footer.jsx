@@ -2,8 +2,10 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 
 import "./Footer.css";
+import { useTranslation } from "react-i18next";
 
 function Footer() {
+  const { t } = useTranslation("Footer");
   return (
     <Box
       sx={{
@@ -26,7 +28,7 @@ function Footer() {
           textAlign: "center",
         }}
       >
-        © 2023 Avatar Meher Baba Lucknow Centre
+      {t("footer")}
       </Typography>
     </Box>
   );

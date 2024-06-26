@@ -1,8 +1,10 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
 import ironBridge from "../../../assets/ironBridge.jpg";
+import { useTranslation } from "react-i18next";
 
 function IronBridge() {
+  const { t } = useTranslation("About");
   return (
     <Box
       sx={{
@@ -10,7 +12,7 @@ function IronBridge() {
       }}
     >
       <Typography variant="h5" sx={{ fontFamily: "Playfair Display, serif" }}>
-        Iron Bridge
+      {t("iron-bridge-heading")}
       </Typography>
       <Box sx={{ display: "block" }}>
         <Box
@@ -33,7 +35,7 @@ function IronBridge() {
             }}
             style={{ padding: "10px" }}
           >
-            Iron Bridge
+          {t("iron-bridge-image")}
           </Typography>
         </Box>
         <Typography
@@ -42,18 +44,7 @@ function IronBridge() {
             fontFamily: "DM Sans, sans-serif",
           }}
         >
-          In February 1941, when Baba was on His travel to various locations of
-          North India, Baba came to Lucknow and contacted Masts. During this
-          visit, He first met Nasiban Mastani, a mast of the 6th plane who used
-          to sit near this bridge. She was revered with respect in Lucknow. It
-          is said that even a queen used to visit her from time to time during
-          those days. Baba met Nasiban Mastani again in October 1943. This time
-          they met in a Harijan (untouchables) settlement. Baba gave her a
-          scarf. At first, she tied that scarf around her head but suddenly, she
-          removed the scarf and gave it to a Harijan woman standing near her.
-          Looking at this, Baba gave her another scarf which she again removed.
-          This shows us that if we have got God Himself, we would not need
-          anything more.
+        {t("iron-bridge-description")}
         </Typography>
       </Box>
     </Box>

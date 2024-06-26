@@ -7,7 +7,11 @@ import Quotes from "../../components/home/Quotes";
 import AboutMeherBaba from "../../components/home/AboutMeherBaba";
 import AboutLucknowCentre from "../../components/home/AboutLucknowCentre";
 
+import { useTranslation } from "react-i18next";
+
 function Home() {
+  
+  const { t } = useTranslation("Home");
   return (
     <Box
       sx={{
@@ -19,9 +23,9 @@ function Home() {
     >
       <Alert />
       <HeroComponent />
-      <Quotes quote={"There is no such thing as ‘failure’ on the journey towards Truth or God. It is merely a question of time."} reference={"The Awakener Magazine I/2/33"}/>
+      <Quotes quote={t("quote-1")} reference={t("quote1-reference")}/>
       <AboutMeherBaba />
-      <Quotes quote={"I am the joy in your heart and the despair of your mind - for love can attain that which the intellect cannot fathom."} reference={"Meher Baba Calling, Pg. 94"}/>
+      <Quotes quote={t("quote-2")} reference={t("quote2-reference")}/>
       <AboutLucknowCentre />
     </Box>
   );

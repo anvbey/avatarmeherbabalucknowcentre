@@ -50,7 +50,7 @@ function Quotes({quote, reference}) {
             textAlign: "center",
           }}
         >
-        (Source - {reference})
+        {reference}
       </Typography>
     </Box>
   );

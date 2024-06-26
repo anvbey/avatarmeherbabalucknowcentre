@@ -12,8 +12,10 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 
 import contactFormSchema from "../../lib/formSchema/contactFormSchema";
+import { useTranslation } from "react-i18next";
 
 const ContactForm = () => {
+  const { t } = useTranslation("Contact");
   const onSubmit = (values) => {
     toast.error(
       "Something went wrong while submitting the request. Kindly reach out to us at the details mentioned below for your queries.",
@@ -51,7 +53,7 @@ const ContactForm = () => {
             fontFamily: "Playfair Display SC, serif",
           }}
         >
-          Connect with us
+          {t("connect")}
         </Typography>
 
         <Typography
@@ -62,8 +64,7 @@ const ContactForm = () => {
             fontFamily: "Playfair Display, serif",
           }}
         >
-          We would love to respond to your queries. <br />
-          Feel free to get in touch with us.
+          {t("sub-heading")}
         </Typography>
 
         <Box
@@ -86,7 +87,7 @@ const ContactForm = () => {
                 fontFamily: "DM Sans, sans-serif",
               }}
             >
-              Send your request
+              {t("send-request")}
             </Typography>
 
             <form onSubmit={handleSubmit(onSubmit)}>
@@ -97,19 +98,18 @@ const ContactForm = () => {
                 marginBottom={2}
               >
                 <TextField
-                  label="Name"
+                  label={t("name-label")}
                   variant="outlined"
                   fullWidth
                   {...register("name")}
                 />
-                
-                  <TextField
-                    label="Phone"
-                    variant="outlined"
-                    fullWidth
-                    {...register("phone")}
-                  />
-                
+
+                <TextField
+                  label={t("phone-label")}
+                  variant="outlined"
+                  fullWidth
+                  {...register("phone")}
+                />
               </Box>
               <Box
                 display="flex"
@@ -118,14 +118,14 @@ const ContactForm = () => {
                 marginBottom={2}
               >
                 <TextField
-                  label="Email"
+                  label={t("email-label")}
                   type="email"
                   variant="outlined"
                   fullWidth
                   {...register("email")}
                 />
                 <TextField
-                  label="Subject"
+                  label={t("subject-label")}
                   variant="outlined"
                   fullWidth
                   {...register("subject")}
@@ -134,7 +134,7 @@ const ContactForm = () => {
 
               <Box display="flex" flexDirection="column" gap={2}>
                 <TextField
-                  label="Message"
+                  label={t("message-label")}
                   multiline
                   rows={4}
                   variant="outlined"
@@ -142,7 +142,7 @@ const ContactForm = () => {
                   {...register("message")}
                 />
                 <Button type="submit" variant="contained" color="primary">
-                  Submit
+                  {t("submit-button")}
                 </Button>
               </Box>
             </form>
@@ -165,7 +165,7 @@ const ContactForm = () => {
                     fontFamily: "DM Sans, sans-serif",
                   }}
                 >
-                  Reach Us
+                  {t("reach-us")}
                 </Typography>
                 <Typography
                   variant="body1"
@@ -175,7 +175,7 @@ const ContactForm = () => {
                     fontFamily: "DM Sans, sans-serif",
                   }}
                 >
-                  Mr. Kamal Kishore Sharma (President)
+                  {t("president-name")}
                 </Typography>
                 <Typography
                   variant="body1"
@@ -185,7 +185,7 @@ const ContactForm = () => {
                     fontFamily: "DM Sans, sans-serif",
                   }}
                 >
-                  Phone: +91 7607 001 888
+                  {t("president-phone")}
                 </Typography>
                 <Typography
                   variant="body1"
@@ -195,7 +195,7 @@ const ContactForm = () => {
                     fontFamily: "DM Sans, sans-serif",
                   }}
                 >
-                  Mr. Sanjay Dubey (Secretary)
+                  {t("secretary-name")}
                 </Typography>
                 <Typography
                   variant="body1"
@@ -205,7 +205,7 @@ const ContactForm = () => {
                     fontFamily: "DM Sans, sans-serif",
                   }}
                 >
-                  Phone: +91 9415 469 415
+                  {t("secretary-name")}
                 </Typography>
                 <Typography
                   variant="body1"
@@ -216,7 +216,7 @@ const ContactForm = () => {
                     wordBreak: "break-all", // Allow breaking long words
                   }}
                 >
-                  Email: avatarmeherbabalucknowcentre@gmail.com
+                  {t("email")}
                 </Typography>
                 <Typography
                   variant="body1"
@@ -226,8 +226,7 @@ const ContactForm = () => {
                     fontFamily: "DM Sans, sans-serif",
                   }}
                 >
-                  Address: 169, Samar Vihar Colony, Alambagh, Lucknow, Uttar
-                  Pradesh, India. 226005 (
+                  {t("address")}(
                   <a
                     href="https://maps.app.goo.gl/Hpu3YAggcdn6xHTp6"
                     target="_blank"
@@ -256,37 +255,7 @@ const ContactForm = () => {
                   fontFamily: "DM Sans, sans-serif",
                 }}
               >
-                Reach Us
-              </Typography>
-              <Typography
-                  variant="body1"
-                  sx={{
-                    marginBottom: "8px",
-                    textAlign: "left",
-                    fontFamily: "DM Sans, sans-serif",
-                  }}
-                >
-                  Mr. Kamal Kishore Sharma (President)
-                </Typography>
-                <Typography
-                  variant="body1"
-                  sx={{
-                    marginBottom: "8px",
-                    textAlign: "left",
-                    fontFamily: "DM Sans, sans-serif",
-                  }}
-                >
-                  Phone: +91 7607 001 888
-                </Typography>
-              <Typography
-                variant="body1"
-                sx={{
-                  marginBottom: "8px",
-                  textAlign: "left",
-                  fontFamily: "DM Sans, sans-serif",
-                }}
-              >
-                Mr. Sanjay Dubey (Secretary)
+                {t("reach-us")}
               </Typography>
               <Typography
                 variant="body1"
@@ -296,7 +265,37 @@ const ContactForm = () => {
                   fontFamily: "DM Sans, sans-serif",
                 }}
               >
-                Phone: +91 9415 469 415
+                {t("president-name")}
+              </Typography>
+              <Typography
+                variant="body1"
+                sx={{
+                  marginBottom: "8px",
+                  textAlign: "left",
+                  fontFamily: "DM Sans, sans-serif",
+                }}
+              >
+                {t("president-phone")}
+              </Typography>
+              <Typography
+                variant="body1"
+                sx={{
+                  marginBottom: "8px",
+                  textAlign: "left",
+                  fontFamily: "DM Sans, sans-serif",
+                }}
+              >
+                {t("secretary-name")}
+              </Typography>
+              <Typography
+                variant="body1"
+                sx={{
+                  marginBottom: "8px",
+                  textAlign: "left",
+                  fontFamily: "DM Sans, sans-serif",
+                }}
+              >
+                {t("secretary-phone")}
               </Typography>
               <Typography
                 variant="body1"
@@ -307,7 +306,7 @@ const ContactForm = () => {
                   wordBreak: "break-all", // Allow breaking long words
                 }}
               >
-                Email: avatarmeherbabalucknowcentre@gmail.com
+                {t("email")}
               </Typography>
               <Typography
                 variant="body1"
@@ -317,8 +316,7 @@ const ContactForm = () => {
                   fontFamily: "DM Sans, sans-serif",
                 }}
               >
-                Address: 169, Samar Vihar Colony, Alambagh, Lucknow, Uttar
-                Pradesh, India. 226005 (
+                {t("location")} (
                 <a
                   href="https://maps.app.goo.gl/Hpu3YAggcdn6xHTp6"
                   target="_blank"
