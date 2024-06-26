@@ -5,9 +5,11 @@ import IconButton from '@mui/material/IconButton';
 import Collapse from '@mui/material/Collapse';
 import Typography from '@mui/material/Typography';
 import CloseIcon from '@mui/icons-material/Close';
+import { useTranslation } from "react-i18next";
 
 export default function TransitionAlerts() {
   const [open, setOpen] = React.useState(true);
+  const { t } = useTranslation("Home");
 
   return (
     <Box sx={{ width: '90%' }}>
@@ -33,9 +35,9 @@ export default function TransitionAlerts() {
         sx={{
           fontFamily: "DM Sans, sans-serif",
         }}
-      >To register for Meher Prem Sammelan Oct'2024, <a href='/oct2024/register' style={{
-        fontWeight: "bold",
-      }}>Click Here!</a>
+      >{t("info")} <a href='/oct2024/register' style={{
+        fontWeight: "bold"
+      }}>{t("click-here")}</a>
       </Typography>
         </Alert>
       </Collapse>

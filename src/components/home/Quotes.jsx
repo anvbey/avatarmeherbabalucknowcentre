@@ -4,7 +4,7 @@ import { Box, Typography } from "@mui/material";
 import Bg from "../../assets/QuotesBg.png";
 
 
-function Quotes({quote, reference}) {
+function Quotes({quote, author, reference}) {
   return (
     <Box
       className="Quotes"
@@ -41,7 +41,7 @@ function Quotes({quote, reference}) {
             textAlign: "center",
           }}
         >
-        - Meher Baba
+        {author}
       </Typography>
       <Typography
           variant="body1"

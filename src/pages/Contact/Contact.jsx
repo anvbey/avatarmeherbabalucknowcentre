@@ -65,6 +65,7 @@ const ContactForm = () => {
           }}
           dangerouslySetInnerHTML={{ __html: t("sub-heading") }}
         >
+          {t("sub-heading")}
         </Typography>
 
         <Box
@@ -316,7 +317,7 @@ const ContactForm = () => {
                   fontFamily: "DM Sans, sans-serif",
                 }}
               >
-                {t("location")} (
+                {t("address")} (
                 <a
                   href="https://maps.app.goo.gl/Hpu3YAggcdn6xHTp6"
                   target="_blank"
@@ -326,7 +327,7 @@ const ContactForm = () => {
                     color: "white",
                   }}
                 >
-                  Location
+                  {t("location")}
                 </a>
                 )
               </Typography>

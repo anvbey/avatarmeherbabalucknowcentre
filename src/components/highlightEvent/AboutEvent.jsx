@@ -88,14 +88,14 @@ function AboutEvent() {
                 fontWeight: "bold",
               }}
             >
-              Location
+            {t("location")}
             </a>
             )
           </Typography>
           <Link to="/oct2024/register">
             <Button
               variant="contained"
-              sx={{ width: "100px", marginTop: "10px", fontWeight: "bold"}}
+              sx={{marginTop: "10px", fontWeight: "bold"}}
             >
               {t("register-button")}
             </Button>

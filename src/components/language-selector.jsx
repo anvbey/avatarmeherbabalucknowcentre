@@ -25,7 +25,7 @@ function LanguageSelector() {
                 textAlign: "center"
             }}
         >
-            {isEnglish ? "English" : "Hindi"}
+            {isEnglish ? "हिंदी" : "English"}
         </MenuItem>
     );
 }

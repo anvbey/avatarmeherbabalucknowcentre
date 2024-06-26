@@ -1,6 +1,6 @@
 {
     "connect": "Connect with us",
-    "sub-heading": "We would love to respond to your queries.<br /> Feel free to get in touch with us.",
+    "sub-heading": "We would love to respond to your queries. Feel free to get in touch with us.",
     "send-request": "Send your request",
     "name-label": "Name",
     "phone-label": "Phone",
@@ -14,5 +14,6 @@
     "secretary-name": "Mr. Sanjay Dubey (Secretary)",
     "secretary-phone": "Phone: +91 9415 469 415",
     "email": "Email: avatarmeherbabalucknowcentre@gmail.com",
-    "address": "Address: 169, Samar Vihar Colony, Alambagh, Lucknow, Uttar Pradesh, India. 226005 (Location)"
+    "address": "Address: 169, Samar Vihar Colony, Alambagh, Lucknow, Uttar Pradesh, India. 226005",
+    "location": "Location"
 }

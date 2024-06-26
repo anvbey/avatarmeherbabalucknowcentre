@@ -23,9 +23,9 @@ function Home() {
     >
       <Alert />
       <HeroComponent />
-      <Quotes quote={t("quote-1")} reference={t("quote1-reference")}/>
+      <Quotes quote={t("quote-1")} author={t("author")} reference={t("quote1-reference")}/>
       <AboutMeherBaba />
-      <Quotes quote={t("quote-2")} reference={t("quote2-reference")}/>
+      <Quotes quote={t("quote-2")} author={t("author")} reference={t("quote2-reference")}/>
       <AboutLucknowCentre />
     </Box>
   );

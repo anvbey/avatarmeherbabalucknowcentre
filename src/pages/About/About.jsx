@@ -25,16 +25,19 @@ const About = () => {
       <Overview />
       <Quotes
         quote={t("quote-1")}
+        author={t("author")}
         reference={t("quote-1-reference")}
       />
       <Timeline />
       <Quotes
         quote={t("quote-2")}
+        author={t("author")}
         reference={t("quote-2-reference")}
       />
       <Present />
       <Quotes
         quote={t("quote-3")}
+        author={t("author")}
         reference={t("quote-3-reference")}
       />
       <Places />

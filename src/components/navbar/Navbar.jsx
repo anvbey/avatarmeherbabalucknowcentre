@@ -12,6 +12,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import LanguageSelector from "../language-selector";
 
 import meherLucknow from "../../assets/Meher_Lucknow.png";
+import { useTranslation } from "react-i18next";
 
 const menuLinkStyle = {
   color: "inherit",
@@ -20,6 +21,7 @@ const menuLinkStyle = {
 };
 
 export default function PrimarySearchAppBar() {
+  const { t } = useTranslation("Navbar");
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
   const [prevScrollPos, setPrevScrollPos] = React.useState(0);
@@ -101,9 +103,7 @@ export default function PrimarySearchAppBar() {
             textAlign: "center",
           }}
         >
-          Meher Prem Sammelan
-          <br />
-          October 2024
+          {t("oct'24")}
         </MenuItem>
       </Link>
       <Link to="/about" style={{ ...menuLinkStyle }}>
@@ -116,7 +116,7 @@ export default function PrimarySearchAppBar() {
             textAlign: "center",
           }}
         >
-          About
+          {t("about")}
         </MenuItem>
       </Link>
       <Link to="/events" style={{ ...menuLinkStyle }}>
@@ -129,7 +129,7 @@ export default function PrimarySearchAppBar() {
             textAlign: "center",
           }}
         >
-          Events
+          {t("events")}
         </MenuItem>
       </Link>
       <Link to="/contact" style={{ ...menuLinkStyle }}>
@@ -142,7 +142,7 @@ export default function PrimarySearchAppBar() {
             textAlign: "center",
           }}
         >
-          Contact Us
+          {t("contact")}
         </MenuItem>
       </Link>
     </Menu>
@@ -186,7 +186,7 @@ export default function PrimarySearchAppBar() {
                   fontWeight: "bold",
                 }}
               >
-                Meher Prem Sammelan October 2024
+                {t("oct'24")}
               </MenuItem>
             </Link>
             <Link to="/about" style={menuLinkStyle}>
@@ -198,7 +198,7 @@ export default function PrimarySearchAppBar() {
                   fontWeight: "bold",
                 }}
               >
-                About
+                {t("about")}
               </MenuItem>
             </Link>
             <Link to="/events" style={menuLinkStyle}>
@@ -210,7 +210,7 @@ export default function PrimarySearchAppBar() {
                   fontWeight: "bold",
                 }}
               >
-                Events
+                {t("events")}
               </MenuItem>
             </Link>
             <Link to="/contact" style={menuLinkStyle}>
@@ -222,7 +222,7 @@ export default function PrimarySearchAppBar() {
                   fontWeight: "bold",
                 }}
               >
-                Contact Us
+                {t("contact")}
               </MenuItem>
             </Link>
           </Box>

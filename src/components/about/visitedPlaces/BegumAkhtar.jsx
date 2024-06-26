@@ -43,6 +43,7 @@ function BegumAkhtar() {
           }}
           dangerouslySetInnerHTML={{ __html: t("begum-akhtar-description") }}
         >
+        {t("begum-akhtar-description")}
         </Typography>
       </Box>
     </Box>

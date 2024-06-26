@@ -27,11 +27,13 @@ const HighlightEvent = () => {
       />
       <Quotes
         quote={t("quote-1")}
+        author={t("author")}
         reference={t("quote-1-reference")}
       />
       <AboutEvent />
       <Quotes
         quote={t("quote-2")}
+        author={t("author")}
         reference={t("quote-2-reference")}
       />
       {/*<Box
