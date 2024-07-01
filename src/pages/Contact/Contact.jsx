@@ -63,8 +63,8 @@ const ContactForm = () => {
             marginBottom: "16px",
             fontFamily: "Playfair Display, serif",
           }}
+          dangerouslySetInnerHTML={{ __html: t("sub-heading") }}
         >
-          {t("sub-heading")}
         </Typography>
 
         <Box
