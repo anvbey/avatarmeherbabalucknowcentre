@@ -12,7 +12,7 @@ function VermaMemorialHall() {
       }}
     >
       <Typography variant="h5" sx={{ fontFamily: "Playfair Display, serif" }}>
-      {t("ganga-prasad-heading")}
+        {t("ganga-prasad-heading")}
       </Typography>
       <Box>
         <Box
@@ -35,7 +35,7 @@ function VermaMemorialHall() {
               fontFamily: "DM Sans, sans-serif",
             }}
           >
-          {t("ganga-prasad-image")}
+            {t("ganga-prasad-image")}
           </Typography>
         </Box>
         <Typography
@@ -44,7 +44,7 @@ function VermaMemorialHall() {
             fontFamily: "DM Sans, sans-serif",
           }}
         >
-        {t("ganga-prasad-description")}
+          {t("ganga-prasad-description")}
         </Typography>
       </Box>
     </Box>

@@ -12,7 +12,7 @@ function IronBridge() {
       }}
     >
       <Typography variant="h5" sx={{ fontFamily: "Playfair Display, serif" }}>
-      {t("iron-bridge-heading")}
+        {t("iron-bridge-heading")}
       </Typography>
       <Box sx={{ display: "block" }}>
         <Box
@@ -35,7 +35,7 @@ function IronBridge() {
             }}
             style={{ padding: "10px" }}
           >
-          {t("iron-bridge-image")}
+            {t("iron-bridge-image")}
           </Typography>
         </Box>
         <Typography
@@ -44,7 +44,7 @@ function IronBridge() {
             fontFamily: "DM Sans, sans-serif",
           }}
         >
-        {t("iron-bridge-description")}
+          {t("iron-bridge-description")}
         </Typography>
       </Box>
     </Box>

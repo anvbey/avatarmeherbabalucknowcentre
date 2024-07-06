@@ -38,7 +38,7 @@ function AboutMeherBaba() {
           fontFamily: "Playfair Display SC, serif",
         }}
       >
-      {t("lucknow-centre")}
+        {t("lucknow-centre")}
       </Typography>
 
       <Box
@@ -59,7 +59,7 @@ function AboutMeherBaba() {
             fontFamily: "DM Sans, sans-serif",
           }}
         >
-        {t("lucknow-centre-description")}
+          {t("lucknow-centre-description")}
         </Typography>
 
         <img

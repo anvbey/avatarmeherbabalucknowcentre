@@ -10,7 +10,6 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import LanguageSelector from "../language-selector";
-
 import meherLucknow from "../../assets/Meher_Lucknow.png";
 import { useTranslation } from "react-i18next";
 
@@ -172,7 +171,6 @@ export default function PrimarySearchAppBar() {
               src={meherLucknow}
             ></Box>
           </Link>
-          
 
           <Box sx={{ flexGrow: 1 }} />
           <LanguageSelector />

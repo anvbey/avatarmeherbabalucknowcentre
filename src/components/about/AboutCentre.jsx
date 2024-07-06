@@ -1,6 +1,5 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-
 import amblko from "../../assets/AMBLKO.jpg";
 import { useTranslation } from "react-i18next";
 
@@ -15,11 +14,10 @@ function AboutCentre() {
             fontFamily: "DM Sans, sans-serif",
           }}
           dangerouslySetInnerHTML={{ __html: t("history-description") }}
-        >
-        </Typography>
+        ></Typography>
       </Box>
       <Typography variant="h5" sx={{ fontFamily: "Playfair Display, serif" }}>
-      {t("about-center-heading")}
+        {t("about-center-heading")}
       </Typography>
       <Box sx={{ display: "block" }}>
         <Box
@@ -43,7 +41,7 @@ function AboutCentre() {
               padding: "10px",
             }}
           >
-          {t("about-center-image")}
+            {t("about-center-image")}
           </Typography>
         </Box>
         <Typography
@@ -52,8 +50,7 @@ function AboutCentre() {
             fontFamily: "DM Sans, sans-serif",
           }}
           dangerouslySetInnerHTML={{ __html: t("about-center-description") }}
-        >
-        </Typography>
+        ></Typography>
       </Box>
     </Box>
   );

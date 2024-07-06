@@ -43,7 +43,7 @@ const About = () => {
       <Places />
       <Box id="documentary" sx={{ margin: "0 60px" }}>
         <Typography variant="h5" sx={{ fontFamily: "Playfair Display, serif" }}>
-        {t("documentary-heading")}
+          {t("documentary-heading")}
         </Typography>
         <Box sx={{ marginTop: "10px" }}>
           <YouTubeEmbed />

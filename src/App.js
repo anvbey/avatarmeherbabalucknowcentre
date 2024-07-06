@@ -17,32 +17,32 @@ import Bg from "./assets/Bg.png";
 function App() {
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
-    <Box
-      className="App"
-      sx={{
-        backgroundImage: `url(${Bg})`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-        minHeight: "100vh",
-      }}
-    >
-      <Navbar />
-      <Box>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/oct2024" element={<HighlightEvent />} />
-          <Route path="/oct2024/register" element={<Registration />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/events" element={<Events />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+      <Box
+        className="App"
+        sx={{
+          backgroundImage: `url(${Bg})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          minHeight: "100vh",
+        }}
+      >
+        <Navbar />
+        <Box>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/oct2024" element={<HighlightEvent />} />
+            <Route path="/oct2024/register" element={<Registration />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/events" element={<Events />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </Box>
+        <Footer />
       </Box>
-      <Footer />
-    </Box>
     </LocalizationProvider>
   );
 }

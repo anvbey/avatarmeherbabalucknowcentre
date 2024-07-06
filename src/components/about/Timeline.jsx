@@ -1,12 +1,10 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-
 import "./Timeline.css";
 import { useTranslation } from "react-i18next";
 
@@ -26,7 +24,7 @@ function Timeline() {
         variant="h4"
         sx={{ fontFamily: "Playfair Display SC, serif" }}
       >
-      {t("timeline-heading")}
+        {t("timeline-heading")}
       </Typography>
       <Typography
         variant="body-1"
@@ -34,7 +32,7 @@ function Timeline() {
           fontFamily: "DM Sans, sans-serif",
         }}
       >
-      {t("timeline-description")}
+        {t("timeline-description")}
       </Typography>
       <VerticalTimeline>
         <VerticalTimelineElement
@@ -49,7 +47,7 @@ function Timeline() {
             }}
             className="vertical-timeline-element-title"
           >
-          {t("timeline-card-1-date")}
+            {t("timeline-card-1-date")}
           </Typography>
           <Typography
             variant="body1"
@@ -57,7 +55,7 @@ function Timeline() {
               fontFamily: "DM Sans, sans-serif",
             }}
           >
-          {t("timeline-card-1-description")}
+            {t("timeline-card-1-description")}
           </Typography>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -72,7 +70,7 @@ function Timeline() {
             }}
             className="vertical-timeline-element-title"
           >
-          {t("timeline-card-2-date")}
+            {t("timeline-card-2-date")}
           </Typography>
           <Typography
             variant="body1"
@@ -80,7 +78,7 @@ function Timeline() {
               fontFamily: "DM Sans, sans-serif",
             }}
           >
-          {t("timeline-card-2-description")}
+            {t("timeline-card-2-description")}
           </Typography>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -91,10 +89,11 @@ function Timeline() {
           <Typography
             variant="body1"
             sx={{
-              fontFamily: "DM Sans, sans-serif", fontWeight: "bold"
+              fontFamily: "DM Sans, sans-serif",
+              fontWeight: "bold",
             }}
           >
-          {t("timeline-card-3-date")}
+            {t("timeline-card-3-date")}
           </Typography>
           <Typography
             variant="body1"
@@ -102,7 +101,7 @@ function Timeline() {
               fontFamily: "DM Sans, sans-serif",
             }}
           >
-          {t("timeline-card-3-description")}
+            {t("timeline-card-3-description")}
           </Typography>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -117,7 +116,7 @@ function Timeline() {
             }}
             className="vertical-timeline-element-title"
           >
-          {t("timeline-card-4-date")}
+            {t("timeline-card-4-date")}
           </Typography>
           <Typography
             variant="body1"
@@ -125,7 +124,7 @@ function Timeline() {
               fontFamily: "DM Sans, sans-serif",
             }}
           >
-          {t("timeline-card-4-description")}
+            {t("timeline-card-4-description")}
           </Typography>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -140,7 +139,7 @@ function Timeline() {
             }}
             className="vertical-timeline-element-title"
           >
-          {t("timeline-card-5-date")}
+            {t("timeline-card-5-date")}
           </Typography>
           <Typography
             variant="body1"
@@ -148,7 +147,7 @@ function Timeline() {
               fontFamily: "DM Sans, sans-serif",
             }}
           >
-          {t("timeline-card-5-description")}
+            {t("timeline-card-5-description")}
           </Typography>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -163,7 +162,7 @@ function Timeline() {
             }}
             className="vertical-timeline-element-title"
           >
-          {t("timeline-card-6-date")}
+            {t("timeline-card-6-date")}
           </Typography>
           <Typography
             variant="body1"
@@ -171,7 +170,7 @@ function Timeline() {
               fontFamily: "DM Sans, sans-serif",
             }}
           >
-          {t("timeline-card-6-description")}
+            {t("timeline-card-6-description")}
           </Typography>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -186,7 +185,7 @@ function Timeline() {
             }}
             className="vertical-timeline-element-title"
           >
-          {t("timeline-card-7-date")}
+            {t("timeline-card-7-date")}
           </Typography>
           <Typography
             variant="body1"
@@ -194,7 +193,7 @@ function Timeline() {
               fontFamily: "DM Sans, sans-serif",
             }}
           >
-          {t("timeline-card-7-description")}
+            {t("timeline-card-7-description")}
           </Typography>
         </VerticalTimelineElement>
       </VerticalTimeline>

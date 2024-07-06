@@ -1,10 +1,8 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-
 import Bg from "../../assets/QuotesBg.png";
 
-
-function Quotes({quote, author, reference}) {
+function Quotes({ quote, author, reference }) {
   return (
     <Box
       className="Quotes"
@@ -26,30 +24,30 @@ function Quotes({quote, author, reference}) {
         rel="stylesheet"
       />
       <Typography
-          variant="body1"
-          sx={{
-            fontFamily: "DM Sans, sans-serif",
-            textAlign: "center",
-          }}
-        >
+        variant="body1"
+        sx={{
+          fontFamily: "DM Sans, sans-serif",
+          textAlign: "center",
+        }}
+      >
         "{quote}"
       </Typography>
       <Typography
-          variant="body1"
-          sx={{
-            fontFamily: "DM Sans, sans-serif",
-            textAlign: "center",
-          }}
-        >
+        variant="body1"
+        sx={{
+          fontFamily: "DM Sans, sans-serif",
+          textAlign: "center",
+        }}
+      >
         {author}
       </Typography>
       <Typography
-          variant="body1"
-          sx={{
-            fontFamily: "DM Sans, sans-serif",
-            textAlign: "center",
-          }}
-        >
+        variant="body1"
+        sx={{
+          fontFamily: "DM Sans, sans-serif",
+          textAlign: "center",
+        }}
+      >
         {reference}
       </Typography>
     </Box>

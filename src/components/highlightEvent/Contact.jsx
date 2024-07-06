@@ -4,11 +4,11 @@ import { List, ListItem } from "@mui/joy";
 import "./Contact.css";
 import { useTranslation } from "react-i18next";
 
-
 const VerticalDividerMiddle = () => {
   const { t } = useTranslation("HEvent");
   return (
-    <Box className='eventContact'
+    <Box
+      className="eventContact"
       sx={{
         width: "90%",
       }}
@@ -23,7 +23,7 @@ const VerticalDividerMiddle = () => {
           fontFamily: "Playfair Display SC, serif",
         }}
       >
-      {t("contact-heading")}
+        {t("contact-heading")}
       </Typography>
       <Box
         sx={{
@@ -45,7 +45,7 @@ const VerticalDividerMiddle = () => {
               fontFamily: "DM Sans, sans-serif",
             }}
           >
-          {t("accommodation")}
+            {t("accommodation")}
           </Typography>
           <Box>
             <List>
@@ -57,7 +57,7 @@ const VerticalDividerMiddle = () => {
                       fontFamily: "DM Sans, sans-serif",
                     }}
                   >
-                  {t("acc-contact-1")}
+                    {t("acc-contact-1")}
                   </Typography>
                 </ListItem>
                 <ListItem>
@@ -67,7 +67,7 @@ const VerticalDividerMiddle = () => {
                       fontFamily: "DM Sans, sans-serif",
                     }}
                   >
-                  {t("acc-contact-2")}
+                    {t("acc-contact-2")}
                   </Typography>
                 </ListItem>
                 <ListItem>
@@ -77,7 +77,7 @@ const VerticalDividerMiddle = () => {
                       fontFamily: "DM Sans, sans-serif",
                     }}
                   >
-                  {t("acc-contact-3")}
+                    {t("acc-contact-3")}
                   </Typography>
                 </ListItem>
               </List>
@@ -97,7 +97,7 @@ const VerticalDividerMiddle = () => {
               fontFamily: "DM Sans, sans-serif",
             }}
           >
-          {t("volunteer-info")}
+            {t("volunteer-info")}
           </Typography>
           <Box>
             <List>
@@ -109,7 +109,7 @@ const VerticalDividerMiddle = () => {
                       fontFamily: "DM Sans, sans-serif",
                     }}
                   >
-                  {t("vol-contact-1")}
+                    {t("vol-contact-1")}
                   </Typography>
                 </ListItem>
                 <ListItem>
@@ -119,7 +119,7 @@ const VerticalDividerMiddle = () => {
                       fontFamily: "DM Sans, sans-serif",
                     }}
                   >
-                  {t("vol-contact-2")}
+                    {t("vol-contact-2")}
                   </Typography>
                 </ListItem>
               </List>
@@ -139,7 +139,7 @@ const VerticalDividerMiddle = () => {
               fontFamily: "DM Sans, sans-serif",
             }}
           >
-          {t("general-info")}
+            {t("general-info")}
           </Typography>
           <Box>
             <List>
@@ -151,7 +151,7 @@ const VerticalDividerMiddle = () => {
                       fontFamily: "DM Sans, sans-serif",
                     }}
                   >
-                  {t("gen-contact-1")}
+                    {t("gen-contact-1")}
                   </Typography>
                 </ListItem>
                 <ListItem>
@@ -161,7 +161,7 @@ const VerticalDividerMiddle = () => {
                       fontFamily: "DM Sans, sans-serif",
                     }}
                   >
-                  {t("gen-contact-2")}
+                    {t("gen-contact-2")}
                   </Typography>
                 </ListItem>
               </List>

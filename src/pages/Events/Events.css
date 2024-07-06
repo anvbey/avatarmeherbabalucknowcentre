@@ -1,57 +1,47 @@
 @media screen and (min-width: 1314px) {
-    .cards{
-        flex-direction: row;
-    }
+  .cards {
+    flex-direction: row;
+  }
 }
 
 @media screen and (min-width: 1069px) {
-    .cards{
-        flex-direction: row;
-    }
+  .cards {
+    flex-direction: row;
+  }
 }
 
 @media screen and (max-width: 1068px) {
-    .cards{
-        flex-direction: row;
-        ;
-    }
+  .cards {
+    flex-direction: row;
+  }
 }
 
-
 @media screen and (max-width: 768px) {
-    .cards{
-        flex-direction: column;
-    }
-
+  .cards {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 662px) {
-    .cards{
-        flex-direction: column;
-        ;
-    }
+  .cards {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 468px) {
-    .cards{
-        flex-direction: column;
-    }
+  .cards {
+    flex-direction: column;
+  }
 }
-
 
 @media screen and (max-width: 368px) {
-    .cards{
-        flex-direction: column;
-        ;
-    }
+  .cards {
+    flex-direction: column;
+  }
 }
-
 
 @media screen and (max-width: 268px) {
-    .cards{
-        flex-direction: column;
-        ;
-    }
-
+  .cards {
+    flex-direction: column;
+  }
 }
- 

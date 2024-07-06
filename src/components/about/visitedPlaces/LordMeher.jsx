@@ -12,7 +12,7 @@ function LordMeher() {
       }}
     >
       <Typography variant="h5" sx={{ fontFamily: "Playfair Display, serif" }}>
-      {t("lord-meher-heading")}
+        {t("lord-meher-heading")}
       </Typography>
       <Box>
         <Box
@@ -29,7 +29,7 @@ function LordMeher() {
             style={{ maxWidth: "50%", height: "auto", borderRadius: "10px" }}
           />
           <Typography variant="body1" style={{ padding: "10px" }}>
-          {t("lord-meher-image")}
+            {t("lord-meher-image")}
           </Typography>
         </Box>
         <Typography
@@ -38,7 +38,7 @@ function LordMeher() {
             fontFamily: "DM Sans, sans-serif",
           }}
         >
-        {t("lord-meher-description")}
+          {t("lord-meher-description")}
         </Typography>
       </Box>
     </Box>

@@ -1,6 +1,5 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-
 import Charbagh from "../about/visitedPlaces/Charbagh";
 import IronBridge from "./visitedPlaces/IronBridge";
 import CentralHotel from "../about/visitedPlaces/CentralHotel";
@@ -27,7 +26,7 @@ function BabaPlaces() {
         variant="h4"
         sx={{ fontFamily: "Playfair Display SC, serif" }}
       >
-      {t("places-heading")}
+        {t("places-heading")}
       </Typography>
       <Charbagh />
       <IronBridge />

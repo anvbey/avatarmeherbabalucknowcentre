@@ -1,32 +1,32 @@
 {
-    "year-select": "Select year",
-    "2024":{
-        "heading": "",
-        "date": "",
-        "description": ""
-    },
-    "2023":{
-        "heading": "",
-        "date": "",
-        "description": ""
-    },
-    "2022":{
-        "heading": "",
-        "date": "",
-        "description": ""
-    },
-    "2021":{
-        "heading": "",
-        "date": "",
-        "description": ""
-    },
-    "2020":{
-        "heading": "",
-        "date": "",
-        "description": ""
-    },
-    "youtube-link": "",
-    "see-more": "",
-    "see-less": "",
-    "no-content": ""
+  "year-select": "Select year",
+  "2024": {
+    "heading": "",
+    "date": "",
+    "description": ""
+  },
+  "2023": {
+    "heading": "",
+    "date": "",
+    "description": ""
+  },
+  "2022": {
+    "heading": "",
+    "date": "",
+    "description": ""
+  },
+  "2021": {
+    "heading": "",
+    "date": "",
+    "description": ""
+  },
+  "2020": {
+    "heading": "",
+    "date": "",
+    "description": ""
+  },
+  "youtube-link": "",
+  "see-more": "",
+  "see-less": "",
+  "no-content": ""
 }

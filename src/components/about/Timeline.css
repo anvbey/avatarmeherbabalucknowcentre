@@ -1,8 +1,7 @@
 .vertical-timeline-element--education {
-    transition: all 0.3s ease;
-  }
-  
-  .vertical-timeline-element--education.expanded {
-    width: 400px; /* Adjust the expanded width as needed */
-    /* Add other styles for the expanded state */
-  }
+  transition: all 0.3s ease;
+}
+
+.vertical-timeline-element--education.expanded {
+  width: 400px;
+}

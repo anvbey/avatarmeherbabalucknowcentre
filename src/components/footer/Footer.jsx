@@ -1,6 +1,5 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-
 import "./Footer.css";
 import { useTranslation } from "react-i18next";
 
@@ -28,7 +27,7 @@ function Footer() {
           textAlign: "center",
         }}
       >
-      {t("footer")}
+        {t("footer")}
       </Typography>
     </Box>
   );

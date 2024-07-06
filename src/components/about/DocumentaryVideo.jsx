@@ -4,7 +4,15 @@ const YouTubeEmbed = ({ videoId }) => {
   const srcUrl = `https://www.youtube.com/embed/DA5vLefXfe0?si=_0QMbMYvzKV3sqO1`;
 
   return (
-    <div style={{ position: "relative", paddingBottom: "56.25%", height: 0, overflow: "hidden", borderRadius: "10px" }}>
+    <div
+      style={{
+        position: "relative",
+        paddingBottom: "56.25%",
+        height: 0,
+        overflow: "hidden",
+        borderRadius: "10px",
+      }}
+    >
       <iframe
         width="100%"
         height="100%"

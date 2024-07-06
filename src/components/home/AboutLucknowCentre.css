@@ -1,5 +1,5 @@
 @media (max-width: 984px) {
-  .about-meher-baba-container{
+  .about-meher-baba-container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -7,16 +7,16 @@
   }
   .about-meher-baba {
     flex-direction: column;
-    align-items: center; /* Center horizontally */
-    text-align: center; /* Center all text */
+    align-items: center;
+    text-align: center;
   }
 
   .meher-baba-image {
     order: -1;
-    width: 80%; /* Occupy full width */
-    max-width: 100%; /* Limit to container width */
-    height: auto; /* Maintain aspect ratio */
+    width: 80%;
+    max-width: 100%;
+    height: auto; 
     margin: 20px;
-    object-fit: contain; /* Maintain aspect ratio without distortion */
+    object-fit: contain;
   }
 }

@@ -5,11 +5,13 @@ import { useTranslation } from "react-i18next";
 function Masjid() {
   const { t } = useTranslation("About");
   return (
-    <Box sx={{
-      margin: "20px 0"
-    }}>
+    <Box
+      sx={{
+        margin: "20px 0",
+      }}
+    >
       <Typography variant="h5" sx={{ fontFamily: "Playfair Display, serif" }}>
-      {t("masjid-heading")}
+        {t("masjid-heading")}
       </Typography>
       <Box>
         <Typography
@@ -18,7 +20,7 @@ function Masjid() {
             fontFamily: "DM Sans, sans-serif",
           }}
         >
-        {t("masjid-image")}
+          {t("masjid-image")}
         </Typography>
       </Box>
     </Box>

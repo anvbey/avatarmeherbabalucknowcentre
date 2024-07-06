@@ -5,20 +5,21 @@ import Card from "../../components/events/Cards";
 import DropDown from "../../components/events/AutoComplete";
 
 import "./Events.css";
-import data from "../../data/Events.json"
+import data from "../../data/Events.json";
 // import { useTranslation } from "react-i18next";
 
 const Events = () => {
-  const [selectedYear, setSelectedYear] = useState(new Date().getFullYear().toString()); // State to hold selected year
+  const [selectedYear, setSelectedYear] = useState(
+    new Date().getFullYear().toString()
+  ); // State to hold selected year
 
   // Function to handle year selection change
   const handleYearChange = (event, value) => {
     setSelectedYear(value.label);
   };
 
-  const eventsForSelectedYear = data.find(
-    (item) => item.year === selectedYear
-  )?.events || [];
+  const eventsForSelectedYear =
+    data.find((item) => item.year === selectedYear)?.events || [];
 
   // const { t } = useTranslation("Events");
 
@@ -42,7 +43,8 @@ const Events = () => {
           alignItems: "flex-start",
         }}
       >
-        <DropDown handleYearChange={handleYearChange} /> {/* Pass the handleYearChange function */}
+        <DropDown handleYearChange={handleYearChange} />{" "}
+        {/* Pass the handleYearChange function */}
       </Box>
       <Box
         className="cards"
@@ -56,13 +58,15 @@ const Events = () => {
           gap: "10px",
         }}
       >
-      {eventsForSelectedYear.length === 0 ? (
-        <Typography variant="body1">No events available for the selected year.</Typography>
-      ) : (
-        // If there are events, map over them and render the Card component
-        <Card year={selectedYear} />
-      )}
-         {/* Pass the selected year */}
+        {eventsForSelectedYear.length === 0 ? (
+          <Typography variant="body1">
+            No events available for the selected year.
+          </Typography>
+        ) : (
+          // If there are events, map over them and render the Card component
+          <Card year={selectedYear} />
+        )}
+        {/* Pass the selected year */}
       </Box>
     </Box>
   );

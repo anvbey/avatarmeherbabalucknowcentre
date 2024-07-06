@@ -1,7 +1,6 @@
 .highlight-image {
-    border-radius: 8px;
-    width: 90%;
-    max-height: 85vh;
-    object-fit: contain;
-  }
-  
+  border-radius: 8px;
+  width: 90%;
+  max-height: 85vh;
+  object-fit: contain;
+}

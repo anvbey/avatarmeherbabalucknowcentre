@@ -12,7 +12,7 @@ function CentralHotel() {
       }}
     >
       <Typography variant="h5" sx={{ fontFamily: "Playfair Display, serif" }}>
-      {t("central-hotel-heading")}
+        {t("central-hotel-heading")}
       </Typography>
       <Box>
         <Box
@@ -35,7 +35,7 @@ function CentralHotel() {
             }}
             style={{ padding: "10px" }}
           >
-          {t("central-hotel-image")}
+            {t("central-hotel-image")}
           </Typography>
         </Box>
         <Typography
@@ -44,7 +44,7 @@ function CentralHotel() {
             fontFamily: "DM Sans, sans-serif",
           }}
         >
-        {t("central-hotel-description")}")
+          {t("central-hotel-description")}")
         </Typography>
       </Box>
     </Box>

@@ -6,26 +6,33 @@ import { useTranslation } from "react-i18next";
 function BegumAkhtar() {
   const { t } = useTranslation("About");
   return (
-    <Box sx={{
-      margin: "20px 0"
-    }}>
-      <Typography variant="h5" sx={{ fontFamily: "Playfair Display, serif" }}>
-      {t("begum-akhtar-heading")}
-      </Typography>
-      <Box>
-      <Box
+    <Box
       sx={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        marginTop: "20px",
+        margin: "20px 0",
       }}
     >
-      <img
-        src={akhtariTomb}
-        alt="description"
-        style={{ minWidth: "40%",maxWidth: "50%", height: "auto", borderRadius: "10px" }}
-      />
+      <Typography variant="h5" sx={{ fontFamily: "Playfair Display, serif" }}>
+        {t("begum-akhtar-heading")}
+      </Typography>
+      <Box>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            marginTop: "20px",
+          }}
+        >
+          <img
+            src={akhtariTomb}
+            alt="description"
+            style={{
+              minWidth: "40%",
+              maxWidth: "50%",
+              height: "auto",
+              borderRadius: "10px",
+            }}
+          />
           <Typography
             variant="body1"
             style={{ padding: "10px" }}
@@ -33,7 +40,7 @@ function BegumAkhtar() {
               fontFamily: "DM Sans, sans-serif",
             }}
           >
-          {t("begum-akhtar-image")}
+            {t("begum-akhtar-image")}
           </Typography>
         </Box>
         <Typography
@@ -42,8 +49,7 @@ function BegumAkhtar() {
             fontFamily: "DM Sans, sans-serif",
           }}
           dangerouslySetInnerHTML={{ __html: t("begum-akhtar-description") }}
-        >
-        </Typography>
+        ></Typography>
       </Box>
     </Box>
   );

@@ -41,11 +41,7 @@ export default function ImgMediaCard({ year }) {
     >
       {events.map((event, index) => (
         <Card key={index} sx={{ margin: "20px", flexBasis: "300px" }}>
-          <CardMedia
-            component="img"
-            alt="Thumbnail"
-            image={MeherPrem}
-          />
+          <CardMedia component="img" alt="Thumbnail" image={MeherPrem} />
           <CardContent>
             <Typography
               gutterBottom
@@ -55,7 +51,7 @@ export default function ImgMediaCard({ year }) {
                 fontSize: "16px",
                 fontWeight: "bold",
                 minHeight: "70px",
-                fontFamily: 'Playfair Display SC, serif'
+                fontFamily: "Playfair Display SC, serif",
               }}
               component="div"
             >
@@ -65,19 +61,30 @@ export default function ImgMediaCard({ year }) {
             <Typography
               gutterBottom
               variant="body1"
-              sx={{ margin: " 0 0 10px 0", fontFamily: 'DM Sans, sans-serif', 
-              borderBottom: "1px solid #ccc" }}
+              sx={{
+                margin: " 0 0 10px 0",
+                fontFamily: "DM Sans, sans-serif",
+                borderBottom: "1px solid #ccc",
+              }}
               component="div"
             >
               Date: {event.startDate}
             </Typography>
-            <Typography variant="body2" color="text.secondary" sx={{ fontFamily: 'DM Sans, sans-serif' }}>
+            <Typography
+              variant="body2"
+              color="text.secondary"
+              sx={{ fontFamily: "DM Sans, sans-serif" }}
+            >
               {showFullDescription[index]
                 ? event.desc
                 : `${event.desc.slice(0, 100)}...`}
             </Typography>
             {!showFullDescription[index] && (
-              <Button size="small" onClick={() => handleLearnMore(index)} sx={{ fontFamily: 'DM Sans, sans-serif', margin: "10px 0 0 0" }}>
+              <Button
+                size="small"
+                onClick={() => handleLearnMore(index)}
+                sx={{ fontFamily: "DM Sans, sans-serif", margin: "10px 0 0 0" }}
+              >
                 See More
               </Button>
             )}
@@ -88,11 +95,15 @@ export default function ImgMediaCard({ year }) {
                 size="small"
                 href={event.youtubeUrl || event.alternateUrl}
                 target="_blank"
-                sx={{ fontFamily: 'DM Sans, sans-serif' }}
+                sx={{ fontFamily: "DM Sans, sans-serif" }}
               >
                 Youtube Link
               </Button>
-              <Button size="small" onClick={() => handleLearnLess(index)} sx={{ fontFamily: 'DM Sans, sans-serif' }}>
+              <Button
+                size="small"
+                onClick={() => handleLearnLess(index)}
+                sx={{ fontFamily: "DM Sans, sans-serif" }}
+              >
                 See Less
               </Button>
             </CardActions>

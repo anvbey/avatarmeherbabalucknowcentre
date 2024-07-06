@@ -4,7 +4,7 @@ const YouTubeEmbed = ({ videoId }) => {
   const srcUrl = `https://www.youtube.com/embed/rMN2PgNo7aw`;
 
   return (
-    <div style={{ borderRadius: "8px", overflow: "hidden", borderRadius: "10px" }}>
+    <div style={{ borderRadius: "8px", overflow: "hidden" }}>
       <iframe
         width="100%"
         height="315"
@@ -18,7 +18,7 @@ const YouTubeEmbed = ({ videoId }) => {
     gyroscope; 
     picture-in-picture; 
     web-share"
-    allowFullScreen
+        allowFullScreen
       ></iframe>
     </div>
   );

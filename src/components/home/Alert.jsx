@@ -1,10 +1,6 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import Alert from '@mui/material/Alert';
-import IconButton from '@mui/material/IconButton';
-import Collapse from '@mui/material/Collapse';
-import Typography from '@mui/material/Typography';
-import CloseIcon from '@mui/icons-material/Close';
+import * as React from "react";
+import {Box, Alert, IconButton, Collapse, Typography} from "@mui/material";
+import CloseIcon from "@mui/icons-material/Close";
 import { useTranslation } from "react-i18next";
 
 export default function TransitionAlerts() {
@@ -12,10 +8,10 @@ export default function TransitionAlerts() {
   const { t } = useTranslation("Home");
 
   return (
-    <Box sx={{ width: '90%' }}>
+    <Box sx={{ width: "90%" }}>
       <Collapse in={open}>
         <Alert
-        severity="info"
+          severity="info"
           action={
             <IconButton
               aria-label="close"
@@ -30,15 +26,22 @@ export default function TransitionAlerts() {
           }
           sx={{ mb: 2 }}
         >
-        <Typography
-        variant="body1"
-        sx={{
-          fontFamily: "DM Sans, sans-serif",
-        }}
-      >{t("info")} <a href='/oct2024/register' style={{
-        fontWeight: "bold"
-      }}>{t("click-here")}</a>
-      </Typography>
+          <Typography
+            variant="body1"
+            sx={{
+              fontFamily: "DM Sans, sans-serif",
+            }}
+          >
+            {t("info")}{" "}
+            <a
+              href="/oct2024/register"
+              style={{
+                fontWeight: "bold",
+              }}
+            >
+              {t("click-here")}
+            </a>
+          </Typography>
         </Alert>
       </Collapse>
     </Box>

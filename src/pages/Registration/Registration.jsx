@@ -1,10 +1,8 @@
-import React from 'react';
-import GroupForm from './GroupLeaderForm';
+import React from "react";
+import GroupForm from "./GroupLeaderForm";
 
 const Registration = () => {
-    return (
-        <GroupForm/>
-    );
+  return <GroupForm />;
 };
 
 export default Registration;

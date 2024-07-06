@@ -1,9 +1,7 @@
 import React from "react";
 import { Box, Button, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-
 import YouTubeEmbed from "./YoutubeVideo";
-
 import "./AboutEvent.css";
 import { useTranslation } from "react-i18next";
 
@@ -29,8 +27,7 @@ function AboutEvent() {
           fontFamily: "Playfair Display SC, serif",
         }}
       >
-      {t("meher-prem-sammelan-heading")}
-
+        {t("meher-prem-sammelan-heading")}
       </Typography>
       <Box
         className="about-meher-prem"
@@ -60,7 +57,7 @@ function AboutEvent() {
               fontFamily: "DM Sans, sans-serif",
             }}
           >
-          {t("meher-prem-sammelan-description")}
+            {t("meher-prem-sammelan-description")}
           </Typography>
           <Typography
             variant="body1"
@@ -70,7 +67,7 @@ function AboutEvent() {
               marginTop: "10px",
             }}
           >
-          {t("date")}
+            {t("date")}
           </Typography>
           <Typography
             variant="body1"
@@ -79,7 +76,7 @@ function AboutEvent() {
               fontWeight: "bold",
             }}
           >
-          {t("venue")} (
+            {t("venue")} (
             <a
               href="https://maps.app.goo.gl/gQsxDw1uAKvFPicR7"
               target="_blank"
@@ -88,14 +85,14 @@ function AboutEvent() {
                 fontWeight: "bold",
               }}
             >
-            {t("location")}
+              {t("location")}
             </a>
             )
           </Typography>
           <Link to="/oct2024/register">
             <Button
               variant="contained"
-              sx={{marginTop: "10px", fontWeight: "bold"}}
+              sx={{ marginTop: "10px", fontWeight: "bold" }}
             >
               {t("register-button")}
             </Button>

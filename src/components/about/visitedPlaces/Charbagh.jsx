@@ -4,13 +4,15 @@ import image from "../../../assets/charbagh.png";
 import { useTranslation } from "react-i18next";
 
 function Charbagh() {
-  const { t } = useTranslation("About");  
+  const { t } = useTranslation("About");
   return (
-    <Box sx={{
-      margin: "20px 0"
-    }}>
+    <Box
+      sx={{
+        margin: "20px 0",
+      }}
+    >
       <Typography variant="h5" sx={{ fontFamily: "Playfair Display, serif" }}>
-      {t("charbagh-heading")}
+        {t("charbagh-heading")}
       </Typography>
       <Box>
         <Box
@@ -24,10 +26,10 @@ function Charbagh() {
           <img
             src={image}
             alt="description"
-            style={{ maxWidth: "100%", height: "auto", borderRadius: "10px"}}
+            style={{ maxWidth: "100%", height: "auto", borderRadius: "10px" }}
           />
           <Typography variant="body1" style={{ margin: "10px" }}>
-          {t("charbagh-image")}
+            {t("charbagh-image")}
           </Typography>
         </Box>
         <Typography
@@ -36,7 +38,7 @@ function Charbagh() {
             fontFamily: "DM Sans, sans-serif",
           }}
         >
-        {t("charbagh-description")}
+          {t("charbagh-description")}
         </Typography>
       </Box>
     </Box>
