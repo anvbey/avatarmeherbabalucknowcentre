@@ -64,9 +64,7 @@ const ContactForm = () => {
             fontFamily: "Playfair Display, serif",
           }}
           dangerouslySetInnerHTML={{ __html: t("sub-heading") }}
-        >
-          {t("sub-heading")}
-        </Typography>
+        />
 
         <Box
           display="flex"

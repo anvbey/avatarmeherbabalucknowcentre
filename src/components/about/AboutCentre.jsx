@@ -16,7 +16,6 @@ function AboutCentre() {
           }}
           dangerouslySetInnerHTML={{ __html: t("history-description") }}
         >
-        {t("history-description")}
         </Typography>
       </Box>
       <Typography variant="h5" sx={{ fontFamily: "Playfair Display, serif" }}>
@@ -54,7 +53,6 @@ function AboutCentre() {
           }}
           dangerouslySetInnerHTML={{ __html: t("about-center-description") }}
         >
-        {t("about-center-description")}
         </Typography>
       </Box>
     </Box>
