@@ -31,6 +31,7 @@ function App() {
         }}
       >
         <Navbar />
+        
         <Box>
           <Routes>
             <Route path="/" element={<Home />} />

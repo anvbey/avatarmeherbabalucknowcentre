@@ -1,4 +1,5 @@
 import * as React from "react";
+import LanguageSelector from "../language-selector"
 import { Link } from "react-router-dom";
 import {
   AppBar,
@@ -9,7 +10,7 @@ import {
   Menu,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import LanguageSelector from "../language-selector";
+
 import meherLucknow from "../../assets/Meher_Lucknow.png";
 import { useTranslation } from "react-i18next";
 
@@ -159,7 +160,9 @@ export default function PrimarySearchAppBar() {
           transition: "top 0.6s",
         }}
       >
-        <Toolbar>
+        <Toolbar sx={{
+          justifyContent: 'space-between',
+        }}>
           <Link to="/">
             <Box
               component="img"
@@ -167,21 +170,22 @@ export default function PrimarySearchAppBar() {
                 height: 70,
                 width: 150,
               }}
-              alt="The alternate text"
+              alt="Meher Lucknow"
               src={meherLucknow}
             ></Box>
           </Link>
-
-          <Box sx={{ flexGrow: 1 }} />
-          <LanguageSelector />
-          <Box sx={{ display: { xs: "none", md: "flex" } }}>
+          
+          
+          
+          <Box sx={{ display: { xs: 'none', md: 'flex' }, justifyContent: 'space-between', width: '100%' }}>
+          <Box sx={{ display: 'flex' }}>
             <Link to="/oct2024" style={menuLinkStyle}>
               <MenuItem
                 onClick={handleMenuClose}
                 style={{
                   ...menuLinkStyle,
-                  color: "#065729",
-                  fontWeight: "bold",
+                  color: '#065729',
+                  fontWeight: 'bold',
                 }}
               >
                 {t("oct'24")}
@@ -192,8 +196,8 @@ export default function PrimarySearchAppBar() {
                 onClick={handleMenuClose}
                 style={{
                   ...menuLinkStyle,
-                  color: "#065729",
-                  fontWeight: "bold",
+                  color: '#065729',
+                  fontWeight: 'bold',
                 }}
               >
                 {t("about")}
@@ -204,8 +208,8 @@ export default function PrimarySearchAppBar() {
                 onClick={handleMenuClose}
                 style={{
                   ...menuLinkStyle,
-                  color: "#065729",
-                  fontWeight: "bold",
+                  color: '#065729',
+                  fontWeight: 'bold',
                 }}
               >
                 {t("events")}
@@ -216,15 +220,19 @@ export default function PrimarySearchAppBar() {
                 onClick={handleMenuClose}
                 style={{
                   ...menuLinkStyle,
-                  color: "#065729",
-                  fontWeight: "bold",
+                  color: '#065729',
+                  fontWeight: 'bold',
                 }}
               >
                 {t("contact")}
               </MenuItem>
             </Link>
           </Box>
+          <LanguageSelector />
+        </Box>
+          
           <Box sx={{ display: { xs: "flex", md: "none" } }}>
+          <LanguageSelector />
             <IconButton
               size="large"
               aria-label="show more"
