@@ -16,27 +16,10 @@ const Events = () => {
   const [data, setData] = useState([]);
   const { i18n } = useTranslation();
 
-  function convertFromDevnagiri(str) {
-    const numbers = ["०", "१", "२", "३", "४", "५", "६", "७", "८", "९"];
-    let convertedStr = "";
-    for (const char of str) {
-      const index = numbers.indexOf(char);
-      convertedStr += index === -1 ? char : index;
-    }
-    return convertedStr;
-  }
-
   // Update data based on the selected language
   useEffect(() => {
     if (i18n.language === "hi") {
-      setData(
-        hindiData.map((item) => {
-          return {
-            ...item,
-            year: convertFromDevnagiri(item.year),
-          };
-        })
-      );
+      setData(hindiData);
     } else {
       setData(englishData);
     }
@@ -50,7 +33,8 @@ const Events = () => {
   const eventsForSelectedYear =
     data.find((item) => item.year === selectedYear)?.events || [];
 
-    const { t } = useTranslation("Events");
+  const { t } = useTranslation("Events");
+
   return (
     <Box
       sx={{
@@ -86,9 +70,7 @@ const Events = () => {
         }}
       >
         {eventsForSelectedYear.length === 0 ? (
-          <Typography variant="body1">
-          {t("no_events_available")}
-          </Typography>
+          <Typography variant="body1">{t("no_events_available")}</Typography>
         ) : (
           <ImgMediaCard events={eventsForSelectedYear} />
         )}
