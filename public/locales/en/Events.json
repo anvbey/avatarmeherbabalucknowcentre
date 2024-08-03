@@ -1,32 +1,8 @@
 {
-  "year-select": "Select year",
-  "2024": {
-    "heading": "",
-    "date": "",
-    "description": ""
-  },
-  "2023": {
-    "heading": "",
-    "date": "",
-    "description": ""
-  },
-  "2022": {
-    "heading": "",
-    "date": "",
-    "description": ""
-  },
-  "2021": {
-    "heading": "",
-    "date": "",
-    "description": ""
-  },
-  "2020": {
-    "heading": "",
-    "date": "",
-    "description": ""
-  },
-  "youtube-link": "",
-  "see-more": "",
-  "see-less": "",
-  "no-content": ""
+  "select_year": "Select Year",
+  "no_events_available": "No events available for the selected year.",
+  "date": "Date",
+  "see_more": "See More",
+  "see_less": "See Less",
+  "youtube_link": "Youtube Link"
 }

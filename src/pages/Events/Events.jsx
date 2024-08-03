@@ -1,27 +1,37 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Box, Typography } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
-import Card from "../../components/events/Cards";
+import ImgMediaCard from "../../components/events/Cards";
 import DropDown from "../../components/events/AutoComplete";
 
 import "./Events.css";
-import data from "../../data/Events.json";
-// import { useTranslation } from "react-i18next";
+import englishData from "../../data/Events.json";
+import hindiData from "../../data/HEvents.json";
 
 const Events = () => {
-  const [selectedYear, setSelectedYear] = useState(
-    new Date().getFullYear().toString()
-  ); // State to hold selected year
+  const [selectedYear, setSelectedYear] = useState(new Date().getFullYear().toString());
+  const [data, setData] = useState([]);
+  const { i18n } = useTranslation();
 
+  // Update data based on the selected language
+  useEffect(() => {
+    if (i18n.language === "hi") {
+      setData(hindiData);
+      
+    } else {
+      setData(englishData);
+      
+    }
+  }, [i18n.language]);
+  
   // Function to handle year selection change
   const handleYearChange = (event, value) => {
     setSelectedYear(value.label);
   };
-
-  const eventsForSelectedYear =
-    data.find((item) => item.year === selectedYear)?.events || [];
-
-  // const { t } = useTranslation("Events");
+  
+  const eventsForSelectedYear = data.find((item) => item.year === selectedYear)?.events || [];
+  console.log(eventsForSelectedYear);
 
   return (
     <Box
@@ -43,8 +53,7 @@ const Events = () => {
           alignItems: "flex-start",
         }}
       >
-        <DropDown handleYearChange={handleYearChange} />{" "}
-        {/* Pass the handleYearChange function */}
+        <DropDown handleYearChange={handleYearChange} />
       </Box>
       <Box
         className="cards"
@@ -54,7 +63,7 @@ const Events = () => {
           justifyContent: "center",
           alignItems: "center",
           marginTop: "80px",
-          flexWrap: "wrap", // Allow cards to wrap to the next row
+          flexWrap: "wrap",
           gap: "10px",
         }}
       >
@@ -63,10 +72,8 @@ const Events = () => {
             No events available for the selected year.
           </Typography>
         ) : (
-          // If there are events, map over them and render the Card component
-          <Card year={selectedYear} />
+          <ImgMediaCard events={eventsForSelectedYear} />
         )}
-        {/* Pass the selected year */}
       </Box>
     </Box>
   );

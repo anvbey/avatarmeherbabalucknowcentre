@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useState } from "react";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
@@ -7,13 +7,11 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import MeherPrem from "../../assets/Oct2024Banner.png";
-import data from "../../data/Events.json";
 
-export default function ImgMediaCard({ year }) {
-  const events = data.find((item) => item.year === year)?.events || [];
-
+const ImgMediaCard = ({ events }) => {
   // State to track whether to show full description for each card
-  const [showFullDescription, setShowFullDescription] = React.useState([]);
+  const [showFullDescription, setShowFullDescription] = useState([]);
+  
 
   // Function to handle "Learn More" button click
   const handleLearnMore = (index) => {
@@ -47,7 +45,7 @@ export default function ImgMediaCard({ year }) {
               gutterBottom
               variant="h6"
               sx={{
-                margin: " 0 0 10px 0",
+                margin: "0 0 10px 0",
                 fontSize: "16px",
                 fontWeight: "bold",
                 minHeight: "70px",
@@ -57,12 +55,11 @@ export default function ImgMediaCard({ year }) {
             >
               {event.title}
             </Typography>
-
             <Typography
               gutterBottom
               variant="body1"
               sx={{
-                margin: " 0 0 10px 0",
+                margin: "0 0 10px 0",
                 fontFamily: "DM Sans, sans-serif",
                 borderBottom: "1px solid #ccc",
               }}
@@ -75,9 +72,7 @@ export default function ImgMediaCard({ year }) {
               color="text.secondary"
               sx={{ fontFamily: "DM Sans, sans-serif" }}
             >
-              {showFullDescription[index]
-                ? event.desc
-                : `${event.desc.slice(0, 100)}...`}
+              {showFullDescription[index] ? event.desc : `${event.desc.slice(0, 100)}...`}
             </Typography>
             {!showFullDescription[index] && (
               <Button
@@ -112,4 +107,6 @@ export default function ImgMediaCard({ year }) {
       ))}
     </Box>
   );
-}
+};
+
+export default ImgMediaCard;

@@ -4,6 +4,7 @@ import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
 import { useTranslation } from 'react-i18next';
+import { useLanguage } from '../LanguageContext';
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   width: 44,
@@ -64,15 +65,13 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
 
 export default function CustomizedSwitches() {
   const { i18n } = useTranslation();
-  const [isEnglish, setIsEnglish] = React.useState(true);
+  const { language, setLanguage } = useLanguage();
+  const isEnglish = language === 'en';
 
   const toggleLanguage = () => {
-    if (isEnglish) {
-      i18n.changeLanguage('hi');
-    } else {
-      i18n.changeLanguage('en');
-    }
-    setIsEnglish(!isEnglish);
+    const newLanguage = isEnglish ? 'hi' : 'en';
+    i18n.changeLanguage(newLanguage);
+    setLanguage(newLanguage);
   };
 
   return (
@@ -85,7 +84,6 @@ export default function CustomizedSwitches() {
             onChange={toggleLanguage} 
           />
         }
-        // label={isEnglish ? "English" : "हिंदी"}
       />
     </FormGroup>
   );
