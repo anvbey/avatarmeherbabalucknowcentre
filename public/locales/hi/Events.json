@@ -1,32 +1,8 @@
 {
-  "year-select": "",
-  "2024": {
-    "heading": "",
-    "date": "",
-    "description": ""
-  },
-  "2023": {
-    "heading": "",
-    "date": "",
-    "description": ""
-  },
-  "2022": {
-    "heading": "",
-    "date": "",
-    "description": ""
-  },
-  "2021": {
-    "heading": "",
-    "date": "",
-    "description": ""
-  },
-  "2020": {
-    "heading": "",
-    "date": "",
-    "description": ""
-  },
-  "youtube-link": "",
-  "see-more": "",
-  "see-less": "",
-  "no-content": ""
+  "select_year": "वर्ष चुनें",
+  "no_events_available": "चयनित वर्ष के लिए कोई कार्यक्रम उपलब्ध नहीं हैं।",
+  "date": "तारीख",
+  "see_more": "और देखें",
+  "see_less": "कम देखें",
+  "youtube_link": "यूट्यूब लिंक"
 }
