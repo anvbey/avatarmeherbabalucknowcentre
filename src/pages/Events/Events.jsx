@@ -15,17 +15,6 @@ const Events = () => {
   );
   const [data, setData] = useState([]);
   const { i18n } = useTranslation();
-
-  function convertFromDevnagiri(str) {
-    const numbers = ["०", "१", "२", "३", "४", "५", "६", "७", "८", "९"];
-    let convertedStr = "";
-    for (const char of str) {
-      const index = numbers.indexOf(char);
-      convertedStr += index === -1 ? char : index;
-    }
-    return convertedStr;
-  }
-
   // Update data based on the selected language
   useEffect(() => {
     if (i18n.language === "hi") {
