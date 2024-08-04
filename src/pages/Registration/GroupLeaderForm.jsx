@@ -79,7 +79,6 @@ const GroupForm = () => {
     });
     remove(index);
     setValue("numberOfMembers", watch("numberOfMembers") - 1);
-    console.log(watch("numberOfMembers"));
     if (watch("numberOfMembers") >= 2) {
       setTimeout(() => {
         setIsPreview({
@@ -140,7 +139,6 @@ const GroupForm = () => {
         return response.json();
       })
       .then((data) => {
-        console.log(data);
         if (data.status === 200) {
           toast.success("Form submitted successfully", { duration: 5000 });
           setTimeout(() => {
