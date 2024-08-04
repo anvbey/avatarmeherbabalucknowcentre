@@ -1,9 +1,13 @@
-import React from "react";
-import TextField from "@mui/material/TextField";
-import Autocomplete from "@mui/material/Autocomplete";
+import React, { useState } from "react";
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import FormControl from "@mui/material/FormControl";
+import Select from "@mui/material/Select";
+import { useTranslation } from "react-i18next";
 
 const DropDown = ({ handleYearChange }) => {
-  const year = [
+  const { t } = useTranslation("Events");
+  const years = [
     { label: "2024", year: 2024 },
     { label: "2023", year: 2023 },
     { label: "2022", year: 2022 },
@@ -11,31 +15,33 @@ const DropDown = ({ handleYearChange }) => {
     { label: "2020", year: 2020 },
   ];
 
-  const defaultProps = {
-    options: year,
-    getOptionLabel: (option) => option.label,
+  const [selectedYear, setSelectedYear] = useState(years[0].year);
+
+  const handleChange = (event) => {
+    const year = event.target.value;
+    setSelectedYear(year);
+    handleYearChange(event, years.find((y) => y.year === year));
   };
 
-  const maxWidth = year.reduce((max, option) => {
-    const labelWidth = option.label.length * 8;
-    return labelWidth > max ? labelWidth : max;
-  }, 0);
-
-  const staticWidth = `${maxWidth + 100}px`;
-
   return (
-    <Autocomplete
-      {...defaultProps}
-      id="disable-clearable"
-      disableClearable
-      freeSolo
-      renderInput={(params) => (
-        <TextField {...params} label="Select Year" variant="standard" />
-      )}
-      style={{ width: staticWidth, margin: "10px 0 0 10px" }}
-      defaultValue={year[0]}
-      onChange={(event, value) => handleYearChange(event, value)}
-    />
+    <div>
+      <FormControl sx={{ m: 1, minWidth: 120 }}>
+        <InputLabel id="year-select-label">{t("select_year")}</InputLabel>
+        <Select
+          labelId="year-select-label"
+          id="year-select"
+          value={selectedYear}
+          label={t("select_year")}
+          onChange={handleChange}
+        >
+          {years.map((year) => (
+            <MenuItem key={year.year} value={year.year}>
+            {t(year.label)}
+            </MenuItem>
+          ))}
+        </Select>
+      </FormControl>
+    </div>
   );
 };
 

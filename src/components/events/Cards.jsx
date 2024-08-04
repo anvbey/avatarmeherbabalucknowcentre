@@ -7,8 +7,11 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import MeherPrem from "../../assets/Oct2024Banner.png";
+import { useTranslation } from "react-i18next";
 
 const ImgMediaCard = ({ events }) => {
+
+  const { t } = useTranslation("Events");
   // State to track whether to show full description for each card
   const [showFullDescription, setShowFullDescription] = useState([]);
   
@@ -65,7 +68,7 @@ const ImgMediaCard = ({ events }) => {
               }}
               component="div"
             >
-              Date: {event.startDate}
+            {t("date")}: {event.startDate}
             </Typography>
             <Typography
               variant="body2"
@@ -78,9 +81,9 @@ const ImgMediaCard = ({ events }) => {
               <Button
                 size="small"
                 onClick={() => handleLearnMore(index)}
-                sx={{ fontFamily: "DM Sans, sans-serif", margin: "10px 0 0 0" }}
+                sx={{ fontFamily: "DM Sans, sans-serif", margin: "10px 0 0 -7px" }}
               >
-                See More
+              {t("see_more")}
               </Button>
             )}
           </CardContent>
@@ -92,14 +95,14 @@ const ImgMediaCard = ({ events }) => {
                 target="_blank"
                 sx={{ fontFamily: "DM Sans, sans-serif" }}
               >
-                Youtube Link
+              {t("youtube_link")}
               </Button>
               <Button
                 size="small"
                 onClick={() => handleLearnLess(index)}
                 sx={{ fontFamily: "DM Sans, sans-serif" }}
               >
-                See Less
+              {t("see_less")}
               </Button>
             </CardActions>
           )}

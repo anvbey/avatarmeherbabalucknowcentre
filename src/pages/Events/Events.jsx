@@ -50,6 +50,7 @@ const Events = () => {
   const eventsForSelectedYear =
     data.find((item) => item.year === selectedYear)?.events || [];
 
+    const { t } = useTranslation("Events");
   return (
     <Box
       sx={{
@@ -86,7 +87,7 @@ const Events = () => {
       >
         {eventsForSelectedYear.length === 0 ? (
           <Typography variant="body1">
-            No events available for the selected year.
+          {t("no_events_available")}
           </Typography>
         ) : (
           <ImgMediaCard events={eventsForSelectedYear} />
