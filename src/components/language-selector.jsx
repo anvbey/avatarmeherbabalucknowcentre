@@ -38,7 +38,7 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
     },
   },
   '& .MuiSwitch-thumb': {
-    backgroundColor: theme.palette.mode === 'dark' ? '#003892' : '#001e3c',
+    backgroundColor: theme.palette.mode === 'dark' ? '#598a6f' : '#598a6f',
     width: 20,
     height: 20,
     '&::before': {
@@ -60,6 +60,25 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
     opacity: 1,
     backgroundColor: theme.palette.mode === 'dark' ? '#8796A5' : '#aab4be',
     borderRadius: 20 / 2,
+  },
+
+  // Add media queries for mobile view
+  '@media (max-width: 600px)': {
+    width: 60, // Increase width for mobile
+    height: 28, // Increase height for mobile
+    '& .MuiSwitch-thumb': {
+      width: 26, // Increase thumb size for mobile
+      height: 26,
+      '&::before': {
+        fontSize: '12px', // Adjust font size for mobile
+      },
+    },
+    '& .MuiSwitch-switchBase': {
+      transform: 'translateX(1px)', // Adjust translation for mobile
+      '&.Mui-checked': {
+        transform: 'translateX(28px)', // Adjust checked translation for mobile
+      },
+    },
   },
 }));
 
