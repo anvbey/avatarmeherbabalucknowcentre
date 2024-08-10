@@ -18,20 +18,21 @@ import {
   Typography,
 } from "@mui/material";
 import MemberForm from "./MemberForm";
+import { useTranslation } from "react-i18next";
 
-const Note = () => (
+const Note = (props) => (
   <Typography
     variant="subtitle1"
     color="textSecondary"
     align="center"
     sx={{ marginBottom: "20px" }}
   >
-    * Kindly verify the details before submitting the form as you won't be able
-    to make changes post submitting.
+    {props.t("note")}
   </Typography>
 );
 
 const GroupForm = () => {
+  const { t } = useTranslation("Registration");
   const [isPreview, setIsPreview] = useState({
     bool: false,
     members: 0,
@@ -97,7 +98,7 @@ const GroupForm = () => {
 
   const onSubmit = async (values) => {
     if (watch("members").length < watch("numberOfMembers") - 1) {
-      toast.error("Please update the members details", {
+      toast.error(t("member-update"), {
         duration: 3000,
         position: "top-right",
       });
@@ -108,7 +109,7 @@ const GroupForm = () => {
       );
     }
     if (dayjs(values.dateOfArrival).isAfter(dayjs(values.dateOfDeparture))) {
-      toast.error("Date of Arrival cannot be greater than Date of Departure");
+      toast.error(t("date-error"));
       return;
     }
     const lowercaseValues = {
@@ -140,7 +141,7 @@ const GroupForm = () => {
       })
       .then((data) => {
         if (data.status === 200) {
-          toast.success("Form submitted successfully", { duration: 5000 });
+          toast.success(t("form-submit"), { duration: 5000 });
           setTimeout(() => {
             window.location.href = "/oct2024";
           }, 3000); // Redirect after 3 seconds
@@ -150,7 +151,7 @@ const GroupForm = () => {
               `${member.first_name} ${member.last_name} (${member.age}, ${member.gender}, ${member.city})`
           );
           toast.error(
-            `Some participants are already registered: ${alreadyRegisteredMembers.join(", ")}`,
+            `${t("already-registered")} ${alreadyRegisteredMembers.join(", ")}`,
             {
               duration: 10000,
               position: "top-right",
@@ -188,13 +189,13 @@ const GroupForm = () => {
         }}
       >
         <Typography variant="h5" gutterBottom>
-          Registration Form
+          {t("registration-form")}
         </Typography>
-        <Note />
+        <Note t={t}/>
         <Grid container spacing={3}>
           <Grid item xs={6}>
             <TextField
-              label="First Name"
+              label={t("first-name")}
               name="first_name"
               {...register("first_name")}
               required
@@ -206,7 +207,7 @@ const GroupForm = () => {
           </Grid>
           <Grid item xs={6}>
             <TextField
-              label="Last Name"
+              label={t("last-name")}
               name="last_name"
               {...register("last_name")}
               required
@@ -218,7 +219,7 @@ const GroupForm = () => {
           </Grid>
           <Grid item xs={6}>
             <TextField
-              label="Email (optional)"
+              label={t("email")}
               type="email"
               name="email"
               {...register("email")}
@@ -230,7 +231,7 @@ const GroupForm = () => {
           </Grid>
           <Grid item xs={6}>
             <TextField
-              label="Phone"
+              label={t("phone")}
               type="tel"
               name="phone"
               {...register("phone")}
@@ -243,7 +244,7 @@ const GroupForm = () => {
           </Grid>
           <Grid item xs={6}>
             <TextField
-              label="Age"
+              label={t("age")}
               type="number"
               name="age"
               {...register("age")}
@@ -256,17 +257,17 @@ const GroupForm = () => {
           </Grid>
           <Grid item xs={6}>
             <FormControl fullWidth>
-              <InputLabel id="gender">Gender *</InputLabel>
+              <InputLabel id="gender">{t("gender")} *</InputLabel>
               <Select
                 name="gender"
                 {...register("gender")}
                 required
                 labelId="gender"
-                label="Gender"
+                label={t("gender")}
               >
-                <MenuItem value="Male">Male</MenuItem>
-                <MenuItem value="Female">Female</MenuItem>
-                <MenuItem value="Other">Others</MenuItem>
+                <MenuItem value="Male">{t("male")}</MenuItem>
+                <MenuItem value="Female">{t("female")}</MenuItem>
+                <MenuItem value="Other">{t("others")}</MenuItem>
               </Select>
             </FormControl>
             <p error={!!errors.gender} style={{ color: "red" }}>
@@ -275,7 +276,7 @@ const GroupForm = () => {
           </Grid>
           <Grid item xs={12}>
             <TextField
-              label="City"
+              label={t("city")}
               name="city"
               {...register("city")}
               required
@@ -287,7 +288,7 @@ const GroupForm = () => {
           </Grid>
           <Grid item xs={6}>
             <DateTimePicker
-              label="Date and Time of Arrival"
+              label={t("date-and-time-of-arrival")}
               name="dateOfArrival"
               onChange={(e) => {
                 if (!e) return;
@@ -301,7 +302,7 @@ const GroupForm = () => {
           </Grid>
           <Grid item xs={6}>
             <DateTimePicker
-              label="Date and Time of Departure"
+              label={t("date-and-time-of-departure")}
               name="dateOfDeparture"
               onChange={(e) => {
                 if (!e) return;
@@ -327,7 +328,7 @@ const GroupForm = () => {
           >
             <div>
               <TextField
-                label="Number of Members"
+                label={t("number-of-members")}
                 type="number"
                 name="numberOfMembers"
                 required
@@ -345,7 +346,7 @@ const GroupForm = () => {
               onClick={handleChange}
               disabled={watch("numberOfMembers") < 1}
             >
-              Update
+              {t("update")}
             </Button>
           </Grid>
         </Grid>
@@ -361,14 +362,14 @@ const GroupForm = () => {
                 marginBottom: "10px",
               }}
             >
-              <MemberForm control={control} index={index} errors={errors} />
+              <MemberForm control={control} index={index} errors={errors} t={t}/>
               <Button
                 variant="contained"
                 color="error"
                 onClick={() => removeParticipant(index)}
                 sx={{ position: "absolute", top: "-10px", right: "-10px" }}
               >
-                Remove
+                {t("remove")}
               </Button>
             </Box>
           ))}
@@ -379,7 +380,7 @@ const GroupForm = () => {
             type="submit"
             sx={{ width: "25vw" }}
           >
-            Submit
+            {t("submit")}
           </Button>
         )}
         <Toaster />

@@ -10,7 +10,7 @@ import {
 } from "@mui/material";
 import { useController } from "react-hook-form";
 
-const MemberForm = ({ control, index }) => {
+const MemberForm = ({ control, index, t }) => {
   const { field: firstNameField, fieldState: firstNameFieldState } =
     useController({
       name: `members[${index}].first_name`,
@@ -45,7 +45,7 @@ const MemberForm = ({ control, index }) => {
       <Grid container spacing={3}>
         <Grid item xs={4}>
           <TextField
-            label={`First Name`}
+            label={t("first-name")}
             {...firstNameField}
             required
             fullWidth
@@ -56,7 +56,7 @@ const MemberForm = ({ control, index }) => {
         </Grid>
         <Grid item xs={4}>
           <TextField
-            label={`Last Name`}
+            label={t("last-name")}
             {...lastNameField}
             required
             fullWidth
@@ -67,7 +67,7 @@ const MemberForm = ({ control, index }) => {
         </Grid>
         <Grid item xs={4}>
           <TextField
-            label={`Age`}
+            label={t("age")}
             type="number"
             {...ageField}
             required
@@ -79,7 +79,7 @@ const MemberForm = ({ control, index }) => {
         </Grid>
         <Grid item xs={4}>
           <TextField
-            label={`Phone (optional)`}
+            label={t("phone-member")}
             type="number"
             {...phoneField}
             fullWidth
@@ -90,11 +90,11 @@ const MemberForm = ({ control, index }) => {
         </Grid>
         <Grid item xs={4}>
           <FormControl fullWidth>
-            <InputLabel id="gender">Gender *</InputLabel>
+            <InputLabel id="gender">{t("gender")} *</InputLabel>
             <Select {...genderField} required labelId="gender" label="Gender">
-              <MenuItem value="Male">Male</MenuItem>
-              <MenuItem value="Female">Female</MenuItem>
-              <MenuItem value="Other">Others</MenuItem>
+              <MenuItem value="Male">{t("male")}</MenuItem>
+              <MenuItem value="Female">{t("female")}</MenuItem>
+              <MenuItem value="Other">{t("others")}</MenuItem>
             </Select>
           </FormControl>
           <p error={genderFieldState.invalid} style={{ color: "red" }}>
