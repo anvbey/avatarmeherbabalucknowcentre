@@ -1,0 +1,10 @@
+{
+    "first_name_required": "प्रथम नाम आवश्यक है",
+    "last_name_required": "उपनाम आवश्यक है",
+    "phone_invalid": "फ़ोन नंबर 10 अंकों का होना चाहिए",
+    "address_required": "पता आवश्यक है",
+    "city_required": "शहर आवश्यक है",
+    "age_required": "उम्र आवश्यक है",
+    "members_required": "कम से कम एक सदस्य आवश्यक है"
+}
+  
