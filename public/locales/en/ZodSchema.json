@@ -1,0 +1,10 @@
+{
+    "first_name_required": "First Name is required",
+    "last_name_required": "Last Name is required",
+    "phone_invalid": "Phone number must be 10 digits",
+    "address_required": "Address is required",
+    "city_required": "City is required",
+    "age_required": "Age is required",
+    "members_required": "At least one member is required"
+}
+  

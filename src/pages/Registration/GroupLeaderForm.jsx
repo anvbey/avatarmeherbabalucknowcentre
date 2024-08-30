@@ -3,7 +3,7 @@ import toast, { Toaster } from "react-hot-toast";
 import { DateTimePicker } from "@mui/x-date-pickers/DateTimePicker";
 import { Link } from "react-router-dom";
 import dayjs from "dayjs";
-import { groupFormSchema } from "../../lib/formSchema/registrationFormSchema";
+import { useGroupFormSchema } from "../../lib/formSchema/registrationFormSchema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm, useFieldArray } from "react-hook-form";
 import {
@@ -33,6 +33,7 @@ const Note = (props) => (
 
 const GroupForm = () => {
   const { t } = useTranslation("Registration");
+  const groupFormSchema = useGroupFormSchema();
   const [isPreview, setIsPreview] = useState({
     bool: false,
     members: 0,
