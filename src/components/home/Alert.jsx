@@ -2,6 +2,7 @@ import * as React from "react";
 import {Box, Alert, IconButton, Collapse, Typography} from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 export default function TransitionAlerts() {
   const [open, setOpen] = React.useState(true);
@@ -33,14 +34,14 @@ export default function TransitionAlerts() {
             }}
           >
             {t("info")}{" "}
-            <a
-              href="/oct2024/register"
+            <Link
+              to="/oct2024/register"
               style={{
                 fontWeight: "bold",
               }}
             >
               {t("click-here")}
-            </a>
+            </Link>
           </Typography>
         </Alert>
       </Collapse>
