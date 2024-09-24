@@ -3,9 +3,23 @@ import { Box, Typography } from "@mui/material";
 import { List, ListItem } from "@mui/joy";
 import "./Contact.css";
 import { useTranslation } from "react-i18next";
+import { useLocation } from "react-router-dom";
+import { useEffect, useRef } from "react";
 
 const VerticalDividerMiddle = () => {
   const { t } = useTranslation("HEvent");
+  const location = useLocation();
+  const contactRef = useRef(null); 
+
+  useEffect(() => {
+    if (location.hash === "#contact") {
+      setTimeout(() => {
+        if (contactRef.current) {
+          contactRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    }
+  }, [location]);
   return (
     <Box
       className="eventContact"
@@ -19,6 +33,8 @@ const VerticalDividerMiddle = () => {
       />
       <Typography
         variant="h4"
+        id="contact"
+        ref={contactRef}
         sx={{
           fontFamily: "Playfair Display SC, serif",
         }}

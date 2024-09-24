@@ -6,7 +6,8 @@ import { Link } from "react-router-dom";
 
 export default function TransitionAlerts() {
   const [open, setOpen] = React.useState(true);
-  const { t } = useTranslation("Home");
+  const { t, i18n } = useTranslation("Home");
+  const locale = i18n.language;
 
   return (
     <Box sx={{ width: "90%" }}>
@@ -34,8 +35,8 @@ export default function TransitionAlerts() {
             }}
           >
             {t("info")}{" "}
-            <Link
-              to="/oct2024/register"
+            <a
+              href={`/oct2024#contact`}
               style={{
                 fontWeight: "bold",
               }}

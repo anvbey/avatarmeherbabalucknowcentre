@@ -89,14 +89,14 @@ function AboutEvent() {
             </a>
             )
           </Typography>
-          <Link to="/oct2024/register">
+          {/* <Link to="/oct2024/register">
             <Button
               variant="contained"
               sx={{ marginTop: "10px", fontWeight: "bold" }}
             >
               {t("register-button")}
             </Button>
-          </Link>
+          </Link> */}
         </Box>
         <Box sx={{ flex: 5, margin: "10px" }}>
           <YouTubeEmbed />
