@@ -2,12 +2,10 @@ import * as React from "react";
 import {Box, Alert, IconButton, Collapse, Typography} from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
 
 export default function TransitionAlerts() {
   const [open, setOpen] = React.useState(true);
-  const { t, i18n } = useTranslation("Home");
-  const locale = i18n.language;
+  const { t } = useTranslation("Home");
 
   return (
     <Box sx={{ width: "90%" }}>
@@ -42,7 +40,7 @@ export default function TransitionAlerts() {
               }}
             >
               {t("click-here")}
-            </Link>
+            </a>
           </Typography>
         </Alert>
       </Collapse>
