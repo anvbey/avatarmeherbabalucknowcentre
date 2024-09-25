@@ -6,7 +6,6 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import MeherPrem from "../../assets/Oct2024Banner.png";
 import { useTranslation } from "react-i18next";
 
 const ImgMediaCard = ({ events }) => {
@@ -42,7 +41,7 @@ const ImgMediaCard = ({ events }) => {
     >
       {events.map((event, index) => (
         <Card key={index} sx={{ margin: "20px", flexBasis: "300px" }}>
-          <CardMedia component="img" alt="Thumbnail" image={MeherPrem} />
+          <CardMedia component="img" alt="Thumbnail" image={event.thumbnailUrl} />
           <CardContent>
             <Typography
               gutterBottom

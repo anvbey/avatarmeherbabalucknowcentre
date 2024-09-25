@@ -204,7 +204,7 @@ const ContactForm = () => {
                     fontFamily: "DM Sans, sans-serif",
                   }}
                 >
-                  {t("secretary-name")}
+                  {t("secretary-phone")}
                 </Typography>
                 <Typography
                   variant="body1"
