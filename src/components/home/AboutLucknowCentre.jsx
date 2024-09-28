@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import { Box, Typography } from "@mui/material";
 
-import Netting from "../../assets/LucknowCentre.jpeg";
+import Netting from "../../assets/LucknowCentre.jpg";
 import "./AboutLucknowCentre.css";
 import { useTranslation } from "react-i18next";
 
