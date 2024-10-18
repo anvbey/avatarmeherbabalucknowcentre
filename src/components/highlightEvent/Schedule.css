@@ -1,0 +1,9 @@
+/* Hide the scrollbar but keep scroll functionality */
+.scrollable-table {
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  .scrollable-table::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+  

@@ -9,6 +9,7 @@ import MeherPrem from "../../assets/Oct2024Banner.png";
 
 import "./HighlightEvent.css";
 import { useTranslation } from "react-i18next";
+import Schedule from "../../components/highlightEvent/Schedule";
 
 const HighlightEvent = () => {
   const { t } = useTranslation("HEvent");
@@ -48,6 +49,7 @@ const HighlightEvent = () => {
         <Typography variant="h3">Session-wise Schedule</Typography>
         <Schedule />
       </Box>*/}
+      <Schedule />
       <Contact />
     </Box>
   );
