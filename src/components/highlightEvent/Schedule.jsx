@@ -11,7 +11,7 @@ import {
   TableRow,
   Grid,
 } from "@mui/material";
-import './Schedule.css';
+import "./Schedule.css";
 
 const Schedule = () => {
   const [selectedDay, setSelectedDay] = useState(0);
@@ -123,12 +123,19 @@ const Schedule = () => {
     const link = document.createElement("a");
     link.href = "/path-to-your-schedule.pdf";
     link.download = "schedule.pdf";
+    document.body.appendChild(link);
     link.click();
+    document.body.removeChild(link);
   };
 
   return (
     <Box sx={{ padding: "20px", width: "90%", margin: "0 auto" }}>
-      <Typography variant="h4" align="center" gutterBottom>
+      <Typography
+        variant="h4"
+        align="center"
+        gutterBottom
+        sx={{ fontFamily: "Playfair Display SC, serif" }}
+      >
         Schedule
       </Typography>
       <Box textAlign="center" marginBottom={3}>
@@ -139,39 +146,37 @@ const Schedule = () => {
 
       <Grid
         container
-        alignItems="center"
-        justifyContent="space-between"
         sx={{
           marginBottom: "20px",
           flexWrap: "nowrap",
-          flexDirection: { xs: "column", sm: "row" },
+          flexDirection: "row",
+          justifyContent: "center",
         }}
       >
-        <Grid item xs={12} sm={6}>
-          <Tabs
-            value={selectedDay}
-            onChange={handleDayChange}
-            sx={{ width: "100%" }}
-          >
-            <Tab label="Day 1" />
-            <Tab label="Day 2" />
-          </Tabs>
-        </Grid>
-        <Grid
-          item
-          xs={12}
-          sm={6}
-          sx={{
-            textAlign: { xs: "center", sm: "right" },
-            marginTop: { xs: "10px", sm: "0px" },
-          }}
+        <Tabs
+          value={selectedDay}
+          onChange={handleDayChange}
         >
-          <Typography variant="h6">Morning Session</Typography>
-        </Grid>
+          <Tab label="Day 1" />
+          <Tab label="Day 2" />
+        </Tabs>
       </Grid>
 
+      <Typography
+        variant="h6"
+        align="right"
+        xs={12}
+        sm={6}
+        sx={{
+          textAlign: "center",
+          marginTop: { xs: "10px", sm: "20px", fontFamily: "DM Sans, sans-serif" },
+        }}
+      >
+        Morning Session
+      </Typography>
+
       <Box sx={{ overflowX: "auto", width: "100%" }}>
-        <Box sx={{ maxHeight: "180px", overflowY: "auto", width: "100%" }} className="scrollable-table">
+        <Box sx={{ width: "100%" }}>
           <Table sx={{ minWidth: 650, width: "100%" }}>
             <TableBody>
               {scheduleData[selectedDay === 0 ? "day1" : "day2"].morning.map(
@@ -189,11 +194,11 @@ const Schedule = () => {
                     }}
                   >
                     <TableCell>
-                      <Typography variant="body1">{act.time}</Typography>
+                      <Typography variant="body1" sx={{fontFamily: "DM Sans, sans-serif"}}>{act.time}</Typography>
                     </TableCell>
 
                     <TableCell>
-                      <Typography variant="body1">
+                      <Typography variant="body1" sx={{fontFamily: "DM Sans, sans-serif"}}>
                         {act.actName} <br />
                         <span style={{ fontSize: "0.8em", color: "gray" }}>
                           #{act.type}
@@ -202,7 +207,7 @@ const Schedule = () => {
                     </TableCell>
 
                     <TableCell sx={{ textAlign: "right" }}>
-                      <Typography variant="body1">{act.location}</Typography>
+                      <Typography variant="body1" sx={{fontFamily: "DM Sans, sans-serif"}}>{act.location}</Typography>
                     </TableCell>
                   </TableRow>
                 )
@@ -218,15 +223,18 @@ const Schedule = () => {
         xs={12}
         sm={6}
         sx={{
-          textAlign: { xs: "center", sm: "right" },
-          marginTop: { xs: "10px", sm: "0px" },
+          textAlign: "center",
+          marginTop: { xs: "10px", sm: "20px", fontFamily: "DM Sans, sans-serif" },
         }}
       >
         Evening Session
       </Typography>
 
       <Box sx={{ overflowX: "auto", width: "100%" }}>
-        <Box sx={{ maxHeight: "180px", overflowY: "auto", width: "100%" }} className="scrollable-table">
+        <Box
+          sx={{ maxHeight: "180px", overflowY: "auto", width: "100%" }}
+          className="scrollable-table"
+        >
           <Table sx={{ minWidth: 650, width: "100%" }}>
             <TableBody>
               {scheduleData[selectedDay === 0 ? "day1" : "day2"].evening.map(
@@ -244,10 +252,10 @@ const Schedule = () => {
                     }}
                   >
                     <TableCell>
-                      <Typography variant="body1">{act.time}</Typography>
+                      <Typography variant="body1" sx={{fontFamily: "DM Sans, sans-serif"}}>{act.time}</Typography>
                     </TableCell>
                     <TableCell>
-                      <Typography variant="body1">
+                      <Typography variant="body1" sx={{fontFamily: "DM Sans, sans-serif"}}>
                         {act.actName} <br />
                         <span style={{ fontSize: "0.8em", color: "gray" }}>
                           #{act.type}
@@ -255,7 +263,7 @@ const Schedule = () => {
                       </Typography>
                     </TableCell>
                     <TableCell sx={{ textAlign: "right" }}>
-                      <Typography variant="body1">{act.location}</Typography>
+                      <Typography variant="body1" sx={{fontFamily: "DM Sans, sans-serif"}}>{act.location}</Typography>
                     </TableCell>
                   </TableRow>
                 )
