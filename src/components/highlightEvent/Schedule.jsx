@@ -86,9 +86,10 @@ const Schedule = () => {
         sx={{
           textAlign: "center",
           marginTop: { xs: "10px", sm: "20px", fontFamily: "DM Sans, sans-serif" },
+          fontWeight: "bold",
         }}
       >
-        Morning Session
+        Morning Session(9:00 AM - 1:00 PM)
       </Typography>
 
       <Box sx={{ overflowX: "auto", width: "100%" }}>
@@ -153,10 +154,11 @@ const Schedule = () => {
         sm={6}
         sx={{
           textAlign: "center",
-          marginTop: { xs: "10px", sm: "20px", fontFamily: "DM Sans, sans-serif" },
+          marginTop: { xs: "10px", sm: "40px", fontFamily: "DM Sans, sans-serif" },
+          fontWeight: "bold",
         }}
       >
-        Evening Session
+        Evening Session(4:00 PM - 8:00 PM)
       </Typography>
 
       <Box sx={{ overflowX: "auto", width: "100%" }}>
