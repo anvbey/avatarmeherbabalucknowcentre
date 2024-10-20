@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
 import {
   Button,
   Tabs,
@@ -10,110 +11,25 @@ import {
   TableCell,
   TableRow,
   Grid,
+  TableHead,
 } from "@mui/material";
 import "./Schedule.css";
+import scheduleData from "../../data/Schedule.json";
 
 const Schedule = () => {
-  const [selectedDay, setSelectedDay] = useState(0);
+  const location = useLocation();
+  const scheduleRef = useRef(null);
 
-  const scheduleData = {
-    day1: {
-      morning: [
-        {
-          time: "9:00 AM",
-          actName: "Morning Yoga",
-          type: "Song",
-          location: "Pune, Maharashtra",
-        },
-        {
-          time: "10:30 AM",
-          actName: "Cultural Dance",
-          type: "Dance",
-          location: "Bangalore, Karnataka",
-        },
-        {
-          time: "12:00 PM",
-          actName: "Documentary Screening",
-          type: "Documentary",
-          location: "Mumbai, Maharashtra",
-        },
-        {
-          time: "1:30 PM",
-          actName: "Lunch Break",
-          type: "Food",
-          location: "Pune, Maharashtra",
-        },
-        {
-          time: "2:30 PM",
-          actName: "Guest Speaker",
-          type: "Talk",
-          location: "Pune, Maharashtra",
-        },
-      ],
-      evening: [
-        {
-          time: "4:00 PM",
-          actName: "Drama Performance",
-          type: "Play",
-          location: "Delhi, Delhi",
-        },
-        {
-          time: "6:00 PM",
-          actName: "Classical Music",
-          type: "Song",
-          location: "Kolkata, West Bengal",
-        },
-      ],
-    },
-    day2: {
-      morning: [
-        {
-          time: "9:30 AM",
-          actName: "Art Showcase",
-          type: "Play",
-          location: "Delhi, Delhi",
-        },
-        {
-          time: "11:00 AM",
-          actName: "Classical Music",
-          type: "Song",
-          location: "Kolkata, West Bengal",
-        },
-        {
-          time: "1:00 PM",
-          actName: "Drama Performance",
-          type: "Play",
-          location: "Chennai, Tamil Nadu",
-        },
-        {
-          time: "2:30 PM",
-          actName: "Lunch Break",
-          type: "Food",
-          location: "Delhi, Delhi",
-        },
-        {
-          time: "3:30 PM",
-          actName: "Q&A Session",
-          type: "Discussion",
-          location: "Delhi, Delhi",
-        },
-      ],
-      evening: [
-        {
-          time: "3:00 PM",
-          actName: "Dance Showcase",
-          type: "Dance",
-          location: "Mumbai, Maharashtra",
-        },
-        {
-          time: "5:30 PM",
-          actName: "Movie Screening",
-          type: "Documentary",
-          location: "Bangalore, Karnataka",
-        },
-      ],
-    },
-  };
+  useEffect(() => {
+    if(location.hash === "#schedule") {
+      setTimeout(() => {
+        if(scheduleRef.current) {
+          scheduleRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    }}, [location]);
+
+  const [selectedDay, setSelectedDay] = useState(0);
 
   const handleDayChange = (event, newValue) => {
     setSelectedDay(newValue);
@@ -121,15 +37,15 @@ const Schedule = () => {
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/path-to-your-schedule.pdf";
-    link.download = "schedule.pdf";
+    link.href = "Schedule.pdf";
+    link.download = "Meher Prem Sammelan Schedule.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
 
   return (
-    <Box sx={{ padding: "20px", width: "90%", margin: "0 auto" }}>
+    <Box sx={{ padding: "20px", width: "90%", margin: "0 auto" }} id="schedule" ref={scheduleRef}>
       <Typography
         variant="h4"
         align="center"
@@ -178,6 +94,19 @@ const Schedule = () => {
       <Box sx={{ overflowX: "auto", width: "100%" }}>
         <Box sx={{ width: "100%" }}>
           <Table sx={{ minWidth: 650, width: "100%" }}>
+            <TableHead>
+              <TableRow>
+                <TableCell>
+                  <Typography variant="h6" sx={{fontFamily: "DM Sans, sans-serif"}}>Duration (mins)</Typography>
+                </TableCell>
+                <TableCell>
+                  <Typography variant="h6" sx={{fontFamily: "DM Sans, sans-serif"}}>Name of Performer</Typography>
+                </TableCell>
+                <TableCell sx={{ textAlign: "right" }}>
+                  <Typography variant="h6" sx={{fontFamily: "DM Sans, sans-serif"}}>City</Typography>
+                </TableCell>
+              </TableRow>
+            </TableHead>
             <TableBody>
               {scheduleData[selectedDay === 0 ? "day1" : "day2"].morning.map(
                 (act, index, array) => (
@@ -194,14 +123,14 @@ const Schedule = () => {
                     }}
                   >
                     <TableCell>
-                      <Typography variant="body1" sx={{fontFamily: "DM Sans, sans-serif"}}>{act.time}</Typography>
+                      <Typography variant="body1" sx={{fontFamily: "DM Sans, sans-serif"}}>{act.duration}</Typography>
                     </TableCell>
 
                     <TableCell>
                       <Typography variant="body1" sx={{fontFamily: "DM Sans, sans-serif"}}>
                         {act.actName} <br />
                         <span style={{ fontSize: "0.8em", color: "gray" }}>
-                          #{act.type}
+                        {act.type !== "" ? `#${act.type}` : ""}
                         </span>
                       </Typography>
                     </TableCell>
@@ -232,10 +161,23 @@ const Schedule = () => {
 
       <Box sx={{ overflowX: "auto", width: "100%" }}>
         <Box
-          sx={{ maxHeight: "180px", overflowY: "auto", width: "100%" }}
+          sx={{ width: "100%" }}
           className="scrollable-table"
         >
           <Table sx={{ minWidth: 650, width: "100%" }}>
+          <TableHead>
+              <TableRow>
+                <TableCell>
+                  <Typography variant="h6" sx={{fontFamily: "DM Sans, sans-serif"}}>Duration (mins)</Typography>
+                </TableCell>
+                <TableCell>
+                  <Typography variant="h6" sx={{fontFamily: "DM Sans, sans-serif"}}>Name of Performer</Typography>
+                </TableCell>
+                <TableCell sx={{ textAlign: "right" }}>
+                  <Typography variant="h6" sx={{fontFamily: "DM Sans, sans-serif"}}>City</Typography>
+                </TableCell>
+              </TableRow>
+            </TableHead>
             <TableBody>
               {scheduleData[selectedDay === 0 ? "day1" : "day2"].evening.map(
                 (act, index, array) => (
@@ -252,13 +194,13 @@ const Schedule = () => {
                     }}
                   >
                     <TableCell>
-                      <Typography variant="body1" sx={{fontFamily: "DM Sans, sans-serif"}}>{act.time}</Typography>
+                      <Typography variant="body1" sx={{fontFamily: "DM Sans, sans-serif"}}>{act.duration}</Typography>
                     </TableCell>
                     <TableCell>
                       <Typography variant="body1" sx={{fontFamily: "DM Sans, sans-serif"}}>
                         {act.actName} <br />
                         <span style={{ fontSize: "0.8em", color: "gray" }}>
-                          #{act.type}
+                          {act.type !== "" ? `#${act.type}` : ""}
                         </span>
                       </Typography>
                     </TableCell>

@@ -1,0 +1,650 @@
+{
+  "day1": {
+    "morning": [
+        {
+          "duration": "10.00",
+          "actName": "Flag-Hoisting & Tree-plantation at Ravindralaya Front Garden (8:30 AM)",
+          "type": "Pre-Show",
+          "location": "Lucknow, UP"
+        },
+        {
+          "duration": "10.00",
+          "actName": "Lighting of the Lamp (8:50 AM)",
+          "type": "Pre-Show",
+          "location": "Lucknow, UP"
+        },
+        {
+          "duration": "10.00",
+          "actName": "Aadi Sachetan",
+          "type": "Arti",
+          "location": "Lucknow, UP"
+        },
+        {
+          "duration": "10.00",
+          "actName": "Chalisa",
+          "type": "Chalisa",
+          "location": "Lucknow, UP"
+        },
+        {
+          "duration": "10.00",
+          "actName": "Welcome Address - Secretary (Sanjay Dubey)",
+          "type": "Speech",
+          "location": "Lucknow, UP"
+        },
+        {
+          "duration": "5.00",
+          "actName": "Time for Announcement (9:30 A.M. - 9:35 A.M.)",
+          "type": "",
+          "location": ""
+        },
+        {
+          "duration": "4.00",
+          "actName": "Pihu Sharma",
+          "type": "Dance",
+          "location": "Lucknow, UP"
+        },
+        {
+          "duration": "4.00",
+          "actName": "Meherkhushi Mehra",
+          "type": "Dance",
+          "location": "Nagpur, MH"
+        },
+        {
+          "duration": "4.00",
+          "actName": "Amayra Bajpai",
+          "type": "Dance",
+          "location": "Lucknow, UP"
+        },
+        {
+          "duration": "15.00",
+          "actName": "Meherkrupa Palve",
+          "type": "Speech",
+          "location": "Nasik, MH"
+        },
+        {
+          "duration": "10.00",
+          "actName": "Narasaraopet Centre",
+          "type": "Song",
+          "location": "Narasaraopet, AP"
+        },
+        {
+          "duration": "5.00",
+          "actName": "Ravi Saraswat",
+          "type": "Song",
+          "location": "Lucknow, UP"
+        },
+        {
+          "duration": "10.00",
+          "actName": "Nagpur & Khapa & Metpanjra centre",
+          "type": "Song",
+          "location": "Nagpur, Khapa, Metpanjra (MH)"
+        },
+        {
+          "duration": "5.00",
+          "actName": "Time for Announcement (10:45 A.M. - 10:50 A.M.)",
+          "type": "",
+          "location": ""
+        },
+        {
+          "duration": "5.00",
+          "actName": "Kalpesh Kamble",
+          "type": "Song",
+          "location": "Solapur, MH"
+        },
+        {
+          "duration": "25.00",
+          "actName": "Documentary",
+          "type": "Film",
+          "location": "Lucknow, UP"
+        },
+        {
+          "duration": "5.00",
+          "actName": "Daryapur Centre",
+          "type": "Song",
+          "location": "Daryapur, MH"
+        },
+        {
+          "duration": "5.00",
+          "actName": "Mridu Tripathi",
+          "type": "Song",
+          "location": "Jhansi, UP"
+        },
+        {
+          "duration": "5.00",
+          "actName": "Time for Announcement (11: 35 A.M. - 11:40 A.M.)",
+          "type": "",
+          "location": ""
+        },
+        {
+          "duration": "5.00",
+          "actName": "Orai Centre",
+          "type": "Song",
+          "location": "Orai, UP"
+        },
+        {
+          "duration": "10.00",
+          "actName": "Meherjyoti Kulshreshtha",
+          "type": "Speech",
+          "location": "Lucknow, UP"
+        },
+        {
+          "duration": "5.00",
+          "actName": "Ahinsa Tirpude",
+          "type": "Song",
+          "location": "Nagpur, MH"
+        },
+        {
+          "duration": "5.00",
+          "actName": "Manik Ubhale",
+          "type": "Song",
+          "location": "Nagpur, MH"
+        },
+        {
+          "duration": "5.00",
+          "actName": "Time for Announcement (12:15 P.M. - 12:20 P.M.)",
+          "type": "",
+          "location": ""
+        },
+        {
+          "duration": "15.00",
+          "actName": "Pratap Chandra Nigam",
+          "type": "Speech",
+          "location": "Hamirpur, UP"
+        },
+        {
+          "duration": "10.00",
+          "actName": "Ahmednagar Centre",
+          "type": "Song",
+          "location": "Ahmednagar, MH"
+        },
+        {
+          "duration": "5.00",
+          "actName": "Devadhideva (Telugu)",
+          "type": "Arti",
+          "location": "Lucknow, UP"
+        }     
+    ],
+    "evening": [
+  {
+    "duration": "5.00",
+    "actName": "Anakapalli Centre",
+    "type": "Song",
+    "location": "Anakapalli, AP"
+  },
+  {
+    "duration": "5.00",
+    "actName": "Mehermanohar & Meherastana Centre",
+    "type": "Song",
+    "location": "Meherastana, UP"
+  },
+  {
+    "duration": "5.00",
+    "actName": "Time for Announcement (4:10 P.M. - 4:15 P.M.)",
+    "type": "",
+    "location": ""
+  },
+  {
+    "duration": "5.00",
+    "actName": "Niraj Deshmukh",
+    "type": "Song",
+    "location": "Amravati, MH"
+  },
+  {
+    "duration": "10.00",
+    "actName": "Suman Choudhary",
+    "type": "Speech",
+    "location": ""
+  },
+  {
+    "duration": "5.00",
+    "actName": "Meher Sanehi & Banda Centre",
+    "type": "Song",
+    "location": "Banda, UP"
+  },
+  {
+    "duration": "30.00",
+    "actName": "Awakening/Jagruti",
+    "type": "Drama",
+    "location": "Lucknow, UP"
+  },
+  {
+    "duration": "5.00",
+    "actName": "Time for Announcement (5:10 P.M. - 5:15 P.M.)",
+    "type": "",
+    "location": ""
+  },
+  {
+    "duration": "10.00",
+    "actName": "Sharad Chandra Upadhyaya",
+    "type": "Speech",
+    "location": "Jabalpur, MP"
+  },
+  {
+    "duration": "5.00",
+    "actName": "Farrukhabad Centre",
+    "type": "Song",
+    "location": "Farrukhabad, UP"
+  },
+  {
+    "duration": "5.00",
+    "actName": "Mehera Ramdohkar",
+    "type": "Song",
+    "location": "Nagpur, MH"
+  },
+  {
+    "duration": "5.00",
+    "actName": "Sagar Group",
+    "type": "Song",
+    "location": "Sagar, MP"
+  },
+  {
+    "duration": "10.00",
+    "actName": "Framroze Mistry (Chairman, AMBPPCT)",
+    "type": "Speech",
+    "location": "Ahmednagar, MH"
+  },
+  {
+    "duration": "5.00",
+    "actName": "Time for Announcement (6:10 P.M. - 6:15 P.M.)",
+    "type": "",
+    "location": ""
+  },
+  {
+    "duration": "5.00",
+    "actName": "Ashish Borade & Hudkeshwar Group",
+    "type": "Song",
+    "location": "Nagpur, MH"
+  },
+  {
+    "duration": "4.00",
+    "actName": "Stuti Sharma",
+    "type": "Dance",
+    "location": "Lucknow, UP"
+  },
+  {
+    "duration": "4.00",
+    "actName": "Meher Bujji",
+    "type": "Dance",
+    "location": "Ahmednagar, MH"
+  },
+  {
+    "duration": "4.00",
+    "actName": "Akshita Dubey",
+    "type": "Dance",
+    "location": "Gurugram, Haryana"
+  },
+  {
+    "duration": "30.00",
+    "actName": "Panel Discussion (Mehernosh Mehta & ID Kaushik)",
+    "type": "Speech",
+    "location": "Mumbai, Meherabad (MH)"
+  },
+  {
+    "duration": "5.00",
+    "actName": "Time for Announcement (8:20 P.M. - 8:25 P.M.)",
+    "type": "",
+    "location": ""
+  },
+  {
+    "duration": "10.00",
+    "actName": "Qawwali",
+    "type": "Song",
+    "location": "Lucknow, UP"
+  },
+  {
+    "duration": "10.00",
+    "actName": "Gopi Ji & Meher Tej",
+    "type": "Song",
+    "location": "Hyderabad, TS"
+  },
+  {
+    "duration": "5.00",
+    "actName": "Prayers",
+    "type": "Prayers",
+    "location": ""
+  },
+  {
+    "duration": "5.00",
+    "actName": "Jaha Kalpana",
+    "type": "Arti",
+    "location": "Lucknow, UP"
+  }
+    ]    
+  },
+  "day2": {
+    "morning": [
+      {
+        "duration": "5.00",
+        "actName": "O Glorious",
+        "type": "Arti",
+        "location": "Lucknow, UP"
+      },
+      {
+        "duration": "10.00",
+        "actName": "Jabalpur Centre",
+        "type": "Song",
+        "location": "Jabalpur, MP"
+      },
+      {
+        "duration": "5.00",
+        "actName": "Time for Announcement (9:20 A.M. - 9:25 A.M.)",
+        "type": "",
+        "location": ""
+      },
+      {
+        "duration": "5.00",
+        "actName": "Wardha Centre",
+        "type": "Song",
+        "location": "Wardha, MH"
+      },
+      {
+        "duration": "10.00",
+        "actName": "Anil Sharma",
+        "type": "Speech",
+        "location": "Delhi"
+      },
+      {
+        "duration": "5.00",
+        "actName": "Om Prakash Koli",
+        "type": "Song",
+        "location": "Ghaziabad, UP"
+      },
+      {
+        "duration": "5.00",
+        "actName": "Yavatmal Centre",
+        "type": "Song",
+        "location": "Yavatmal, MH"
+      },
+      {
+        "duration": "5.00",
+        "actName": "Meher Sanehi",
+        "type": "Song",
+        "location": "Banda, UP"
+      },
+      {
+        "duration": "10.00",
+        "actName": "Krishnaiah Budde",
+        "type": "Speech",
+        "location": "Secunderabad, TS"
+      },
+      {
+        "duration": "4.00",
+        "actName": "Akshita Dubey",
+        "type": "Dance",
+        "location": "Lucknow, UP"
+      },
+      {
+        "duration": "4.00",
+        "actName": "Meher Bujji",
+        "type": "Dance",
+        "location": "Ahmednagar (Ahilyanagar)"
+      },
+      {
+        "duration": "4.00",
+        "actName": "Mehera Sharma",
+        "type": "Dance",
+        "location": "Dehradun, UK"
+      },
+      {
+        "duration": "5.00",
+        "actName": "Time for Announcement (10:20 A.M. - 10:25 A.M.)",
+        "type": "",
+        "location": ""
+      },
+      {
+        "duration": "5.00",
+        "actName": "Siddharth Verma",
+        "type": "Song",
+        "location": "Mumbai, MH"
+      },
+      {
+        "duration": "5.00",
+        "actName": "Kalpesh Kamble",
+        "type": "Song",
+        "location": "Solapur, MH"
+      },
+      {
+        "duration": "10.00",
+        "actName": "Delhi Centre",
+        "type": "Song",
+        "location": "Delhi"
+      },
+      {
+        "duration": "30.00",
+        "actName": "AMBPPCT Trustees",
+        "type": "Speech",
+        "location": "Ahmednagar, MH"
+      },
+      {
+        "duration": "5.00",
+        "actName": "Time for Announcement (11:30 A.M. - 11:35 A.M.)",
+        "type": "",
+        "location": ""
+      },
+      {
+        "duration": "5.00",
+        "actName": "Niraj Deshmukh",
+        "type": "Song",
+        "location": "Amravati, MH"
+      },
+      {
+        "duration": "5.00",
+        "actName": "Jarakhar Centre",
+        "type": "Song",
+        "location": "Jarakhar, UP"
+      },
+      {
+        "duration": "5.00",
+        "actName": "Hariram and Group",
+        "type": "Song",
+        "location": "Kanpur, UP"
+      },
+      {
+        "duration": "5.00",
+        "actName": "Meher Nandan",
+        "type": "Song",
+        "location": "Nauranga, UP"
+      },
+      {
+        "duration": "15.00",
+        "actName": "Mehernosh Mehta",
+        "type": "Speech",
+        "location": "Mumbai, MH"
+      },
+      {
+        "duration": "5.00",
+        "actName": "Time for Announcement (12:20 P.M. - 12:25 P.M.)",
+        "type": "",
+        "location": ""
+      },
+      {
+        "duration": "10.00",
+        "actName": "Gopi Ji & Meher Tej",
+        "type": "Song",
+        "location": "Ahmednagar, MH"
+      },
+      {
+        "duration": "10.00",
+        "actName": "Ashish Borade & Hudkeshwar Group",
+        "type": "Song",
+        "location": "Nagpur, MH"
+      },
+      {
+        "duration": "5.00",
+        "actName": "Marathi Arti",
+        "type": "Arti",
+        "location": "Lucknow, UP"
+      }
+    ],    
+    "evening": [
+      {
+        "duration": "5.00",
+        "actName": "Karimnagar, Hyderabad Centre",
+        "type": "Song",
+        "location": "Lucknow, UP"
+      },
+      {
+        "duration": "5.00",
+        "actName": "Anil Srivastava",
+        "type": "Song",
+        "location": "Lucknow, UP"
+      },
+      {
+        "duration": "5.00",
+        "actName": "Akola Centre",
+        "type": "Song",
+        "location": "Akola, MH"
+      },
+      {
+        "duration": "5.00",
+        "actName": "Jhansi Centre",
+        "type": "Song",
+        "location": "Lucknow, UP"
+      },
+      {
+        "duration": "5.00",
+        "actName": "Time for Announcement (4:20 P.M. - 4:25 P.M.)",
+        "type": "",
+        "location": ""
+      },
+      {
+        "duration": "10.00",
+        "actName": "Suresh Gholse",
+        "type": "Speech",
+        "location": "Nagpur, MH"
+      },
+      {
+        "duration": "5.00",
+        "actName": "Chandrapur Centre",
+        "type": "Song",
+        "location": "Chandrapur, MH"
+      },
+      {
+        "duration": "5.00",
+        "actName": "Bramhapuri Centre",
+        "type": "Song",
+        "location": "Brahmapuri, MH"
+      },
+      {
+        "duration": "5.00",
+        "actName": "Sunita Nigam",
+        "type": "Song",
+        "location": "Hamirpur, MH"
+      },
+      {
+        "duration": "10.00",
+        "actName": "Amravati Centre",
+        "type": "Song",
+        "location": "Amravati, MH"
+      },
+      {
+        "duration": "10.00",
+        "actName": "Chittaranjan Gangde",
+        "type": "Speech",
+        "location": "Lucknow, UP"
+      },
+      {
+        "duration": "5.00",
+        "actName": "Time for Announcement (5:25 P.M. - 5:30 P.M.)",
+        "type": "",
+        "location": ""
+      },
+      {
+        "duration": "15.00",
+        "actName": "Vishakhapatnam Centre",
+        "type": "Song",
+        "location": "Vishakhapatnam, AP"
+      },
+      {
+        "duration": "4.00",
+        "actName": "Shagun",
+        "type": "Dance",
+        "location": "Lucknow, UP"
+      },
+      {
+        "duration": "8.00",
+        "actName": "Lord Meher",
+        "type": "Dance",
+        "location": "Lucknow, UP"
+      },
+      {
+        "duration": "5.00",
+        "actName": "Sushma Bami",
+        "type": "Song",
+        "location": "Dehradun, UK"
+      },
+      {
+        "duration": "5.00",
+        "actName": "Bharat Bhushan & Family",
+        "type": "Song",
+        "location": "Kanpur, UP"
+      },
+      {
+        "duration": "10.00",
+        "actName": "Vote of Thanks - President (Kamal Kishore Sharma)",
+        "type": "Speech",
+        "location": "Lucknow, UP"
+      },
+      {
+        "duration": "5.00",
+        "actName": "Time for Announcement (6:25 P.M. - 6:30 P.M.)",
+        "type": "",
+        "location": ""
+      },
+      {
+        "duration": "10.00",
+        "actName": "Ahmednagar Centre",
+        "type": "Song",
+        "location": "Ahmednagar, MH"
+      },
+      {
+        "duration": "5.00",
+        "actName": "Mridu Tripathi",
+        "type": "Song",
+        "location": "Hamirpur, UP"
+      },
+      {
+        "duration": "10.00",
+        "actName": "Sagar Group",
+        "type": "Song",
+        "location": "Sagar, MH"
+      },
+      {
+        "duration": "15.00",
+        "actName": "ID Kaushik",
+        "type": "Speech",
+        "location": "Nagpur, MH"
+      },
+      {
+        "duration": "5.00",
+        "actName": "Manik Ubhale",
+        "type": "Song",
+        "location": "Nagpur, MH"
+      },
+      {
+        "duration": "5.00",
+        "actName": "Ahimsa Tirpude",
+        "type": "Song",
+        "location": "Nagpur, MH"
+      },
+      {
+        "duration": "10.00",
+        "actName": "Lucknow Centre",
+        "type": "Song",
+        "location": "Lucknow, UP"
+      },
+      {
+        "duration": "5.00",
+        "actName": "Prayers",
+        "type": "Prayers",
+        "location": ""
+      },
+      {
+        "duration": "5.00",
+        "actName": "Bujhave Naar (Gujarati)",
+        "type": "Arti",
+        "location": "Lucknow, UP"
+      }
+    ]    
+  }
+}

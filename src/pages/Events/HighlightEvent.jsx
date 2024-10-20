@@ -4,6 +4,7 @@ import { Box } from "@mui/material";
 import Quotes from "../../components/home/Quotes";
 import AboutEvent from "../../components/highlightEvent/AboutEvent";
 import Contact from "../../components/highlightEvent/Contact";
+import Brochure from "../../components/highlightEvent/Brochure";
 
 import MeherPrem from "../../assets/Oct2024Banner.png";
 
@@ -50,6 +51,7 @@ const HighlightEvent = () => {
         <Schedule />
       </Box>*/}
       <Schedule />
+      <Brochure />
       <Contact />
     </Box>
   );

@@ -32,9 +32,17 @@ export default function TransitionAlerts() {
               fontFamily: "DM Sans, sans-serif",
             }}
           >
-            {t("info")}{" "}
             <a
-              href={`/oct2024#contact`}
+              href={`/oct2024#schedule`}
+              style={{
+                fontWeight: "bold",
+              }}
+            >
+            {t("info")}{" "}
+            </a>
+            <span style={{ fontWeight: "bold" }}>{t("and")}</span>
+            <a
+              href={`/oct2024#brochure`}
               style={{
                 fontWeight: "bold",
               }}
