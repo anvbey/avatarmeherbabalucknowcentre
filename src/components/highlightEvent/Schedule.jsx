@@ -89,7 +89,7 @@ const Schedule = () => {
           fontWeight: "bold",
         }}
       >
-        Morning Session(9:00 AM - 1:00 PM)
+        Morning Session (9:00 AM - 1:00 PM)
       </Typography>
 
       <Box sx={{ overflowX: "auto", width: "100%" }}>
@@ -158,7 +158,22 @@ const Schedule = () => {
           fontWeight: "bold",
         }}
       >
-        Evening Session(4:00 PM - 8:00 PM)
+        Open Mic (2:00 PM - 3:30 PM)
+      </Typography>
+
+      <Typography
+        variant="h6"
+        align="right"
+        xs={12}
+        sm={6}
+        sx={{
+          textAlign: "center",
+          marginTop: { xs: "10px", sm: "40px", fontFamily: "DM Sans, sans-serif" },
+          marginBottom: "20px",
+          fontWeight: "bold",
+        }}
+      >
+        Evening Session (4:00 PM - 8:00 PM)
       </Typography>
 
       <Box sx={{ overflowX: "auto", width: "100%" }}>
