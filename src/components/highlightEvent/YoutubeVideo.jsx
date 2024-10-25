@@ -2,7 +2,7 @@ import React from "react";
 
 const YouTubeEmbed = ({ videoId }) => {
   const srcUrl =
-    "https://www.youtube.com/embed/CrW5bS9AFo8?si=YogCClzx36p2-l3S";
+    "https://www.youtube.com/embed/bAEczdb9Tr0?si=M23ef1-BLqGIchSk";
 
   return (
     <div style={{ borderRadius: "8px", overflow: "hidden" }}>
